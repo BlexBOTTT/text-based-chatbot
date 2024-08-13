@@ -8,6 +8,7 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - race_inquiry_black
 
 responses:
   utter_greet:

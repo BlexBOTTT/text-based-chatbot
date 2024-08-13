@@ -89,3 +89,23 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: race_inquiry_black
+  examples: |
+    - are you black?
+    - are you a black person?
+    - are you of African descent?
+    - do you identify as black?
+    - is the person I'm talking to black?
+    - are you African American?
+    - is this a black person?
+    - are you a person of color?
+    - is the person I'm speaking with black?
+    - do you come from a black community?
+    - is this chat with a black person?
+    - are you from African heritage?
+    - do you have African ancestry?
+    - is this a black individual?
+    - are you racially black?
+    - are you African or African American?
+    - are you a person of African descent?

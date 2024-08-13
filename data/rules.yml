@@ -11,3 +11,10 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+rules:
+- rule: Say 'I am black' anytime the user asks about race
+  steps:
+  - intent: race_inquiry_black
+  - action: utter_iamblack
+  - action: utter_did_that_help  # Updated to fit story
