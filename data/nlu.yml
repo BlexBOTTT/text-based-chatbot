@@ -90,7 +90,7 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
 
-- intent: race_inquiry_black
+- intent: race_challenge_black
   examples: |
     - are you black?
     - are you a black person?

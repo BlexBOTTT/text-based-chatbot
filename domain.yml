@@ -8,7 +8,7 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  - race_inquiry_black
+  - race_challenge_black
 
 responses:
   utter_greet:
@@ -24,12 +24,27 @@ responses:
   utter_happy:
   - text: "Great, carry on!"
 
+  utter_sad:
+  - text: "I'm sorry."
+
   utter_goodbye:
   - text: "Bye"
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
+  utter_i_am_black:
+  - text: "Yes, I am a black niga lol\n
+          Take a look at this: https://www.youtube.com/shorts/EYLQraIpMMk"
+
+  utter_satisfaction:
+  - text: "It's great to know that this meets your expectations."
+  - text: "Thank you for your positive feedback!"
+
+  utter_disatisfaction:
+  - text: "I'm sorry to hear that this didn't meet your expectations."
+  - text: "We're sorry that this experience wasn't up to standard."
+     
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
