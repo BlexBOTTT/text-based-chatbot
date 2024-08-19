@@ -16,8 +16,9 @@ aims to be conversational
 - MongoDB (Knowledge Management/Base??)
 - BERT
 - NLPaug (for data augmentation)
+- ~~LLM integration via OpenAI?~~
 
-Commands:
+# Commands:
 
 Activate venv - python 3.8.10
 - venv\Scripts\activate
@@ -31,8 +32,8 @@ rasa run --enable-api --cors "*"
 rasa run --enable-api --cors "*" --model <path>
 
 # Installation problems
-- if with "mattermostwrapper" issue:
-    - pip install setuptools==58.0.4
-    - pip install rasa
-    - rasa --version
+    - if "mattermostwrapper" issue:
+        - pip install setuptools==58.0.4
+        - pip install rasa
+        - rasa --version
 

@@ -84,6 +84,7 @@ nlu:
     - so sad
 
 - intent: bot_challenge
+
   examples: |
     - are you a bot?
     - are you a human?
@@ -109,3 +110,27 @@ nlu:
     - are you racially black?
     - are you African or African American?
     - are you a person of African descent?
+
+# SFAC-LP Related:
+
+- intent: ask_inquire_LP_staff
+  examples: |
+    -
+
+- intent: ask_lp_website
+  examples: |
+    -
+
+- intent: ask_lp_campus_location
+  examples: |
+    -
+
+- - intent: ask_college_courses/programs
+  examples: |
+    -
+
+- intent: ask_sfac_vision
+- intent: ask_sfac_mission
+- intent: ask_sfac_vision
+
+  
