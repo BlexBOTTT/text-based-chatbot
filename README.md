@@ -41,14 +41,13 @@ rasa run --enable-api --cors "*" --model <path>
 rasa run --enable-api --cors "*" --port 5005
 
 # Installation problems
-    - if "mattermostwrapper" issue:
-        - pip install setuptools==58.0.4
-        - pip install rasa
-        - rasa --version
+- if "mattermostwrapper" issue:
+    - pip install setuptools==58.0.4
+    - pip install rasa
+    - rasa --version
 
-    - if this kind of
-        - c:\users\user\cbproject\rasa-env\lib\site-packages\rasa\core\channels\socketio.py:236: 
-        _RuntimeWarning: coroutine ‘AsyncServer.enter_room’ was never awaited_
-        - try this:
-            -![venv async error](images/async_236_warning.png)
+- if c:\users\user\cbproject\rasa-env\lib\site-packages\rasa\core\channels\socketio.py:236: 
+    _RuntimeWarning: coroutine ‘AsyncServer.enter_room’ was never awaited_
+    - try this below:![async_236_warning](https://github.com/user-attachments/assets/dbbd79ad-8974-40f4-a95b-156eda87b33c)
+
         
