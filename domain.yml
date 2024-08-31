@@ -33,10 +33,6 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
-  utter_i_am_black:
-  - text: "Yes, I am a black niga lol\n
-          Take a look at this: https://www.youtube.com/shorts/EYLQraIpMMk"
-
   utter_satisfaction:
   - text: "It's great to know that this meets your expectations."
   - text: "Thank you for your positive feedback!"

@@ -29,18 +29,3 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
-- story: race_challenge_black_affirm
-  steps:
-  - intent: race_challenge_black
-  - action: utter_i_am_black
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_satisfaction
-
-- story: race_challenge_black_deny
-  steps:
-  - intent: race_challenge_black
-  - action: utter_i_am_black
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_disatisfaction
