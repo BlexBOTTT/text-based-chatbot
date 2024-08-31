@@ -7,7 +7,7 @@ aims to be conversational
 
 # Configurations:
     This rasa project is supported with:
-    - Python Version:   3.8.10 (In blexbottt's R5-3600 desktop)
+    - Python Version:   3.8.10 (In blexbottt's R5-3600/B450M desktop)
     - Rasa Version:     3.6.20
 
 # CHECKLIST (say DONE if completed)
@@ -17,6 +17,10 @@ aims to be conversational
 - BERT
 - NLPaug (for data augmentation)
 - ~~LLM integration via OpenAI?~~
+    # What about the dataset? is it:
+    - For college-related only?
+    - K-12?
+    - Or, Both K-12 and College?
 
 # Commands:
 
