@@ -25,7 +25,8 @@ aims to be conversational
 # Commands:
 
 Activate venv - python 3.8.10
-- venv\Scripts\activate
+
+venv\Scripts\activate
 
 - rasa train
 - rasa shell
@@ -33,7 +34,11 @@ Activate venv - python 3.8.10
 rasa run --enable-api 
 rasa run --enable-api --cors "*"
 
+rasa run -m models --enable-api --cors "*"
+
 rasa run --enable-api --cors "*" --model <path>
+
+rasa run --enable-api --cors "*" --port 5005
 
 # Installation problems
     - if "mattermostwrapper" issue:
@@ -41,3 +46,9 @@ rasa run --enable-api --cors "*" --model <path>
         - pip install rasa
         - rasa --version
 
+    - if this kind of
+        - c:\users\user\cbproject\rasa-env\lib\site-packages\rasa\core\channels\socketio.py:236: 
+        _RuntimeWarning: coroutine ‘AsyncServer.enter_room’ was never awaited_
+        - try this:
+            -![venv async error](images/async_236_warning.png)
+        
