@@ -7,12 +7,21 @@ rules:
   - intent: ask_tuition_cs
   - action: utter_tuition_cs
 
-
-- rule: When user asks for eductuition
+- rule: When user asks for educ tuition
   steps:
   - intent: ask_tuition_educ
   - action: utter_tuition_educ
 
+# config.yml/FallbackClassifier rule mapping for questions out of the intents
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_rephrase
+
+
+
+
+##  DEFAULT RASA DATA BELOW:
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye
