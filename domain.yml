@@ -10,16 +10,24 @@ intents:
   - bot_challenge
   - ask_tuition_cs
   - ask_tuition_educ
+  - nlu_fallback
 
 responses:
 
+  # config.yml/FallbackClassifier response for questions out of the intent
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  
   utter_tuition_cs:
   - text: "The tuition fee of the CS is 25k php"
-
   
   utter_tuition_educ:
   - text: "The tuition fee of the Educ is 35k php"
 
+
+
+
+##  DEFAULT RASA DATA BELOW:
   utter_greet:
   - text: "Hey! How are you?"
 
@@ -43,12 +51,11 @@ responses:
   - text: "I am a bot, powered by Rasa."
 
   utter_satisfaction:
-  - text: "It's great to know that this meets your expectations."
-  - text: "Thank you for your positive feedback!"
-
+  - text: "Great to know that this meets your expectations."
+ 
   utter_disatisfaction:
   - text: "I'm sorry to hear that this didn't meet your expectations."
-  - text: "We're sorry that this experience wasn't up to standard."
+  
      
 session_config:
   session_expiration_time: 60
