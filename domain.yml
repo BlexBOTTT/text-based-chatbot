@@ -8,8 +8,18 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - ask_tuition_cs
+  - ask_tuition_educ
 
 responses:
+
+  utter_tuition_cs:
+  - text: "The tuition fee of the CS is 25k php"
+
+  
+  utter_tuition_educ:
+  - text: "The tuition fee of the Educ is 35k php"
+
   utter_greet:
   - text: "Hey! How are you?"
 

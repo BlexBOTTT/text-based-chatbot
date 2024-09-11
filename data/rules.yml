@@ -2,6 +2,17 @@ version: "3.1"
 
 rules:
 
+- rule: When user asks for cs tuition
+  steps:
+  - intent: ask_tuition_cs
+  - action: utter_tuition_cs
+
+
+- rule: When user asks for eductuition
+  steps:
+  - intent: ask_tuition_educ
+  - action: utter_tuition_educ
+
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye

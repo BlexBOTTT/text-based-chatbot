@@ -35,14 +35,13 @@ Activate venv - python 3.8.10
 - rasa train
 - rasa shell
 
-rasa run --enable-api 
+# default command for conversing with the chatbot in the web's chat widget
+rasa run --enable-api
+
 rasa run --enable-api --cors "*"
 
-rasa run -m models --enable-api --cors "*"
-
+# command if has multiple models saved and want to slect a particular .tar.gz one
 rasa run --enable-api --cors "*" --model <path>
-
-rasa run --enable-api --cors "*" --port 5005
 
 # Installation problems
 - FOR FiRTST time installing rasa:

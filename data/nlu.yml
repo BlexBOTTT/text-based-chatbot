@@ -94,9 +94,39 @@ nlu:
 - intent: ask_inquire_LP_staff
 - intent: ask_lp_website
 - intent: ask_lp_campus_location
-- intent: ask_college_courses/programs
+
 - intent: ask_sfac_vision
 - intent: ask_sfac_mission
 - intent: ask_sfac_vision
+- intent: ask_college_courses/programs
+- intent: ask_tuition_all_courses
+
+- intent: ask_tuition_cs
+  examples: |
+    - Could you tell me how much the tuition fees are for the computer science course?
+    - What are the current fees for enrolling in computer science?
+    - How much is the tuition for a computer science degree?
+    - Can you provide the cost breakdown for the computer science program?
+    - What’s the annual tuition for computer science?
+    - How much does it cost to study computer science here?
+    - I’m interested in computer science, how much is the tuition fee?
+    - What are the semester fees for the computer science course?
+    - Could you give me the tuition details for a computer science degree?
+    - How much would I need to pay per semester for computer science?
+    - Can you tell me the total cost for a computer science program?
+
+- intent: ask_tuition_educ
+  examples: |
+    - Could you tell me how much the tuition fees are for the Education course?
+    - What are the current fees for enrolling in Education?
+    - How much is the tuition for a Education degree?
+    - Can you provide the cost breakdown for the Education program?
+    - What’s the annual tuition for Education?
+    - How much does it cost to study Education here?
+    - I’m interested in Education, how much is the tuition fee?
+    - What are the semester fees for the Education course?
+    - Could you give me the tuition details for a Education degree?
+    - How much would I need to pay per semester for Education?
+    - Can you tell me the total cost for a Education program?
 
   
