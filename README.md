@@ -57,11 +57,11 @@ rasa run --enable-api --cors "*" --model <path>
 
 - if c:\users\USER\cbproject\rasa-env\lib\site-packages\rasa\core\channels\socketio.py:236: 
     _RuntimeWarning: coroutine ‘AsyncServer.enter_room’ was never awaited_
-    - try this below:![async_236_warning](images/async_236_warning.png)
+    - try this below:![async_236_warning](docs/images/async_236_warning.png)
     
 
 - if Powershell's "ExecutionPolicy" (which usually trying to use venv in powershell):
-    ![Execution policy](images/execution_policy.png)
+    ![Execution policy](docs/images/execution_policy.png)
     - try this below:
         - open windows powershell and execute `Get-ExecutionPolicy`
         - if the response was `Restricted`, 
