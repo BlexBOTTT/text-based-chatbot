@@ -13,12 +13,15 @@ rules:
   - action: utter_tuition_educ
 
 # config.yml/FallbackClassifier rule mapping for questions out of the intents
-- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+- rule: Fallback rule
   steps:
   - intent: nlu_fallback
-  - action: utter_please_rephrase
+  - action: action_default_fallback
 
-
+- rule: User is asking the school location
+  steps:
+  - intent: ask_school_location
+  - action: utter_school_location
 
 
 ##  DEFAULT RASA DATA BELOW:

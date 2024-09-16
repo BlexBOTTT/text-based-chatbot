@@ -9,8 +9,11 @@
 
 # from typing import Any, Text, Dict, List
 #
-# from rasa_sdk import Action, Tracker
-# from rasa_sdk.executor import CollectingDispatcher
+from rasa_sdk import Action, Tracker
+#from rasa_sdk.executor import CollectingDispatcher
+
+# Fallback Policy
+from rasa_sdk.events import UserUtteranceReverted
 #
 #
 # class ActionHelloWorld(Action):
@@ -25,3 +28,11 @@
 #         dispatcher.utter_message(text="Hello World!")
 #
 #         return []
+
+class ActionDefaultFallback(Action):
+    def name(self):
+        return "action_default_fallback"
+
+    def run(self, dispatcher, tracker, domain):
+        dispatcher.utter_message(text="Sorry, I didn't understand that. Can you rephrase?")
+        return [UserUtteranceReverted()]

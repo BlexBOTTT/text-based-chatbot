@@ -11,12 +11,13 @@ intents:
   - ask_tuition_cs
   - ask_tuition_educ
   - nlu_fallback
+  - ask_school_location
 
 responses:
 
   # config.yml/FallbackClassifier response for questions out of the intent
-  utter_please_rephrase:
-  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  utter_default:
+    - text: "Sorry, I didn't quite get that. Could you please try again?"
   
   utter_tuition_cs:
   - text: "The tuition fee of the CS is 25k php"
@@ -24,8 +25,11 @@ responses:
   utter_tuition_educ:
   - text: "The tuition fee of the Educ is 35k php"
 
-
-
+  utter_school_location:
+  - text: "The address of the LP-Campus is: 
+  045 Admiral Road, Admiral Village, Talon Tres, Las Piñas City 1747, Metro Manila, Philippines 
+  \n
+  Check this google map link: https://maps.app.goo.gl/dRqctXP4QoQe4WPk6"
 
 ##  DEFAULT RASA DATA BELOW:
   utter_greet:

@@ -10,7 +10,7 @@ assistant_id: 20240814-215218-all-miso
 # https://rasa.com/docs/rasa/nlu/components/
 language: en
 
-pipeline: # the "null" is disabled to enable pipelines
+pipeline: # null
 # # No configuration for the NLU pipeline was provided. The following default pipeline was used to train your model.
 # # If you'd like to customize it, uncomment and adjust the pipeline.
 # # See https://rasa.com/docs/rasa/tuning-your-model for more information.
@@ -33,16 +33,10 @@ pipeline: # the "null" is disabled to enable pipelines
 #     threshold: 0.3
 #     ambiguity_threshold: 0.1
 
-  # FallbackClassifier: 
-  # meant to trigger when all of the intent predictions are lower than the threshold configured below,
-  # hence will trigger a response where it doesn't recognize the question
-  - name: FallbackClassifier
-    threshold: 0.7
-  # ambiguity_threshold: 0.1
 
 # Configuration for Rasa Core.
 # https://rasa.com/docs/rasa/core/policies/
-policies: null
+policies: #null
 # # No configuration for policies was provided. The following default policies were used to train your model.
 # # If you'd like to customize them, uncomment and adjust the policies.
 # # See https://rasa.com/docs/rasa/policies for more information.
@@ -55,3 +49,11 @@ policies: null
 #     max_history: 5
 #     epochs: 100
 #     constrain_similarities: true
+
+  # FallbackClassifier: 
+  # meant to trigger when all of the intent predictions are lower than the threshold configured below,
+  # hence will trigger a response where it doesn't recognize the question
+  - name: RulePolicy
+    core_fallback_threshold: 0.4   # Adjust the confidence threshold here
+    core_fallback_action_name: "action_default_fallback"  # Fallback action
+    enable_fallback_prediction: True
