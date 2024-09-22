@@ -2,7 +2,10 @@ version: "3.1"
 
 stories:
 
-
+- story: ask tuition price
+  steps:
+  - intent: ask_tuition
+  - action: action_ask_tuition
 
 
 ##  DEFAULT RASA DATA BELOW:

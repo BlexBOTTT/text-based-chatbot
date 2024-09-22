@@ -7,23 +7,29 @@ intents:
   - deny
   - mood_great
   - mood_unhappy
-  - bot_challenge
-  - ask_tuition_cs
-  - ask_tuition_educ
+  - bot_challenge 
   - nlu_fallback
   - ask_school_location
+  - ask_tuition
+
+entities:
+  - course
+
+slots:
+  course:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: course
+
+actions:
+    - action_ask_tuition
 
 responses:
-
-  # config.yml/FallbackClassifier response for questions out of the intent
-  utter_default:
-    - text: "Sorry, I didn't quite get that. Could you please try again?"
-  
-  utter_tuition_cs:
-  - text: "The tuition fee of the CS is 25k php"
-  
-  utter_tuition_educ:
-  - text: "The tuition fee of the Educ is 35k php"
+  # Tuition prices - Las Pinas
+  utter_ask_tuition:
+  - text: "The tuition fee for the {course} course is ${tuition} php"
 
   utter_school_location:
   - text: "The address of the LP-Campus is: 
@@ -31,7 +37,11 @@ responses:
   \n
   Check this google map link: https://maps.app.goo.gl/dRqctXP4QoQe4WPk6"
 
-##  DEFAULT RASA DATA BELOW:
+  # config.yml/FallbackClassifier response for questions out of the intent
+  utter_default:
+  - text: "Sorry, I didn't quite get that. Could you please try again?"
+
+###  DEFAULT RASA DATA BELOW:
   utter_greet:
   - text: "Hey! How are you?"
 
@@ -59,8 +69,7 @@ responses:
  
   utter_disatisfaction:
   - text: "I'm sorry to hear that this didn't meet your expectations."
-  
-     
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

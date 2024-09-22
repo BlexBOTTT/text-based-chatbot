@@ -32,6 +32,7 @@ Activate venv - python 3.8.10
 
 .venv\Scripts\activate
 
+- rasa run actions (run this first if have changes in custom .py codes before rasa train)
 - rasa train
 
 # command to talk to the chatbot in the CLI (command line interface)
