@@ -1,0 +1,73 @@
+version: "3.1"
+
+nlu:
+
+# Tuition prices - Las Pinas
+  - intent: ask_tuition
+    examples: |
+      - What is the tuition for [computer science](course) course?
+      - How much is the tuition for [education](course) course?
+      - Can you tell me the tuition fee for [hospitality management](course) course?
+      - How much does it cost to study [business administration](course) course?
+      - What's the tuition fee for [engineering](course) course?
+      - What are the tuition fees for [psychology](course) course?
+      - How much is tuition for [nursing](course) course?
+
+  - synonym: computer science
+    examples: |
+      - CS
+      - BSCS
+      - BS CS
+      - Bachelor of Science in Computer Science
+      - comsci
+      - com sci
+      - comp sci
+
+  - synonym: education
+    examples: |
+      - educ
+      - BSED
+      - eng
+
+  - synonym: hospitality management
+    examples: |
+      - HM
+      - hospitality
+      - hospitality-management
+
+  - synonym: business administration
+    examples: |
+      - business admin
+      - BA
+      - bus admin
+      - BSBA
+
+  - synonym: engineering
+    examples: |
+      - eng
+      - engineering
+      - eng
+      - BSENG
+      - BS ENG
+
+  - synonym: psychology
+    examples: |
+      - psych
+      - BS Psychology
+      - eng
+      - BSENG
+      - BS ENG
+
+  - synonym: nursing
+    examples: |
+      - BSN
+      - BS Nursing
+      - Nursing
+
+# - intent: ask_tuition_computer_science
+# - intent: ask_tuition_education
+# - intent: ask_tuition_hospitality_management
+# - intent: ask_tuition_business_administration
+# - intent: ask_tuition_engineering
+# - intent: ask_tuition_psychology
+# - intent: ask_tuition_nursing
