@@ -1,0 +1,49 @@
+version: "3.1"
+
+stories:
+
+- story: ask tuition price
+  steps:
+  - intent: ask_tuition
+  - action: action_ask_tuition
+
+
+- story: ask admission process
+  steps:
+    - intent: ask_admission_process
+    - action: utter_ask_admission_process
+
+- story: ask admission requirements
+  steps:
+    - intent: ask_admission_requirements
+    - action: utter_ask_admission_requirements
+
+
+##  DEFAULT RASA DATA BELOW:
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+

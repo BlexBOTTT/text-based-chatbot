@@ -11,6 +11,8 @@ intents:
   - nlu_fallback
   - ask_school_location
   - ask_tuition
+  - ask_admission_process
+  - ask_admission_requirements
 
 entities:
   - course
@@ -27,19 +29,24 @@ actions:
     - action_ask_tuition
 
 responses:
+
+  utter_ask_admission_process:
+    - text: "The admission process involves several steps: first, fill out the application form, then submit the required documents, and finally, wait for the interview schedule."
+  utter_ask_admission_requirements:
+    - text: "To apply, you need to submit your high school diploma, a personal statement, and two letters of recommendation."
+
   # Tuition prices - Las Pinas
   utter_ask_tuition:
   - text: "The tuition fee for the {course} course is ${tuition} php"
 
   utter_school_location:
   - text: "The address of the LP-Campus is: 
-  045 Admiral Road, Admiral Village, Talon Tres, Las Piñas City 1747, Metro Manila, Philippines 
-  \n
-  Check this google map link: https://maps.app.goo.gl/dRqctXP4QoQe4WPk6"
+  045 Admiral Road, Admiral Village, Talon Tres, Las Piñas City 1747, Metro Manila, Philippines
+  \nCheck this google map link: https://maps.app.goo.gl/dRqctXP4QoQe4WPk6"
 
   # config.yml/FallbackClassifier response for questions out of the intent
-  utter_default:
-  - text: "Sorry, I didn't quite get that. Could you please try again?"
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
 
 ###  DEFAULT RASA DATA BELOW:
   utter_greet:

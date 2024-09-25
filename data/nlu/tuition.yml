@@ -27,10 +27,10 @@ nlu:
     examples: |
       - educ
       - BSED
-      - eng
 
   - synonym: hospitality management
     examples: |
+      - BSHM
       - HM
       - hospitality
       - hospitality-management
@@ -54,9 +54,6 @@ nlu:
     examples: |
       - psych
       - BS Psychology
-      - eng
-      - BSENG
-      - BS ENG
 
   - synonym: nursing
     examples: |

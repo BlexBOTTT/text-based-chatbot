@@ -1,0 +1,31 @@
+version: "3.1"
+
+nlu:
+
+
+# Las Pinas Campus
+- intent: ask_admission_process
+  examples: |
+    - Can you explain the admission process?
+    - What are the steps to apply for admission?
+    - How do I enroll in the school?
+    - What is the procedure for getting admitted?
+    - Can you walk me through the application process?
+    - How long does the admission process take?
+    - Is there an online application for admission?
+    - What documents do I need to submit for admission?
+    - Are there any entrance exams for admission?
+    - When does the application period open?
+
+- intent: ask_admission_requirements
+  examples: |
+    - What are the requirements for admission?
+    - Can you tell me what documents are needed to apply?
+    - Do I need to submit a personal statement for admission?
+    - Are there specific grades required for admission?
+    - Is there an age limit for applicants?
+    - What qualifications do I need to be accepted?
+    - Are letters of recommendation required for admission?
+    - Do I need to take any standardized tests?
+    - What are the prerequisites for applying?
+    - Can you provide a checklist of admission requirements?

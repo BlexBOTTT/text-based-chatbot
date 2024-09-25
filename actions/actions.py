@@ -13,7 +13,7 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
 # Fallback Policy
-#from rasa_sdk.events import UserUtteranceReverted
+from rasa_sdk.events import UserUtteranceReverted
 #
 #
 # class ActionHelloWorld(Action):
@@ -65,9 +65,9 @@ class ActionAskTuition(Action):
 
 ### Default fallback response for inputs with unrecognized intents (not trained)
 # class ActionDefaultFallback(Action):
-#     def name(self):
+#     def name(self) -> str:
 #         return "action_default_fallback"
 
-    # def run(self, dispatcher, tracker, domain):
-    #     dispatcher.utter_message(text="Sorry, I didn't understand that. Can you rephrase?")
-    #     return [UserUtteranceReverted()]
+#     def run(self, dispatcher: CollectingDispatcher, tracker, domain):
+#         dispatcher.utter_message(text="Sorry, I didn't understand that. Can you rephrase?")
+#         return [UserUtteranceReverted()]

@@ -3,25 +3,5 @@ version: "3.1"
 nlu:
 
 # SFAC-LP Related:
-- intent: ask_inquire_LP_staff
+
 - intent: ask_lp_website
-
-# Las Pinas Campus
-- intent: ask_school_location 
-  examples: |
-    - Where is the school located?
-    - Can you tell me the location of the campus?
-    - Where is the Las Piñas campus?
-    - What is the address of the school?
-    - How do I get to the Bacoor campus?
-    - Where are your campuses located?
-    - Where is the Las Piñas campus situated?
-    - I need the location of the school.
-    - Can you give me directions to the Las Piñas campus?
-    - Where is the Las Pinas campus located?
-    - What is the exact address of the campus?
-
-- intent: ask_sfac_vision
-- intent: ask_sfac_mission
-- intent: ask_sfac_vision
-
