@@ -4,4 +4,39 @@ nlu:
 
 # SFAC-LP Related:
 
-- intent: ask_lp_website
+- intent: ask_contact
+  examples: |
+    - Can you provide a link to the contact page of the school?
+    - How can I get in touch with the school directly?
+    - Is there a page where I can contact the school?
+    - Where can I find the school's contact details?
+    - Where can I contact the school administration?
+    - I need to talk to someone from the school, where should I go?
+    - Can I get the school's contact information?
+    - Where's the school contact page?
+    - Do you have a contact page for the school?
+    - How do I reach the school office?
+    - Is there a direct way to contact the school?
+    - Where can I find contact information for the school?
+    - Could you point me to the school's contact page?
+    - I need contact details for the school, where can I find them?
+    - How do I contact the school administration?
+    - Can you show me the contact page for the school?
+    - Is there a page for contacting the school?
+    - Where do I go if I want to contact the school?
+    - Can you give me the link to the school contact information?
+    - What is the school's contact page URL?
+    - Where can I reach the school administration online?
+    - Is there any page to contact the school?
+    - Can you direct me to the contact section of the school website?
+    - How can I contact the school through the website?
+    - I need the contact details of the school, where can I find them?
+    - What is the email address for the admissions office at Las Piñas?
+    - Can you give me the contact details for the staff at Las Piñas?
+    - Who handles financial aid inquiries at Las Piñas?
+    - What is the best way to contact Las Piñas campus staff?
+    - Can you tell me the contact information for Las Piñas staff?
+    - How can I get support from the Las Piñas administration?
+    - Is there a hotline for the Las Piñas campus staff?
+    - How can I schedule a meeting with Las Piñas campus staff?
+    - Can you provide the Las Piñas staff directory?

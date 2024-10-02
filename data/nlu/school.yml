@@ -17,6 +17,7 @@ nlu:
     - Can you give me directions to the Las Piñas campus?
     - Where is the Las Pinas campus located?
     - What is the exact address of the campus?
+
     
 - intent: ask_sfac_vision
 - intent: ask_sfac_mission

@@ -2,8 +2,11 @@ version: "3.1"
 
 rules:
 
-#
-
+# school contact
+- rule: Respond to contact page query
+  steps:
+    - intent: ask_contact
+    - action: utter_ask_contact
 
 # config.yml/FallbackClassifier rule mapping for questions out of the intents
 - rule: Ask the user to rephrase whenever they send a message with low NLU confidence

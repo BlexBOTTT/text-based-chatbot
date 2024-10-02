@@ -7,9 +7,12 @@ aims to be conversational
 
 # Configurations:
     This rasa project is supported with:
-    - Python Version:   3.8.10
+    DESKTOP
+    - Python Version:   3.8.10 -> 3.10.11
+    - pip version:      24.2
     - Rasa Version:     3.6.20
-
+    -
+    LAPTOP
     - Python Version:   3.10.11
     - pip version:      23.0.1
     - Rasa Version:     3.6.20

@@ -13,6 +13,7 @@ intents:
   - ask_tuition
   - ask_admission_process
   - ask_admission_requirements
+  - ask_contact
 
 entities:
   - course
@@ -29,6 +30,20 @@ actions:
     - action_ask_tuition
 
 responses:
+
+  utter_ask_contact:
+  - text: |
+      Here are the contact details for the school:
+      
+      **Official Website**: https://www.stfrancislp.com/landing-lp/contact.php
+
+      **Facebook**: https://www.facebook.com/mysfaclp
+
+      **Phone**: 0917-729-2909 / 8800-3131
+
+      **Email**: sfaclaspinasadmission@gmail.com
+      
+      **Physical Address**: [045 Admiral Village, Talon Tres, Las Piñas City, Metro Manila 1747, Philippines](https://maps.app.goo.gl/PtT4YRcZbk8bH8nK9)
 
   utter_ask_admission_process:
     - text: "The admission process involves several steps: first, fill out the application form, then submit the required documents, and finally, wait for the interview schedule."
