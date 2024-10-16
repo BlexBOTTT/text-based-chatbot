@@ -14,6 +14,7 @@ intents:
   - ask_admission_process
   - ask_admission_requirements
   - ask_contact
+  - ask_available_discounts
 
 entities:
   - course
@@ -27,7 +28,8 @@ slots:
         entity: course
 
 actions:
-    - action_ask_tuition
+  - action_ask_tuition
+  - action_fetch_dynamic_response
 
 responses:
 
@@ -45,15 +47,27 @@ responses:
       
       **Physical Address**: [045 Admiral Village, Talon Tres, Las Piñas City, Metro Manila 1747, Philippines](https://maps.app.goo.gl/PtT4YRcZbk8bH8nK9)
 
+  # Admission related
   utter_ask_admission_process:
     - text: "The admission process involves several steps: first, fill out the application form, then submit the required documents, and finally, wait for the interview schedule."
   utter_ask_admission_requirements:
     - text: "To apply, you need to submit your high school diploma, a personal statement, and two letters of recommendation."
+  utter_ask_available_discounts:
+    - text: |
+        Here are the discount options available at our school:
+        - Early enrollment discount: A 5% discount on tuition fees for students who enroll before the specified deadline.
+        - Sibling discount: A 10% discount for each additional sibling enrolled.
+        - Academic scholarship: Discounts based on academic performance, ranging from 10% to 50% off tuition.
+        - Full payment discount: A 5% discount if you pay the full tuition upfront.
+        - Financial assistance: Discounts are available for students from low-income families upon assessment.
+        
+        If you have any specific questions or need more information, feel free to ask!
 
   # Tuition prices - Las Pinas
   utter_ask_tuition:
   - text: "The tuition fee for the {course} course is ${tuition} php"
-
+  
+  # School location
   utter_school_location:
   - text: "The address of the LP-Campus is: 
   045 Admiral Road, Admiral Village, Talon Tres, Las Piñas City 1747, Metro Manila, Philippines
@@ -87,11 +101,9 @@ responses:
   - text: "I am a bot, powered by Rasa."
 
   utter_satisfaction:
-  - text: "Great to know that this meets your expectations."
+  - text: "Great to know that this meets your expectations. Is there any more questions to ask regarding to the admission?"
  
   utter_disatisfaction:
-  - text: "I'm sorry to hear that this didn't meet your expectations."
+  - text: "I'm sorry to hear that this didn't meet your expectations. Is there any more questions to ask regarding to the admission?"
 
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+

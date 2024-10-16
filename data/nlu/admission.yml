@@ -29,3 +29,16 @@ nlu:
     - Do I need to take any standardized tests?
     - What are the prerequisites for applying?
     - Can you provide a checklist of admission requirements?
+
+- intent: ask_available_discounts
+  examples: |
+    - Are there any discounts available at the school?
+    - What discounts can I avail as a student?
+    - Do you offer any discounts on tuition fees?
+    - Are there discounts for siblings studying in the same school?
+    - Is there a scholarship or discount program I can apply for?
+    - Do you have any special discounts for honors students?
+    - Are there discounts available for early enrollment?
+    - Can I get a discount for paying the fees in full upfront?
+    - Are there discounts for students from low-income families?
+    - What financial aid or discount options are available?

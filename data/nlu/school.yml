@@ -2,7 +2,6 @@ version: "3.1"
 
 nlu:
 
-
 # Las Pinas Campus
 - intent: ask_school_location 
   examples: |
@@ -19,8 +18,8 @@ nlu:
     - What is the exact address of the campus?
 
     
-- intent: ask_sfac_vision
-- intent: ask_sfac_mission
-- intent: ask_sfac_vision
-- intent: ask_inquire_LP_staff
+# - intent: ask_sfac_vision
+# - intent: ask_sfac_mission
+# - intent: ask_sfac_vision
+# - intent: ask_inquire_LP_staff
 

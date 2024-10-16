@@ -6,18 +6,29 @@ stories:
   steps:
   - intent: ask_tuition
   - action: action_ask_tuition
-
+  - action: utter_ask_tuition
 
 - story: ask admission process
   steps:
     - intent: ask_admission_process
     - action: utter_ask_admission_process
+    - action: action_fetch_dynamic_response
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_satisfaction
 
 - story: ask admission requirements
   steps:
     - intent: ask_admission_requirements
     - action: utter_ask_admission_requirements
 
+- story: Handle discount inquiries
+  steps:
+    - intent: ask_available_discounts
+    - action: utter_ask_available_discounts
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_satisfaction
 
 ##  DEFAULT RASA DATA BELOW:
 - story: happy path
@@ -26,6 +37,7 @@ stories:
   - action: utter_greet
   - intent: mood_great
   - action: utter_happy
+  - action: utter_satisfaction
 
 - story: sad path 1
   steps:
@@ -35,7 +47,7 @@ stories:
   - action: utter_cheer_up
   - action: utter_did_that_help
   - intent: affirm
-  - action: utter_happy
+  - action: utter_sad
 
 - story: sad path 2
   steps:
@@ -45,5 +57,6 @@ stories:
   - action: utter_cheer_up
   - action: utter_did_that_help
   - intent: deny
+  - action: utter_disatisfaction
   - action: utter_goodbye
 
