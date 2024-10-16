@@ -20,14 +20,14 @@ aims to be conversational
 # CHECKLIST (say DONE if completed)
 - Connect to website (html-php)
     - configure dataset in the front-end
-- MongoDB (Knowledge Management/Base??)
+- MongoDB (Knowledge Management/Base??) DONE!!!
 - BERT
 - NLPaug (for data augmentation)
 - ~~LLM integration via OpenAI?~~
     # What about the dataset? is it:
-    - For college-related only?
-    - K-12?
-    - Or, Both K-12 and College?
+    - _For college only_
+    - ~K-12?~
+    - ~Or, Both K-12 and College?~
 
 # Commands:
 
