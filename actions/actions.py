@@ -9,12 +9,29 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
-# Fallback Policy
-from rasa_sdk.events import UserUtteranceReverted
-
 # DO NOT DELETE:For integration of mongodb, and fetching intent-responses back to the chatbot
 from pymongo import MongoClient
 
+### QUERY SEARCHER, DO NOT DELETE
+def build_query(intent: str, collection_name: str) -> dict:
+    # Define fields to search based on the collection type
+    fields = {
+        "admission": ["rasa_intent", "utter_admission"],
+        "courses": ["rasa_intent", "course", "synonyms", "tuition"]
+        
+        # Add other collections and their respective fields as needed, MANUALLY!
+    }
+
+    # Construct the query dynamically
+    if collection_name in fields:
+        return {
+            "$or": [
+                {field: {"$regex": intent, "$options": "i"}} for field in fields[collection_name]
+            ]
+        }
+    # Return an empty query if the collection name is not found
+    return {}
+### 
 
 ### DO NOT DELETE: MAIN CODE FETCH SNIPPET FOR MONGODB RESPONSE, 
 class ActionFetchDynamicResponse(Action):
@@ -22,7 +39,6 @@ class ActionFetchDynamicResponse(Action):
         return "action_fetch_dynamic_response"
 
     def __init__(self):
-        # Replace with your actual MongoDB URI
         self.client = MongoClient("mongodb://localhost:27017/")
         self.db = self.client['admission_chatbot']
 
@@ -30,87 +46,58 @@ class ActionFetchDynamicResponse(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        # Get the intent from the user's latest message
         intent = tracker.latest_message['intent']['name']
-
-        # Iterate over all collections in the database
+        
         for collection_name in self.db.list_collection_names():
             collection = self.db[collection_name]
 
-            # Try to find a document that matches the intent
-            query = {
-                "$or": [
-                    {"process": {"$regex": intent, "$options": "i"}},
-                    {"course": {"$regex": intent, "$options": "i"}},
-                    {"synonyms": {"$regex": intent, "$options": "i"}},
-                    {"details": {"$regex": intent, "$options": "i"}}
-                ]
-            }
+            # only for complex ones like courses collection
+            if collection_name == "courses" and intent == "ask_tuition":
+                course_name = tracker.get_slot('course')  # Fetch the course slot value from the tuition.yml NLU
+
+                 # Use the course_name in the query if it's available
+                if course_name:
+                    query = {
+                        "course": {"$regex": course_name, "$options": "i"}
+                    }
+                else:
+                    # If no course name is available, fallback to a broader query
+                    query = build_query(intent, collection_name)
+            else: # Use the helper function to build the query, fallback to a broader query
+                query = build_query(intent, collection_name)
+
+            # logging debugger START
+            # CLI command: rasa run actions --debug
+            # import logging
+            # logger = logging.getLogger(__name__)
+
+            # logger.debug(f"Searching for intent: {intent} in collection: {collection_name}")
+            # logger.debug(f"Query used: {query}")
 
             result = collection.find_one(query)
 
+            # if result:
+            #     logger.debug(f"Document found: {result}")
+            # else:
+            #     logger.debug(f"No matching document found in collection: {collection_name}")
+            # logging debugger END
+
             if result:
-                # Format the response based on the collection type
                 if collection_name == "courses":
-                    response = f"{result['course']} - Tuition: {result['tuition']}"
-                elif collection_name == "admission":
-                    response = f"Admission Process: {result.get('details', 'No details available.')}"
+                    response = f"{result.get('course', 'No course available.')} - Tuition: {result.get('tuition', 'No tuition available.')}"
+                elif collection_name == "admission":    
+                    response = f"{result.get('utter_admission', 'No details available.')}"
                 
                 dispatcher.utter_message(text=response)
                 return []
 
-        # If no response was found
         dispatcher.utter_message(text="I'm sorry, I couldn't find the information you're looking for.")
         return []
 ###
 
 
 
-
-### Custom action for dynamic tuition prices
-
-### Example tuition data
-tuition_data = {
-    "computer science": 2000,
-    "education": 1500,
-    "hospitality management": 1800,
-    "business administration": 1600,
-    "engineering": 2200,
-    "psychology": 1700,
-    "nursing": 1900,
-}
-
-class ActionAskTuition(Action):
-    def name(self) -> Text:
-        return "action_ask_tuition"
-
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        
-        course = tracker.get_slot("course").lower()
-        tuition = tuition_data.get(course, "not available")
-        
-        if tuition != "not available":
-            message = f"The tuition fee for {course.title()} is ${tuition}."
-        else:
-            message = f"I'm sorry, I don't have information on the tuition for {course.title()}."
-        
-        dispatcher.utter_message(text=message)
-        return []
-
-
-
-### Default fallback response for inputs with unrecognized intents (not trained)
-# class ActionDefaultFallback(Action):
-#     def name(self) -> str:
-#         return "action_default_fallback"
-
-#     def run(self, dispatcher: CollectingDispatcher, tracker, domain):
-#         dispatcher.utter_message(text="Sorry, I didn't understand that. Can you rephrase?")
-#         return [UserUtteranceReverted()]
-
-# RASA DEFAULT:
+### RASA DEFAULT:
 # This is a simple example for a custom action which utters "Hello World!"
 # class ActionHelloWorld(Action):
 #

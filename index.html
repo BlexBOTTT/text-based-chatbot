@@ -10,8 +10,22 @@
   
   <h1>SFAC WEBSiTE example</h1>
 
+  <!-- RASA CHATBOT WEBSITE WIDGET START
+   https://chat-widget-docs.rasa.com/?path=/docs/rasa-chat-widget--widget -->
+  <div data-websocket-url="http://localhost:5005" id="rasa-chat-widget"
+    data-close-on-outside-click="true"
+    data-default-open="true"
+    data-primary="#ff0000"
+    data-primary-highlight="#ffadad"
+    data-root-element-id="storybook-preview-wrapper"
+    >
+  </div>
+  <script src="scripts/rasa-webchat.js" type="application/javascript"></script>
+  <!-- RASA CHATBOT WEBSITE WIDGET END -->
+ 
+
   <!-- guide from: https://www.youtube.com/watch?v=eJMT2FovZsM -->
-  <script>!(function () {
+  <!-- <script>!(function () {
     let e = document.createElement("script"),
       t = document.head || document.getElementsByTagName("head")[0];
     (e.src = "scripts/rasa-webchat.js"),
@@ -33,7 +47,7 @@
       }),
       t.insertBefore(e, t.firstChild);
   })();
-  </script>
+  </script> -->
         
 </body>
 </html>

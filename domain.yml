@@ -28,7 +28,6 @@ slots:
         entity: course
 
 actions:
-  - action_ask_tuition
   - action_fetch_dynamic_response
 
 responses:
@@ -48,10 +47,6 @@ responses:
       **Physical Address**: [045 Admiral Village, Talon Tres, Las Piñas City, Metro Manila 1747, Philippines](https://maps.app.goo.gl/PtT4YRcZbk8bH8nK9)
 
   # Admission related
-  utter_ask_admission_process:
-    - text: "The admission process involves several steps: first, fill out the application form, then submit the required documents, and finally, wait for the interview schedule."
-  utter_ask_admission_requirements:
-    - text: "To apply, you need to submit your high school diploma, a personal statement, and two letters of recommendation."
   utter_ask_available_discounts:
     - text: |
         Here are the discount options available at our school:
