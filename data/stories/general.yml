@@ -1,0 +1,16 @@
+version: "3.1"
+
+rules:
+
+# school contact
+- rule: Respond to contact page query
+  steps:
+    - intent: ask_contact
+    - action: utter_ask_contact
+
+
+# school location
+- rule: User is asking the school location
+  steps:
+  - intent: ask_school_location
+  - action: utter_school_location

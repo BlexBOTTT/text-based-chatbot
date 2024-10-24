@@ -22,24 +22,39 @@ pipeline: # null
     analyzer: char_wb
     min_ngram: 1
     max_ngram: 4
+
   - name: DIETClassifier
     epochs: 100
     constrain_similarities: true
+
   - name: EntitySynonymMapper
   - name: ResponseSelector
     epochs: 100
     constrain_similarities: true
 
+  # FallbackClassifier: 
+  # meant to trigger when all of the intent predictions are lower than the threshold configured below,
+  # hence will trigger a response where it doesn't recognize the question 
   - name: FallbackClassifier
     threshold: 0.7
     ambiguity_threshold: 0.1
 
-# FallbackClassifier: 
-#  meant to trigger when all of the intent predictions are lower than the threshold configured below,
-#  hence will trigger a response where it doesn't recognize the question 
-  # - name: FallbackClassifier
-  #   threshold: 0.3
+  # BERT INTEGRATION BELOW:
+  # https://rasa.com/blog/how-to-benchmark-bert/
   
+  - name: LanguageModelFeaturizer  
+    model_name: bert
+    model_weights: "local_bert_model/pytorch_model.bin"
+    from_pt: true  # Load PyTorch weights
+    config: "local_bert_model/config.json"  # Optional if you have a config file
+    tokenizer: "local_bert_model/tokenizer_config.json"  # Optional if you have a tokenizer config
+
+  # - name: HFTransformersNLP
+  #   model_weights: "bert-base-uncased"
+  #   model_name: "bert"
+  # - name: LanguageModelFeaturizer
+  # - name: LanguageModelTokenizer 
+ 
 
 # Configuration for Rasa Core.
 # https://rasa.com/docs/rasa/core/policies/

@@ -3,7 +3,7 @@ version: "3.1"
 nlu:
 
 # Tuition prices - Las Pinas
-- intent: ask_tuition
+- intent: ask_tuition_specific
   examples: |
     - What is the tuition for [computer science](course) course?
     - Could you provide the tuition details for [computer science](course)?

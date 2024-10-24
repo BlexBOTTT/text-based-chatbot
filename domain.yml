@@ -10,7 +10,7 @@ intents:
   - bot_challenge 
   - nlu_fallback
   - ask_school_location
-  - ask_tuition
+  - ask_tuition_specific
   - ask_admission_process
   - ask_admission_requirements
   - ask_contact
@@ -32,6 +32,11 @@ actions:
 
 responses:
 
+  # migrated to mongodb below:
+    # - utter_ask_tuition:   # Tuition prices - Las Pinas
+
+    # - utter_discounts:
+
   utter_ask_contact:
   - text: |
       Here are the contact details for the school:
@@ -47,20 +52,12 @@ responses:
       **Physical Address**: [045 Admiral Village, Talon Tres, Las Piñas City, Metro Manila 1747, Philippines](https://maps.app.goo.gl/PtT4YRcZbk8bH8nK9)
 
   # Admission related
-  utter_ask_available_discounts:
-    - text: |
-        Here are the discount options available at our school:
-        - Early enrollment discount: A 5% discount on tuition fees for students who enroll before the specified deadline.
-        - Sibling discount: A 10% discount for each additional sibling enrolled.
-        - Academic scholarship: Discounts based on academic performance, ranging from 10% to 50% off tuition.
-        - Full payment discount: A 5% discount if you pay the full tuition upfront.
-        - Financial assistance: Discounts are available for students from low-income families upon assessment.
-        
-        If you have any specific questions or need more information, feel free to ask!
 
-  # Tuition prices - Las Pinas
-  utter_ask_tuition:
-  - text: "The tuition fee for the {course} course is ${tuition} php"
+   
+
+
+
+
   
   # School location
   utter_school_location:

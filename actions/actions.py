@@ -12,17 +12,18 @@ from rasa_sdk.executor import CollectingDispatcher
 # DO NOT DELETE:For integration of mongodb, and fetching intent-responses back to the chatbot
 from pymongo import MongoClient
 
-### QUERY SEARCHER, DO NOT DELETE
+### QUERY SEARCHER FUNCTION, DO NOT DELETE
 def build_query(intent: str, collection_name: str) -> dict:
     # Define fields to search based on the collection type
     fields = {
         "admission": ["rasa_intent", "utter_admission"],
-        "courses": ["rasa_intent", "course", "synonyms", "tuition"]
+        "courses": ["rasa_intent", "course", "synonyms", "tuition"],
+        "discounts": ["rasa_intent", "utter_discounts"],
         
         # Add other collections and their respective fields as needed, MANUALLY!
     }
 
-    # Construct the query dynamically
+    # Construct the query dynamically based on the provided collection name
     if collection_name in fields:
         return {
             "$or": [
@@ -33,12 +34,14 @@ def build_query(intent: str, collection_name: str) -> dict:
     return {}
 ### 
 
-### DO NOT DELETE: MAIN CODE FETCH SNIPPET FOR MONGODB RESPONSE, 
+### DO NOT DELETE: MAIN ACTION CLASS CODE FETCH RESPONSES FROM MONGODB,
 class ActionFetchDynamicResponse(Action):
     def name(self) -> Text:
+        # Name of the action used in the Rasa domain
         return "action_fetch_dynamic_response"
 
     def __init__(self):
+        # Initialize MongoDB client and connect to the admission_chatbot database
         self.client = MongoClient("mongodb://localhost:27017/")
         self.db = self.client['admission_chatbot']
 
@@ -46,14 +49,18 @@ class ActionFetchDynamicResponse(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
+        # Get the latest intent from the user's message
         intent = tracker.latest_message['intent']['name']
         
+        # Loop through all collections in the database
         for collection_name in self.db.list_collection_names():
+            # Fetch the course name from the tracker slot
             collection = self.db[collection_name]
 
-            # only for complex ones like courses collection
+            # Special handling for the 'courses' collection when asking about tuition
             if collection_name == "courses" and intent == "ask_tuition":
-                course_name = tracker.get_slot('course')  # Fetch the course slot value from the tuition.yml NLU
+                # Fetch the course slot value from the data/nlu/tuition.yml
+                course_name = tracker.get_slot('course')  
 
                  # Use the course_name in the query if it's available
                 if course_name:
@@ -63,41 +70,36 @@ class ActionFetchDynamicResponse(Action):
                 else:
                     # If no course name is available, fallback to a broader query
                     query = build_query(intent, collection_name)
-            else: # Use the helper function to build the query, fallback to a broader query
+            else: 
+                # Use the helper function to build the query, fallback to a broader query
                 query = build_query(intent, collection_name)
 
-            # logging debugger START
-            # CLI command: rasa run actions --debug
-            # import logging
-            # logger = logging.getLogger(__name__)
-
-            # logger.debug(f"Searching for intent: {intent} in collection: {collection_name}")
-            # logger.debug(f"Query used: {query}")
-
+            # Execute the query on the current collection
             result = collection.find_one(query)
 
-            # if result:
-            #     logger.debug(f"Document found: {result}")
-            # else:
-            #     logger.debug(f"No matching document found in collection: {collection_name}")
-            # logging debugger END
-
+            # Check if a result was found
             if result:
+                                # Format response based on collection type
+
                 if collection_name == "courses":
                     response = f"{result.get('course', 'No course available.')} - Tuition: {result.get('tuition', 'No tuition available.')}"
                 elif collection_name == "admission":    
                     response = f"{result.get('utter_admission', 'No details available.')}"
+                elif collection_name == "discounts":    
+                    response = f"{result.get('utter_discounts', 'No details available.')}"    
                 
+                # Send the response back to the user
                 dispatcher.utter_message(text=response)
                 return []
 
+        # If no information was found in any collection in the DB, send an apology message
         dispatcher.utter_message(text="I'm sorry, I couldn't find the information you're looking for.")
         return []
 ###
 
 
 
-### RASA DEFAULT:
+### RASA DEFAULT, do not open:
 # This is a simple example for a custom action which utters "Hello World!"
 # class ActionHelloWorld(Action):
 #

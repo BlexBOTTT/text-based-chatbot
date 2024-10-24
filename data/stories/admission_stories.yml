@@ -1,0 +1,21 @@
+version: "3.1"
+
+stories:
+
+# MongoDB action START
+- story: ask tuition price of a specific course
+  steps:
+  - intent: ask_tuition_specific
+  - action: action_fetch_dynamic_response
+
+- story: ask admission process
+  steps:
+    - intent: ask_admission_process
+    - action: action_fetch_dynamic_response
+
+- story: ask admission requirements
+  steps:
+    - intent: ask_admission_requirements
+    - action: action_fetch_dynamic_response
+
+# MongoDB action END

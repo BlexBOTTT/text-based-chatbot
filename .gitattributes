@@ -1,0 +1,2 @@
+# This is a sample .gitattributes file
+# Remove any line that tracks the pytorch_model.bin or similar large files
