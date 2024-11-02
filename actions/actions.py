@@ -58,7 +58,7 @@ class ActionFetchDynamicResponse(Action):
             collection = self.db[collection_name]
 
             # Special handling for the 'courses' collection when asking about tuition
-            if collection_name == "courses" and intent == "ask_tuition":
+            if collection_name == "courses" and intent == "ask_tuition_specific":
                 # Fetch the course slot value from the data/nlu/tuition.yml
                 course_name = tracker.get_slot('course')  
 

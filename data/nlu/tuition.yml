@@ -84,6 +84,70 @@ nlu:
     - Is there a difference in tuition for [nursing](course) if I take it online?
     - What's the total tuition cost for the entire [nursing](course) program?
 
+- synonym: computer science
+  examples: |
+    - CS
+    - BSCS
+    - BS CS
+    - cs
+    - bscs
+    - bs cs
+    - bs-cs
+    - Bachelor of Science in Computer Science
+    - comsci
+    - com sci
+    - comp sci
+    - comsci
+    - B.S. Computer Science
+
+- synonym: education
+  examples: |
+    - educ
+    - BSED
+    - Bachelor of Science in Education
+    - BS Education
+    - B.S. Education
+
+- synonym: hospitality management
+  examples: |
+    - BSHM
+    - HM
+    - hospitality
+    - hospitality-management
+    - Hospitality Management
+    - B.S. Hospitality Management
+    - Bachelor of Science in Hospitality Management
+
+- synonym: business administration
+  examples: |
+    - business admin
+    - BA
+    - bus admin
+    - BSBA
+    - Bachelor of Science in Business Administration
+
+- synonym: engineering
+  examples: |
+    - eng
+    - engineering
+    - eng
+    - BSENG
+    - BS ENG
+    - Bachelor of Science in Engineering
+
+- synonym: psychology
+  examples: |
+    - psych
+    - BS Psychology
+    - Bachelor of Science in Psychology
+
+- synonym: nursing
+  examples: |
+    - BSN
+    - BS Nursing
+    - Nursing
+    - Bachelor of Science in Nursing
+
 # - intent: ask_tuition_computer_science
 # - intent: ask_tuition_education
 # - intent: ask_tuition_hospitality_management

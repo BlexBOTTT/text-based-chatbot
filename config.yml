@@ -41,20 +41,18 @@ pipeline: # null
 
   # BERT INTEGRATION BELOW:
   # https://rasa.com/blog/how-to-benchmark-bert/
-  
-  - name: LanguageModelFeaturizer  
-    model_name: bert
-    model_weights: "local_bert_model/pytorch_model.bin"
-    from_pt: true  # Load PyTorch weights
-    config: "local_bert_model/config.json"  # Optional if you have a config file
-    tokenizer: "local_bert_model/tokenizer_config.json"  # Optional if you have a tokenizer config
 
-  # - name: HFTransformersNLP
-  #   model_weights: "bert-base-uncased"
-  #   model_name: "bert"
-  # - name: LanguageModelFeaturizer
-  # - name: LanguageModelTokenizer 
- 
+  # Hugging Face Transformer integration for BERT
+  # NOTE: REQUIRED INTERNET CONNECTION TO WORK:
+  # https://rasa.com/docs/rasa/components#languagemodelfeaturizer
+  - name: LanguageModelFeaturizer
+    # Using BERT model
+    model_name: "bert"
+    # Pre-trained model weights; adjust to a specific model if needed
+    model_weights: "bert-base-uncased"
+  # Adds BERT embeddings as features
+
+
 
 # Configuration for Rasa Core.
 # https://rasa.com/docs/rasa/core/policies/

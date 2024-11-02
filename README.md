@@ -7,21 +7,15 @@ aims to be conversational
 
 # Configurations:
     This rasa project is supported with:
-    DESKTOP
-    - Python Version:   3.8.10 -> 3.10.11
-    - pip version:      24.2
-    - Rasa Version:     3.6.20
-    -
-    LAPTOP
+    DESKTOP-LAPTOP
     - Python Version:   3.10.11
-    - pip version:      23.0.1
+    - pip version:      24.2
     - Rasa Version:     3.6.20
 
 # CHECKLIST (say DONE if completed)
-- Connect to website (html-php)
-    - configure dataset in the front-end
+- Connect to website DONE!!! (via rasa widgetchat div file)
 - MongoDB (Knowledge Management/Base??) DONE!!!
-- BERT
+- BERT - DONE!! (NEED TESTING RESULTS!!)
 - NLPaug (for data augmentation)
 - ~~LLM integration via OpenAI?~~
     # What about the dataset? is it:
@@ -33,16 +27,15 @@ aims to be conversational
 
 Activate venv - python 3.8.10
 
-.venv\Scripts\activate
+- .venv\Scripts\activate
 
-- rasa run actions (run this first if have changes in custom .py codes before rasa train)
+# command for training chatbot
+- rasa run actions (IMPORTANT:run this first with anything since everything the chatbot responses is from the db itself)
 - rasa train
 
 # command to talk to the chatbot in the CLI (command line interface)
 - rasa shell
-
 # default command for conversing with the chatbot in the web's chat widget
-rasa run --enable-api
 rasa run --enable-api --cors "*"
 # command if has multiple models saved and want to slect a particular .tar.gz one
 rasa run --enable-api --cors "*" --model <path>

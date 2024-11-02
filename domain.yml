@@ -22,7 +22,7 @@ entities:
 slots:
   course:
     type: text
-    influence_conversation: false
+    influence_conversation: true
     mappings:
       - type: from_entity
         entity: course
