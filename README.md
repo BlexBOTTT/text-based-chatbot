@@ -29,15 +29,15 @@ Activate venv - python 3.8.10
 
 - .venv\Scripts\activate
 
-# command for training chatbot
+# FREQUENTLY USED COMMANDS
+## command for training chatbot
 - rasa run actions (IMPORTANT:run this first with anything since everything the chatbot responses is from the db itself)
 - rasa train
-
-# command to talk to the chatbot in the CLI (command line interface)
+## command to talk to the chatbot in the CLI (command line interface)
 - rasa shell
-# default command for conversing with the chatbot in the web's chat widget
+## default command for conversing with the chatbot in the web's chat widget
 rasa run --enable-api --cors "*"
-# command if has multiple models saved and want to slect a particular .tar.gz one
+## command if has multiple models saved and want to slect a particular .tar.gz one
 rasa run --enable-api --cors "*" --model <path>
 
 # Installation problems

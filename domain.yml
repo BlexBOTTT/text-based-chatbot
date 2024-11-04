@@ -32,70 +32,60 @@ actions:
 
 responses:
 
-  # migrated to mongodb below:
-    # - utter_ask_tuition:   # Tuition prices - Las Pinas
+  # MongoDB Responses includes:
+  # - Admission related inquiry and FAQs
+  # - Tuition
+  # - Couse/Program Lists
 
-    # - utter_discounts:
+  # initial welcome reply to user after opening the website
+  utter_welcome_greet:
+  - text: "Hello there! What can I help you with today?"
 
-  utter_ask_contact:
+  utter_bot_coverage:
   - text: |
-      Here are the contact details for the school:
-      
-      **Official Website**: https://www.stfrancislp.com/landing-lp/contact.php
+      Would you like to know what admission-related topics do I cover?
+      Here they are below Here are the contact details for the school:
+      - Admission Inquiries and FAQs
+      - Course/Program Lists
+      - - Tuition Prices
+      - Available Discount and Vouchers
+      - School Location
+      - School Contact Information
 
-      **Facebook**: https://www.facebook.com/mysfaclp
-
-      **Phone**: 0917-729-2909 / 8800-3131
-
-      **Email**: sfaclaspinasadmission@gmail.com
-      
-      **Physical Address**: [045 Admiral Village, Talon Tres, Las Piñas City, Metro Manila 1747, Philippines](https://maps.app.goo.gl/PtT4YRcZbk8bH8nK9)
-
-  # Admission related
-
-   
-
-
-
-
-  
-  # School location
-  utter_school_location:
-  - text: "The address of the LP-Campus is: 
-  045 Admiral Road, Admiral Village, Talon Tres, Las Piñas City 1747, Metro Manila, Philippines
-  \nCheck this google map link: https://maps.app.goo.gl/dRqctXP4QoQe4WPk6"
+  # utter_admission_coverage:
+  # - text: |
 
   # config.yml/FallbackClassifier response for questions out of the intent
   utter_please_rephrase:
   - text: I'm sorry, I didn't quite understand that. Could you rephrase?
 
 ###  DEFAULT RASA DATA BELOW:
-  utter_greet:
-  - text: "Hey! How are you?"
+  # utter_greet:
+  # - text: "Hey! How are you?"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "respons/speech-dent-head.gif"
+  # utter_cheer_up:
+  # - text: "Here is something to cheer you up:"
+  #   image: "respons/speech-dent-head.gif"
 
   utter_did_that_help:
   - text: "Did that help you?"
 
-  utter_happy:
-  - text: "Great, carry on!"
+  # utter_happy:
+  # - text: "Great, carry on!"
 
-  utter_sad:
-  - text: "I'm sorry."
+  # utter_sad:
+  # - text: "I'm sorry."
 
-  utter_goodbye:
-  - text: "Bye"
+  # utter_goodbye:
+  # - text: "Bye"
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  # utter_iamabot:
+  # - text: "I am a bot, powered by Rasa."
 
   utter_satisfaction:
   - text: "Great to know that this meets your expectations. Is there any more questions to ask regarding to the admission?"
  
-  utter_disatisfaction:
-  - text: "I'm sorry to hear that this didn't meet your expectations. Is there any more questions to ask regarding to the admission?"
+  # utter_disatisfaction:
+  # - text: "I'm sorry to hear that this didn't meet your expectations. Is there any more questions to ask regarding to the admission?"
 
 

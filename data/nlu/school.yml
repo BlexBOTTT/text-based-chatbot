@@ -16,6 +16,19 @@ nlu:
     - Where is the Las Pinas campus located?
     - What is the exact address of the campus?
 
+
+- intent: ask_contact
+  examples: |
+    - Can you provide a link to the contact page of the school?
+    - How can I get in touch with the school directly?
+    - Where can I find the school's contact details?
+    - Can I get the school's contact information?
+    - How do I reach the school office?
+    - Is there a direct way to contact the school?
+    - What is the school's contact page URL?
+    - Where can I reach the school administration online?
+    - Who handles financial aid inquiries at Las Piñas?
+    - How can I get support from the Las Piñas administration?
     
 # - intent: ask_sfac_vision
 # - intent: ask_sfac_mission

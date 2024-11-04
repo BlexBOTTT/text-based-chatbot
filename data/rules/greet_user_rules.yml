@@ -1,0 +1,12 @@
+# version: "3.1"
+
+# rules:
+
+# Rasa chatbot greets the user after opening the widget
+# https://rasa.com/docs/rasa/reaching-out-to-user/
+- rule: welcome and greet user at start
+  conversation_start: true # this rule only applies at the beginning of a conversation
+  steps:
+  - intent: greet
+  - action: utter_welcome_greet
+  # continued with greet_user_stories.yml

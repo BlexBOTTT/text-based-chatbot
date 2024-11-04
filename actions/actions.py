@@ -19,7 +19,8 @@ def build_query(intent: str, collection_name: str) -> dict:
         "admission": ["rasa_intent", "utter_admission"],
         "courses": ["rasa_intent", "course", "synonyms", "tuition"],
         "discounts": ["rasa_intent", "utter_discounts"],
-        
+        "general": ["rasa_intent", "utter_discounts", "utter_ask_contact"],
+
         # Add other collections and their respective fields as needed, MANUALLY!
     }
 
@@ -83,11 +84,22 @@ class ActionFetchDynamicResponse(Action):
 
                 if collection_name == "courses":
                     response = f"{result.get('course', 'No course available.')} - Tuition: {result.get('tuition', 'No tuition available.')}"
+
                 elif collection_name == "admission":    
                     response = f"{result.get('utter_admission', 'No details available.')}"
+
                 elif collection_name == "discounts":    
-                    response = f"{result.get('utter_discounts', 'No details available.')}"    
-                
+                    response = f"{result.get('utter_discounts', 'No details available.')}"
+
+                elif collection_name == "general":
+                    if intent == "ask_school_location":
+                        response = result.get('utter_school_location', 'Location details not available.')
+                    elif intent == "ask_contact":
+                        response = result.get('utter_ask_contact', 'Contact details not available.')
+                    else:
+                        response = result.get('utter_else', 'No general details available.')  
+
+
                 # Send the response back to the user
                 dispatcher.utter_message(text=response)
                 return []

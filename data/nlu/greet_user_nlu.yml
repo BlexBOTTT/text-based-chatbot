@@ -1,0 +1,20 @@
+# version: "3.1"
+
+# nlu:
+
+# ##  DEFAULT RASA DATA BELOW:
+# - intent: welcome_greet
+#   examples: |
+#     - hey
+#     - hello
+#     - hi
+#     - hello there
+#     - good morning
+#     - good evening
+#     - moin
+#     - hey there
+#     - let's go
+#     - hey dude
+#     - goodmorning
+#     - goodevening
+#     - good afternoon

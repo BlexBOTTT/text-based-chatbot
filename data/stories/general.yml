@@ -1,16 +1,23 @@
 version: "3.1"
 
-rules:
+stories:
 
-# school contact
-- rule: Respond to contact page query
-  steps:
-    - intent: ask_contact
-    - action: utter_ask_contact
-
+# MongoDB action START
 
 # school location
-- rule: User is asking the school location
+- story: User asks for school's physical location
   steps:
   - intent: ask_school_location
-  - action: utter_school_location
+  - action: action_fetch_dynamic_response
+
+- story: User asks for school's contact information
+  steps:
+  - intent: ask_contact
+  - action: action_fetch_dynamic_response
+
+# MongoDB action END
+
+# school contact
+
+
+
