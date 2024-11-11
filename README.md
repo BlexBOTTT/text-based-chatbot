@@ -30,11 +30,20 @@ Activate venv - python 3.8.10
 - .venv\Scripts\activate
 
 # FREQUENTLY USED COMMANDS
-## command for training chatbot
+
+
+## commands for training chatbot
 - rasa run actions (IMPORTANT:run this first with anything since everything the chatbot responses is from the db itself)
+## CLI command for data validation to see any checks and potential issues
+- rasa data validate
+### CLI command for data splitting NLU training data (80/20 by default, but with '--training-fraction 0.7' will split to 70/30)
+- rasa data split nlu --training-fraction 0.7
+## then if there is no any potential downmark checks or potential issues, finally submit
 - rasa train
+
 ## command to talk to the chatbot in the CLI (command line interface)
 - rasa shell
+
 ## default command for conversing with the chatbot in the web's chat widget
 rasa run --enable-api --cors "*"
 ## command if has multiple models saved and want to slect a particular .tar.gz one

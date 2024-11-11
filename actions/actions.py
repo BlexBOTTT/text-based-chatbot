@@ -16,11 +16,11 @@ from pymongo import MongoClient
 def build_query(intent: str, collection_name: str) -> dict:
     # Define fields to search based on the collection type
     fields = {
-        "admission": ["rasa_intent", "utter_admission"],
-        "courses": ["rasa_intent", "course", "synonyms", "tuition"],
-        "discounts": ["rasa_intent", "utter_discounts"],
-        "general": ["rasa_intent", "utter_discounts", "utter_ask_contact"],
-
+        "admission": ["rasa_intent"],
+        "courses": ["rasa_intent"],
+        "discounts": ["rasa_intent"],
+        "general": ["rasa_intent"],
+        "tuition_prices": ["rasa_intent", "course", "synonyms"],
         # Add other collections and their respective fields as needed, MANUALLY!
     }
 
@@ -59,9 +59,11 @@ class ActionFetchDynamicResponse(Action):
             collection = self.db[collection_name]
 
             # Special handling for the 'courses' collection when asking about tuition
-            if collection_name == "courses" and intent == "ask_tuition_specific":
+            if collection_name == "tuition_prices" and intent == "ask_tuition_specific":
                 # Fetch the course slot value from the data/nlu/tuition.yml
                 course_name = tracker.get_slot('course')  
+            
+                print("detected course:", course_name)
 
                  # Use the course_name in the query if it's available
                 if course_name:
@@ -80,14 +82,14 @@ class ActionFetchDynamicResponse(Action):
 
             # Check if a result was found
             if result:
-                                # Format response based on collection type
+            # Format response based on collection type
 
-                if collection_name == "courses":
-                    response = f"{result.get('course', 'No course available.')} - Tuition: {result.get('tuition', 'No tuition available.')}"
-
-                elif collection_name == "admission":    
+                if collection_name == "admission":    
                     response = f"{result.get('utter_admission', 'No details available.')}"
 
+                elif collection_name == "courses":
+                    response = f"{result.get('utter_course_list', 'No details available.')}"
+                
                 elif collection_name == "discounts":    
                     response = f"{result.get('utter_discounts', 'No details available.')}"
 
@@ -97,7 +99,12 @@ class ActionFetchDynamicResponse(Action):
                     elif intent == "ask_contact":
                         response = result.get('utter_ask_contact', 'Contact details not available.')
                     else:
-                        response = result.get('utter_else', 'No general details available.')  
+                        response = result.get('No general details available.')  
+
+                elif collection_name == "tuition_prices":
+                    response = result.get('utter_tuition_price_specific', 'No tuition available.')
+                    if intent == "ask_tuition_general":
+                        response = result.get('utter_tuition_price_general', 'No tuition available.')
 
 
                 # Send the response back to the user

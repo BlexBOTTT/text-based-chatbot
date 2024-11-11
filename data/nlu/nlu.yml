@@ -5,6 +5,7 @@ nlu:
 ##  DEFAULT RASA DATA BELOW:
 - intent: greet
   examples: |
+    - Hello
     - hey
     - hello
     - hi
@@ -19,19 +20,19 @@ nlu:
     - goodevening
     - good afternoon
 
-- intent: goodbye
-  examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
-    - farewell
+# - intent: goodbye
+#   examples: |
+#     - cu
+#     - good by
+#     - cee you later
+#     - good night
+#     - bye
+#     - goodbye
+#     - have a nice day
+#     - see you around
+#     - bye bye
+#     - see you later
+#     - farewell
 
 - intent: affirm
   examples: |
@@ -48,17 +49,17 @@ nlu:
     - yah
     - fine
 
-- intent: deny
-  examples: |
-    - nope
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-    - nah
+# - intent: deny
+#   examples: |
+#     - nope
+#     - no
+#     - n
+#     - never
+#     - I don't think so
+#     - don't like that
+#     - no way
+#     - not really
+#     - nah
 
 # - intent: mood_great
 #   examples: |

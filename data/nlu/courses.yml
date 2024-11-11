@@ -1,0 +1,16 @@
+version: "3.1"
+
+nlu:
+
+- intent: ask_courses_list
+  examples: |
+    - What courses do you offer?
+    - Can you list the available courses?
+    - Tell me about the courses I can enroll in.
+    - Do you have a list of courses?
+    - What programs are available at your school?
+    - I’d like to know all the courses you offer.
+    - Could you provide a list of your courses?
+    - Which courses are currently available?
+    - What courses can I take at your institution?
+    - Please give me the list of courses.

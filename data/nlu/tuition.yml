@@ -5,85 +5,28 @@ nlu:
 # Tuition prices - Las Pinas
 - intent: ask_tuition_specific
   examples: |
-    - What is the tuition for [computer science](course) course?
-    - Could you provide the tuition details for [computer science](course)?
-    - How much do I need to pay for the [computer science](course) program?
-    - Can you tell me the tuition fees for the [computer science](course) course?
-    - I'm interested in the tuition for [computer science](course). What is it?
-    - How much is the tuition for [computer science](course) at your university?
-    - What are the costs associated with the [computer science](course) course?
-    - Can you break down the tuition fees for [computer science](course)?
-    - Is there a difference in tuition for [computer science](course) if I take it online?
-    - What's the total tuition cost for the entire [computer science](course) program?
+    - What is the tuition for [course] course?
+    - Could you provide the tuition details for [course]?
+    - How much do I need to pay for the [course] program?
+    - Can you tell me the tuition fees for the [course] course?
+    - I'm interested in the tuition for [course]. What is it?
+    - How much is the tuition for [course] at your university?
+    - What are the costs associated with the [course] course?
+    - Can you break down the tuition fees for [course]?
+    - Is there a difference in tuition for [course] if I take it online?
+    - What's the total tuition cost for the entire [course] program?
 
-    - How much is the tuition for [education](course) course?
-    - Could you provide the tuition details for [education](course)?
-    - How much do I need to pay for the [education](course) program?
-    - Can you tell me the tuition fees for the [education](course) course?
-    - I'm interested in the tuition for [education](course). What is it?
-    - How much is the tuition for [education](course) at your university?
-    - What are the costs associated with the [education](course) course?
-    - Can you break down the tuition fees for [education](course)?
-    - Is there a difference in tuition for [education](course) if I take it online?
-    - What's the total tuition cost for the entire [education](course) program?
-
-    - Can you tell me the tuition fee for [hospitality management](course) course?
-    - Could you provide the tuition details for [hospitality management](course)?
-    - How much do I need to pay for the [hospitality management](course) program?
-    - Can you tell me the tuition fees for the [hospitality management](course) course?
-    - I'm interested in the tuition for [hospitality management](course). What is it?
-    - How much is the tuition for [hospitality management](course) at your university?
-    - What are the costs associated with the [hospitality management](course) course?
-    - Can you break down the tuition fees for [hospitality management](course)?
-    - Is there a difference in tuition for [hospitality management](course) if I take it online?
-    - What's the total tuition cost for the entire [hospitality management](course) program?
-
-    - How much does it cost to study [business administration](course) course?
-    - Could you provide the tuition details for [business administration](course)?
-    - How much do I need to pay for the [business administration](course) program?
-    - Can you tell me the tuition fees for the [business administration](course) course?
-    - I'm interested in the tuition for [business administration](course). What is it?
-    - How much is the tuition for [business administration](course) at your university?
-    - What are the costs associated with the [business administration](course) course?
-    - Can you break down the tuition fees for [business administration](course)?
-    - Is there a difference in tuition for [business administration](course) if I take it online?
-    - What's the total tuition cost for the entire [business administration](course) program?
-
-    - What's the tuition fee for [engineering](course) course?
-    - What is the tuition for [engineering](course) course?
-    - Could you provide the tuition details for [engineering](course)?
-    - How much do I need to pay for the [engineering](course) program?
-    - Can you tell me the tuition fees for the [engineering](course) course?
-    - I'm interested in the tuition for [engineering](course). What is it?
-    - How much is the tuition for [engineering](course) at your university?
-    - What are the costs associated with the [engineering](course) course?
-    - Can you break down the tuition fees for [engineering](course)?
-    - Is there a difference in tuition for [engineering](course) if I take it online?
-    - What's the total tuition cost for the entire [engineering](course) program?
-
-    - What are the tuition fees for [psychology](course) course?
-    - Could you provide the tuition details for [psychology](course)?
-    - How much do I need to pay for the [psychology](course) program?
-    - Can you tell me the tuition fees for the [psychology](course) course?
-    - I'm interested in the tuition for [psychology](course). What is it?
-    - How much is the tuition for [psychology](course) at your university?
-    - What are the costs associated with the [psychology](course) course?
-    - Can you break down the tuition fees for [psychology](course)?
-    - Is there a difference in tuition for [psychology](course) if I take it online?
-    - What's the total tuition cost for the entire [psychology](course) program?
+- intent: ask_tuition_general
+  examples: |
+    - What is the tuition fee?
+    - How much is the tuition?
+    - Can you tell me the tuition cost?
+    - Could you provide information on tuition fees?
+    - What are the tuition fees at your university?
+    - I’d like to know the tuition cost.
+    - How much do I need to pay in tuition?
+    - What’s the cost of tuition?
     
-    - How much is tuition for [nursing](course) course?
-    - What is the tuition for [nursing](course) course?
-    - Could you provide the tuition details for [nursing](course)?
-    - How much do I need to pay for the [nursing](course) program?
-    - Can you tell me the tuition fees for the [nursing](course) course?
-    - I'm interested in the tuition for [nursing](course). What is it?
-    - How much is the tuition for [nursing](course) at your university?
-    - What are the costs associated with the [nursing](course) course?
-    - Can you break down the tuition fees for [nursing](course)?
-    - Is there a difference in tuition for [nursing](course) if I take it online?
-    - What's the total tuition cost for the entire [nursing](course) program?
-
 - synonym: computer science
   examples: |
     - CS

@@ -1,0 +1,9 @@
+version: "3.1"
+
+stories:
+
+# MongoDB action START
+- story: user asks for the list of courses/programs offered
+  steps:
+  - intent: ask_courses_list
+  - action: action_fetch_dynamic_response

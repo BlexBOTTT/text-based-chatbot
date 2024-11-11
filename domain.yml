@@ -2,12 +2,13 @@ version: "3.1"
 
 intents:
   - greet
-  - goodbye
+  # - goodbye
   - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge 
+  # - deny
+  # - mood_great
+  # - mood_unhappy
+  # - bot_challenge
+
   - nlu_fallback
   - ask_school_location
   - ask_tuition_specific
@@ -15,6 +16,9 @@ intents:
   - ask_admission_requirements
   - ask_contact
   - ask_available_discounts
+  - ask_courses_list
+  - utter_tuition_course_clarification
+  - ask_tuition_general
 
 entities:
   - course
@@ -40,6 +44,19 @@ responses:
   # initial welcome reply to user after opening the website
   utter_welcome_greet:
   - text: "Hello there! What can I help you with today?"
+    buttons:
+    - title: "Admission chatbot coverage"
+      payload: "what topics do you cover?"
+    - title: "Check Admission Requirements"
+      payload: "ask admission requirements"
+    - title: "Courses/Programs Offered"
+      payload: "ask courses list"
+    - title: "Tuition Fees"
+      payload: "ask tuition fees general"
+    - title: "School Location"
+      payload: "ask school location"
+    - title: "Tuition prices"
+      payload: "Tuition prices"
 
   utter_bot_coverage:
   - text: |
@@ -51,6 +68,27 @@ responses:
       - Available Discount and Vouchers
       - School Location
       - School Contact Information
+
+  utter_tuition_course_price_clarification:
+  - text: "May I know which course are you inquiring to?"
+    buttons:
+    - title: "Nursing"
+      payload: "ask nursing tuition"
+    - title: "Computer Science"
+      payload: "ask Computer Science tuition"
+    - title: "Psychology"
+      payload: "ask Psychology tuition"
+    - title: "Engineering"
+      payload: "ask Engineering tuition"
+    - title: "Education"
+      payload: "ask Education tuition"
+    - title: "Business Administration"
+      payload: "ask Business Administration tuition"
+    - title: "Hospitality Management"
+      payload: "ask Hospitality Management tuition"
+    - title: "General / All"
+      payload: "ask All tuition prices"
+
 
   # utter_admission_coverage:
   # - text: |
@@ -69,6 +107,11 @@ responses:
 
   utter_did_that_help:
   - text: "Did that help you?"
+    buttons:
+    - title: "Yes"
+      payload: "/affirm"
+    - title: "No"
+      payload: "/deny"
 
   # utter_happy:
   # - text: "Great, carry on!"

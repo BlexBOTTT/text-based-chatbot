@@ -44,11 +44,11 @@ pipeline: # null
   # Hugging Face Transformer integration for BERT
   # NOTE: REQUIRED INTERNET CONNECTION TO WORK:
   # https://rasa.com/docs/rasa/components#languagemodelfeaturizer
-  - name: LanguageModelFeaturizer
-    # Using BERT model
-    model_name: "bert"
-    # Pre-trained model weights; adjust to a specific model if needed
-    model_weights: "bert-base-uncased"
+  # - name: LanguageModelFeaturizer
+  #   # Using BERT model
+  #   model_name: "bert"
+  #   # Pre-trained model weights; adjust to a specific model if needed
+  #   model_weights: "bert-base-uncased"
   # Adds BERT embeddings as features
 
 
