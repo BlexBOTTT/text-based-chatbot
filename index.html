@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasa chatbot</title>
+
+    <style>
+      body {
+          background-image: url('docs/background.jpg'); /* Path to your image */
+          background-size: cover; /* Scales the image to cover the entire page */
+          background-repeat: no-repeat; /* Prevents the image from repeating */
+          background-attachment: fixed; /* Keeps the image fixed while scrolling */
+          background-position: center; /* Centers the image */
+      }
+  </style>
+</head>
+
+<body>
+  
+  <h1>SFAC WEBSiTE example</h1>
+
+  <!-- RASA CHATBOT WEBSITE WIDGET START
+   actual core documentation: https://rasa.com/docs/rasa/connectors/your-own-website/#websocket-channel
+   for the widget appearance customization: https://chat-widget-docs.rasa.com/?path=/docs/rasa-chat-widget--widget -->
+  <div data-websocket-url="http://localhost:5005" id="rasa-chat-widget"
+    data-close-on-outside-click="true"
+    data-default-open="true"
+    data-primary="#ff0000"
+    data-primary-highlight="#ffadad"
+    data-root-element-id="storybook-preview-wrapper"
+    data-initial-payload="Hello"> <!-- data initial payload to automatically trigger the welcome greeting intent -->
+  </div>
+  <!-- scripts/rasa-webchat.js for core files to being run locally without internet -->
+  <script src="scripts/rasa-webchat.js" type="application/javascript"></script>
+  <!-- RASA CHATBOT WEBSITE WIDGET END -->
+ 
+        
+</body>
+</html>
