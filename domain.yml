@@ -1,24 +1,26 @@
 version: "3.1"
 
+# reference point is the data/nlu/ folder alignment a-z
 intents:
-  - greet
-  # - goodbye
-  - affirm
-  # - deny
-  # - mood_great
-  # - mood_unhappy
-  # - bot_challenge
-
   - nlu_fallback
-  - ask_school_location
-  - ask_tuition_specific
   - ask_admission_process
   - ask_admission_requirements
-  - ask_contact
-  - ask_available_discounts
+  - ask_admission_online_registration
+  - ask_admission_transferee_enrollment
+  - ask_admission_working_student
   - ask_courses_list
-  - utter_tuition_course_clarification
-  - ask_tuition_general
+  - ask_available_discounts
+  - ask_school_location 
+  - ask_school_contact
+  - ask_bot_coverage
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - ask_tuition_price_specific
+  - ask_tuition_price_general
+
 
 entities:
   - course
@@ -30,9 +32,21 @@ slots:
     mappings:
       - type: from_entity
         entity: course
+  
+  helpful_feedback:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_intent
+        intent: affirm
+        value: "yes"
+      - type: from_intent
+        intent: deny
+        value: "no"
 
 actions:
   - action_fetch_dynamic_response
+  - action_iterate_helpful_counter
 
 responses:
 
@@ -46,7 +60,7 @@ responses:
   - text: "Hello there! What can I help you with today?"
     buttons:
     - title: "Admission chatbot coverage"
-      payload: "what topics do you cover?"
+      payload: "ask bot coverage"
     - title: "Check Admission Requirements"
       payload: "ask admission requirements"
     - title: "Courses/Programs Offered"
@@ -55,39 +69,40 @@ responses:
       payload: "ask tuition fees general"
     - title: "School Location"
       payload: "ask school location"
-    - title: "Tuition prices"
-      payload: "Tuition prices"
+    - title: "School contact"
+      payload: "ask school contact"
 
   utter_bot_coverage:
   - text: |
       Would you like to know what admission-related topics do I cover?
       Here they are below Here are the contact details for the school:
-      - Admission Inquiries and FAQs
+      - Admission-related Inquiries and FAQs
       - Course/Program Lists
-      - - Tuition Prices
-      - Available Discount and Vouchers
-      - School Location
-      - School Contact Information
+      - Available Discounts
+      - General Inquiries
+      - Tuition Prices of the Courses
+    
+  
 
-  utter_tuition_course_price_clarification:
-  - text: "May I know which course are you inquiring to?"
-    buttons:
-    - title: "Nursing"
-      payload: "ask nursing tuition"
-    - title: "Computer Science"
-      payload: "ask Computer Science tuition"
-    - title: "Psychology"
-      payload: "ask Psychology tuition"
-    - title: "Engineering"
-      payload: "ask Engineering tuition"
-    - title: "Education"
-      payload: "ask Education tuition"
-    - title: "Business Administration"
-      payload: "ask Business Administration tuition"
-    - title: "Hospitality Management"
-      payload: "ask Hospitality Management tuition"
-    - title: "General / All"
-      payload: "ask All tuition prices"
+  # utter_tuition_course_price_clarification:
+  # - text: "May I know which course are you inquiring to?"
+  #   buttons:
+  #   - title: "Nursing"
+  #     payload: "ask nursing tuition"
+  #   - title: "Computer Science"
+  #     payload: "ask Computer Science tuition"
+  #   - title: "Psychology"
+  #     payload: "ask Psychology tuition"
+  #   - title: "Engineering"
+  #     payload: "ask Engineering tuition"
+  #   - title: "Education"
+  #     payload: "ask Education tuition"
+  #   - title: "Business Administration"
+  #     payload: "ask Business Administration tuition"
+  #   - title: "Hospitality Management"
+  #     payload: "ask Hospitality Management tuition"
+  #   - title: "General / All"
+  #     payload: "ask All tuition prices"
 
 
   # utter_admission_coverage:
@@ -98,20 +113,20 @@ responses:
   - text: I'm sorry, I didn't quite understand that. Could you rephrase?
 
 ###  DEFAULT RASA DATA BELOW:
+  utter_did_that_help:
+  - text: "Did that help you?"
+    buttons:
+    - title: "Yes"
+      payload: "affirm"
+    - title: "No"
+      payload: "deny"
+
   # utter_greet:
   # - text: "Hey! How are you?"
 
   # utter_cheer_up:
   # - text: "Here is something to cheer you up:"
   #   image: "respons/speech-dent-head.gif"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-    buttons:
-    - title: "Yes"
-      payload: "/affirm"
-    - title: "No"
-      payload: "/deny"
 
   # utter_happy:
   # - text: "Great, carry on!"
@@ -125,8 +140,8 @@ responses:
   # utter_iamabot:
   # - text: "I am a bot, powered by Rasa."
 
-  utter_satisfaction:
-  - text: "Great to know that this meets your expectations. Is there any more questions to ask regarding to the admission?"
+  # utter_satisfaction:
+  # - text: "Great to know that this meets your expectations. Is there any more questions to ask regarding to the admission?"
  
   # utter_disatisfaction:
   # - text: "I'm sorry to hear that this didn't meet your expectations. Is there any more questions to ask regarding to the admission?"

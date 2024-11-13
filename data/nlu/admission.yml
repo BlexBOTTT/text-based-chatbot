@@ -2,10 +2,11 @@ version: "3.1"
 
 nlu:
 
-
 # Las Pinas Campus
 - intent: ask_admission_process
   examples: |
+    - ask admission process
+    - admission process
     - Can you explain the admission process?
     - What are the steps to apply for admission?
     - How do I enroll in the school?
@@ -16,9 +17,28 @@ nlu:
     - What documents do I need to submit for admission?
     - Are there any entrance exams for admission?
     - When does the application period open?
+    - Can you give me details about the application procedure?
+    - How do I apply for admission to your institution?
+    - What is the deadline for submitting applications?
+    - Are there any specific qualifications needed to apply?
+    - Can I apply for admission online or in person?
+    - How do I submit my application documents?
+    - Do I need to take an entrance exam before applying?
+    - What is the process for transferring to your school?
+    - How can I check my application status?
+    - Do I need a recommendation letter for admission?
+    - Is there an application fee for admission?
+    - Can I submit my application after the deadline?
+    - Are there any special requirements for international students?
+    - How soon will I know the outcome of my application?
+    - Are there any interviews as part of the admission process?
+    - What are the steps to get enrolled after being accepted?
+    - Is there an application form I need to fill out?
 
 - intent: ask_admission_requirements
   examples: |
+    - ask admission requirements
+    - admission requirements
     - What are the requirements for admission?
     - Can you tell me what documents are needed to apply?
     - Do I need to submit a personal statement for admission?
@@ -29,16 +49,119 @@ nlu:
     - Do I need to take any standardized tests?
     - What are the prerequisites for applying?
     - Can you provide a checklist of admission requirements?
+    - What documents should I prepare for admission?
+    - Is a high school diploma necessary for admission?
+    - Do I need to submit transcripts for admission?
+    - Are there any health or medical requirements for admission?
+    - Do I need to provide proof of residency?
+    - What kind of academic records do I need for admission?
+    - Do I need an entrance exam for admission?
+    - What is the minimum GPA required for admission?
+    - Are there any specific courses I need before applying?
+    - Is a portfolio required for certain programs?
+    - Do I need to take an interview as part of the admission process?
+    - Can I apply without a recommendation letter?
+    - Are there any specific language proficiency requirements?
+    - What are the specific eligibility criteria for international students?
+    - Do I need to provide a financial statement for admission?
+    - Are there any special admission requirements for transfer students?
+    - Can I submit my application if I don’t meet all the requirements yet?
 
-- intent: ask_available_discounts
+- intent: ask_admission_online_registration
   examples: |
-    - Are there any discounts available at the school?
-    - What discounts can I avail as a student?
-    - Do you offer any discounts on tuition fees?
-    - Are there discounts for siblings studying in the same school?
-    - Is there a scholarship or discount program I can apply for?
-    - Do you have any special discounts for honors students?
-    - Are there discounts available for early enrollment?
-    - Can I get a discount for paying the fees in full upfront?
-    - Are there discounts for students from low-income families?
-    - What financial aid or discount options are available?
+    - ask admission online registration
+    - ask online registration
+    - online registration
+    - How can I register online?
+    - Can I sign up through your website?
+    - Is there an option for online registration?
+    - Where can I find the online registration form?
+    - How do I complete the registration process online?
+    - Are there online options for enrollment?
+    - Can I enroll without going to campus?
+    - Do you offer online registration for new students?
+    - How do I apply online for admission?
+    - Is it possible to register remotely?
+    - Can I submit my registration forms online?
+    - How do I register for classes online?
+    - Is the registration process fully online?
+    - Where can I access the online registration portal?
+    - What steps do I need to follow for online registration?
+    - Do I need to create an account to register online?
+    - Can I submit all my documents online for admission?
+    - Is there an online form for student registration?
+    - How do I confirm my online registration?
+    - Can I complete the entire application process online?
+    - Do I need to visit campus after registering online?
+    - Are there any fees associated with online registration?
+    - Can I change my registration details online?
+    - How do I track the status of my online registration?
+    - Can I apply for admission online through your website?
+    - What is the deadline for online registration?
+    - Is online registration available for international students?
+
+- intent: ask_admission_transferee_enrollment
+  examples: |
+    - ask admission transferee enrollment
+    - admission transferee enrollment
+    - transferee enrollment
+    - How can I apply for admission as a transferee?
+    - What are the steps for transferring to your school?
+    - Do you accept transferees for enrollment?
+    - Can I transfer to your university mid-year?
+    - What requirements are needed for transferee enrollment?
+    - How do I transfer my credits to your institution?
+    - Is there an enrollment process for transfer students?
+    - What are the qualifications to apply as a transferee?
+    - How do I start the transfer admission process?
+    - Are there any special procedures for transferee enrollment?
+    - Can I transfer my courses from another university?
+    - What documents are required for transferring to your school?
+    - How do I complete the enrollment process as a transferee?
+    - Is there a specific deadline for transferee applications?
+    - Do I need to provide a transfer certificate to apply?
+    - Are there any specific guidelines for transfer students?
+    - Can I apply as a transferee even if I have unfinished courses?
+    - How do I verify my previous credits for transfer?
+    - Is there a minimum GPA requirement for transfer students?
+    - How do I know if my previous courses will be accepted for transfer?
+    - What are the necessary steps to transfer into your program?
+    - Can I apply for a scholarship as a transferee?
+    - Do I need to take any additional exams as a transferee?
+    - Are there any orientation programs for transfer students?
+    - How long does the transfer admission process take?
+    - Are transfer students eligible for financial aid?
+    - What is the transfer process for international students?
+
+- intent: ask_admission_working_student
+  examples: |
+    - ask admission working_student
+    - admission working student
+    - working student
+    - How can working students apply for admission?
+    - Do you offer flexible enrollment options for working students?
+    - Can I study while working full-time at your school?
+    - Are there special requirements for working students?
+    - Do you have programs that accommodate working students?
+    - Is there a part-time option for working students?
+    - How do working students enroll in your courses?
+    - Are there evening classes available for working students?
+    - Can I apply as a working student and still take classes?
+    - Do you have any special considerations for working students applying for admission?
+    - What options do you offer for students who are also working?
+    - Are there any evening or weekend classes for working students?
+    - Do you have online courses for working students?
+    - How can I balance work and study at your school?
+    - Is it possible to attend school part-time while holding a job?
+    - Can working students take full-time or part-time courses?
+    - What is the enrollment process for working students?
+    - Can I apply as a working student if I have a full-time job?
+    - Do you have any evening or night shifts for classes?
+    - Can I attend classes on weekends if I work during the week?
+    - Are there flexible course schedules for working professionals?
+    - Can I take night classes or weekend classes for my degree program?
+    - Do you provide support for students who are working full-time?
+    - Can I apply as a working student without disrupting my job schedule?
+    - How do working students manage their course load and employment?
+    - What should working students know about your school’s schedule and programs?
+    - Can I combine work and study in your flexible programs?

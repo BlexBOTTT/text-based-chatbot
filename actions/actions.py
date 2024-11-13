@@ -10,8 +10,11 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
 # DO NOT DELETE:For integration of mongodb, and fetching intent-responses back to the chatbot
-from pymongo import MongoClient
+from pymongo import MongoClient, errors
+import os
 
+############################################################################################################################
+############################################################################################################################
 ### QUERY SEARCHER FUNCTION, DO NOT DELETE
 def build_query(intent: str, collection_name: str) -> dict:
     # Define fields to search based on the collection type
@@ -43,16 +46,28 @@ class ActionFetchDynamicResponse(Action):
 
     def __init__(self):
         # Initialize MongoDB client and connect to the admission_chatbot database
-        self.client = MongoClient("mongodb://localhost:27017/")
-        self.db = self.client['admission_chatbot']
-
+        try:
+            mongo_uri = os.getenv("MONGO_URI", "mongodb://localhost:27017/")
+            self.client = MongoClient(mongo_uri)
+            self.db = self.client['admission_chatbot']
+        except errors.ConnectionError as e:
+            print(f"Error connecting to MongoDB: {e}")
+            self.db = None  # Gracefully handle failure to connect
+            
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
+        if self.db is None:
+            dispatcher.utter_message(text="I'm sorry, there was an error connecting to the database.")
+            return []
+
         # Get the latest intent from the user's message
         intent = tracker.latest_message['intent']['name']
-        
+
+        # debugger print on which intent is selected
+        print("Detected intent:", intent)
+
         # Loop through all collections in the database
         for collection_name in self.db.list_collection_names():
             # Fetch the course name from the tracker slot
@@ -77,47 +92,57 @@ class ActionFetchDynamicResponse(Action):
                 # Use the helper function to build the query, fallback to a broader query
                 query = build_query(intent, collection_name)
 
+            try:
             # Execute the query on the current collection
-            result = collection.find_one(query)
+                result = collection.find_one(query)
 
-            # Check if a result was found
-            if result:
-            # Format response based on collection type
+                # Check if a result was found
+                if result:
+                # Format response based on collection type
 
-                if collection_name == "admission":    
-                    response = f"{result.get('utter_admission', 'No details available.')}"
+                    if collection_name == "admission":    
+                        response = f"{result.get('utter_admission', 'No details available.')}"
 
-                elif collection_name == "courses":
-                    response = f"{result.get('utter_course_list', 'No details available.')}"
+                    elif collection_name == "courses":
+                        response = f"{result.get('utter_course_list', 'No details available.')}"
+                    
+                    elif collection_name == "discounts":    
+                        response = f"{result.get('utter_discounts', 'No details available.')}"
+
+                    elif collection_name == "general":
+                        if intent == "ask_school_location":
+                            response = result.get('utter_school_location', 'Location details not available.')
+                        elif intent == "ask_contact":
+                            response = result.get('utter_ask_contact', 'Contact details not available.')
+                        else:
+                            response = result.get('No general details available.')  
+
+                    elif collection_name == "tuition_prices":
+                        response = result.get('utter_tuition_price_specific', 'No tuition available.')
+                        if intent == "ask_tuition_general":
+                            response = result.get('utter_tuition_price_general', 'No tuition available.')
+
+
+                    # Send the response back to the user
+                    dispatcher.utter_message(text=response)
+                    return []
                 
-                elif collection_name == "discounts":    
-                    response = f"{result.get('utter_discounts', 'No details available.')}"
-
-                elif collection_name == "general":
-                    if intent == "ask_school_location":
-                        response = result.get('utter_school_location', 'Location details not available.')
-                    elif intent == "ask_contact":
-                        response = result.get('utter_ask_contact', 'Contact details not available.')
-                    else:
-                        response = result.get('No general details available.')  
-
-                elif collection_name == "tuition_prices":
-                    response = result.get('utter_tuition_price_specific', 'No tuition available.')
-                    if intent == "ask_tuition_general":
-                        response = result.get('utter_tuition_price_general', 'No tuition available.')
-
-
-                # Send the response back to the user
-                dispatcher.utter_message(text=response)
-                return []
+            except Exception as e:
+                print(f"Error querying collection {collection_name}: {e}")
+                continue
 
         # If no information was found in any collection in the DB, send an apology message
-        dispatcher.utter_message(text="I'm sorry, I couldn't find the information you're looking for.")
+        dispatcher.utter_message(text="LAST I'm sorry, I couldn't find the information you're looking for.")
         return []
 ###
 
+############################################################################################################################
+############################################################################################################################
 
+# action_feedback_counter is in actions_2.py
 
+############################################################################################################################
+############################################################################################################################
 ### RASA DEFAULT, do not open:
 # This is a simple example for a custom action which utters "Hello World!"
 # class ActionHelloWorld(Action):

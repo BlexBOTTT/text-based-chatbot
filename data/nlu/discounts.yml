@@ -1,0 +1,36 @@
+version: "3.1"
+
+nlu:
+
+- intent: ask_available_discounts
+  examples: |
+    - ask available discounts
+    - available discounts
+    - Are there any discounts available at the school?
+    - What discounts can I avail as a student?
+    - Do you offer any discounts on tuition fees?
+    - Are there discounts for siblings studying in the same school?
+    - Is there a scholarship or discount program I can apply for?
+    - Do you have any special discounts for honors students?
+    - Are there discounts available for early enrollment?
+    - Can I get a discount for paying the fees in full upfront?
+    - Are there discounts for students from low-income families?
+    - What financial aid or discount options are available?
+    - Are there any fee reductions or discounts available?
+    - Do you provide any discounts for academic achievements?
+    - What is the discount policy for new students?
+    - Do you offer discounts for transferring students?
+    - Is there a discount for students who refer others?
+    - Are there any discounts for veterans or active military personnel?
+    - Do you have any promotional discounts available this year?
+    - Can I get a discount for enrolling in multiple courses?
+    - Is there a discount for students who pay their tuition early?
+    - Are there any discounts for students with disabilities?
+    - Are there discounts for alumni or their family members?
+    - Do you offer any group discounts for student organizations?
+    - Are there discounts for students enrolled in specific programs?
+    - Do you have any discounts for international students?
+    - Can I receive a discount if I pay the tuition in installments?
+    - Are there any seasonal discounts available for tuition?
+    - What other financial support options are available besides discounts?
+    - Can I combine discounts with other financial aid?

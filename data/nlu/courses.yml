@@ -4,6 +4,9 @@ nlu:
 
 - intent: ask_courses_list
   examples: |
+    - ask courses list
+    - courses list
+    - course list
     - What courses do you offer?
     - Can you list the available courses?
     - Tell me about the courses I can enroll in.
@@ -14,3 +17,21 @@ nlu:
     - Which courses are currently available?
     - What courses can I take at your institution?
     - Please give me the list of courses.
+    - Can you share the courses you provide?
+    - Do you have a catalog of courses?
+    - What are the courses available for enrollment?
+    - Can you tell me about the courses offered?
+    - Which programs are currently open for enrollment?
+    - What courses are available this semester?
+    - Can you show me the courses offered this year?
+    - Do you offer any degree programs? If yes, which ones?
+    - Could you send me a list of programs available at your school?
+    - Can I see the full list of courses offered?
+    - What academic programs can I choose from?
+    - Are there any specialized programs you offer?
+    - What are the available majors at your institution?
+    - Can you give me more details on your available courses?
+    - What is the complete list of academic courses?
+    - Can I get a course catalog for this year?
+    - Do you have a brochure with all available courses?
+    - Which degree programs do you currently offer?

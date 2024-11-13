@@ -1,19 +1,113 @@
-# version: "3.1"
+version: "3.1"
 
-# nlu:
+nlu:
 
-# SFAC-LP Related:
+#SFAC-LP Related:
 
-# - intent: ask_contact
-#   examples: |
-#     - Can you provide a link to the contact page of the school?
-#     - How can I get in touch with the school directly?
-#     - Where can I find the school's contact details?
-#     - Can I get the school's contact information?
-#     - How do I reach the school office?
-#     - Is there a direct way to contact the school?
-#     - What is the school's contact page URL?
-#     - Where can I reach the school administration online?
-#     - Who handles financial aid inquiries at Las Piñas?
-#     - How can I get support from the Las Piñas administration?
+# Las Pinas Campus
+- intent: ask_school_location 
+  examples: |
+    - ask school location
+    - school location
+    - campus location
+    - Where is the school located?
+    - Can you tell me the location of the campus?
+    - Where is the Las Piñas campus?
+    - What is the address of the school?
+    - How do I get to the Bacoor campus?
+    - Where is the Las Piñas campus situated?
+    - I need the location of the school.
+    - Can you give me directions to the Las Piñas campus?
+    - Where is the Las Pinas campus located?
+    - What is the exact address of the campus?
+    - Can you tell me the address of the school?
+    - How do I get to the school?
+    - Where can I find the Bacoor campus?
+    - What’s the location of your main campus?
+    - How far is the Las Piñas campus from here?
+    - Where is the university’s campus located?
+    - How do I get to the university’s main campus?
+    - Is the Bacoor campus near the city center?
+    - What’s the nearest landmark to the school?
+    - What public transport options are available to get to the campus?
+    - Could you provide the location of the university’s campuses?
+    - Where is the main campus situated?
+    - How can I reach the school by public transport?
+    - What’s the route to the Bacoor campus from here?
+    - Can you share the campus location of your university?
+    - Is the Las Piñas campus near any major roads or highways?
+    - Can you provide me with a map of the school’s location?
+
+- intent: ask_school_contact
+  examples: |
+    - ask school contact
+    - school contact
+    - Can you provide a link to the contact page of the school?
+    - How can I get in touch with the school directly?
+    - Where can I find the school's contact details?
+    - Can I get the school's contact information?
+    - How do I reach the school office?
+    - Is there a direct way to contact the school?
+    - What is the school's contact page URL?
+    - Where can I reach the school administration online?
+    - Who handles financial aid inquiries at Las Piñas?
+    - How can I get support from the Las Piñas administration?
+    - What’s the best way to contact the school?
+    - Can you share the school's email address?
+    - What is the phone number for the school office?
+    - How do I contact the admissions office?
+    - Can you give me the contact details for the school?
+    - Where can I call for assistance with school-related questions?
+    - What’s the contact number for the Las Piñas campus?
+    - Can you give me the contact info for the school’s registrar?
+    - Is there a contact form on the school’s website?
+    - How can I get in touch with student services?
+    - What is the email for inquiries about the school’s programs?
+    - Who can I contact for general school inquiries?
+    - How can I reach the school by email?
+    - Can you provide the school’s social media contact?
+    - Where can I find the support contact for Las Piñas campus?
+    - Can I contact the school through WhatsApp or other messaging apps?
+    - How do I get in touch with the financial aid office?
+    - What’s the contact number for student support at the school?
+
+- intent: ask_bot_coverage
+  examples: |
+    - ask bot coverage
+    - bot coverage
+    - What topics does the chatbot cover?
+    - What can the chatbot help me with?
+    - Can you tell me what the chatbot can assist me with?
+    - What are the areas the chatbot covers?
+    - What information can I get from the chatbot?
+    - What kind of inquiries can the chatbot handle?
+    - Does the chatbot cover all courses offered?
+    - What topics can I ask the chatbot about?
+    - How can the chatbot assist me with school-related questions?
+    - Can I get information about tuition from the chatbot?
+    - What services does the chatbot provide?
+    - Does the chatbot cover admissions and application inquiries?
+    - What questions can I ask the chatbot regarding tuition fees?
+    - Can I get course details from the chatbot?
+    - What information does the chatbot provide about financial aid?
+    - What kind of academic programs can the chatbot tell me about?
+    - Can the chatbot assist me with course registration details?
+    - Does the chatbot cover information about faculty or staff?
+    - What student services can I learn about through the chatbot?
+    - What can the chatbot tell me about deadlines and important dates?
+    - Can the chatbot help me with information on campus locations?
+    - Can I inquire about scholarships through the chatbot?
+    - Does the chatbot provide information on course prerequisites?
+    - How can I use the chatbot to learn about school events?
+    - What is the chatbot's coverage regarding enrollment processes?
+    - Does the chatbot cover student support services?
+    - How can the chatbot help me with class schedules?
+    - Can the chatbot answer questions about school policies and rules?
+    - Can the chatbot help me with questions about academic advising?
+
+# - intent: ask_sfac_vision
+# - intent: ask_sfac_mission
+# - intent: ask_sfac_vision
+# - intent: ask_inquire_LP_staff
+
 

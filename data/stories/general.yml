@@ -12,7 +12,7 @@ stories:
 
 - story: User asks for school's contact information
   steps:
-  - intent: ask_contact
+  - intent: ask_school_contact
   - action: action_fetch_dynamic_response
 
 # MongoDB action END

@@ -1,9 +1,11 @@
-# version: "3.1"
+version: "3.1"
 
 rules:
 
 # Rasa chatbot greets the user after opening the widget
 # https://rasa.com/docs/rasa/reaching-out-to-user/
+
+# NOTE: only works one-time after loading
 - rule: welcome and greet user at start
   conversation_start: true # this rule only applies at the beginning of a conversation
   steps:

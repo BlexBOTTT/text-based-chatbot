@@ -1,0 +1,336 @@
+version: "3.1"
+
+nlu:
+
+# Tuition prices - Las Pinas
+- intent: ask_tuition_price_specific
+  examples: |
+    - ask tuition price specific
+    - tuition price specific
+    - What is the tuition for [course] course?
+    - Could you provide the tuition details for [course]?
+    - How much do I need to pay for the [course] program?
+    - Can you tell me the tuition fees for the [course] course?
+    - I'm interested in the tuition for [course]. What is it?
+    - How much is the tuition for [course] at your university?
+    - What are the costs associated with the [course] course?
+    - Can you break down the tuition fees for [course]?
+    - Is there a difference in tuition for [course] if I take it online?
+    - What's the total tuition cost for the entire [course] program?
+    - How much will I pay for the [course] course tuition?
+    - What's the tuition fee for the [course] program at your school?
+    - Could you give me a breakdown of the [course] course fees?
+    - What are the total costs for the [course] program per semester?
+    - How much do I need to budget for tuition for [course]?
+    - What's the estimated tuition for [course]?
+    - Are there any hidden fees for the [course] program’s tuition?
+    - How much do I pay for a year of [course] study?
+    - What’s the tuition fee for the full duration of the [course] program?
+    - Do you have any discounts for the [course] tuition?
+    - Is the tuition for the [course] course the same for all students?
+    - Can you list the costs for [course] tuition for international students?
+    - What is the average tuition cost for the [course] course?
+    - Do students taking the [course] course on a part-time basis pay the same tuition fee?
+    - Is there a payment plan for tuition in the [course] program?
+    - Can I get an estimate for the tuition fees for [course]?
+    - What is the tuition for [course] per credit hour?
+    - How do I apply for financial aid for the [course] program's tuition?
+
+- intent: ask_tuition_price_general
+  examples: |
+    - ask tuition prices general
+    - tuition prices general
+    - What is the tuition fee?
+    - How much is the tuition?
+    - Can you tell me the tuition cost?
+    - Could you provide information on tuition fees?
+    - What are the tuition fees at your university?
+    - I’d like to know the tuition cost.
+    - How much do I need to pay in tuition?
+    - What’s the cost of tuition?
+    - How much is the general tuition fee?
+    - Can you give me the tuition details?
+    - What’s the average tuition fee at your university?
+    - Could you tell me the tuition fees for all courses?
+    - How much is the tuition for undergraduate programs?
+    - What are the costs of tuition at your school?
+    - Can you share the tuition fees for different courses?
+    - I’d like to know the general tuition rate.
+    - How much tuition is required for a semester?
+    - How do tuition fees work at your university?
+    - What are the annual tuition fees?
+    - Is there an average tuition cost for most programs?
+    - Can you break down the tuition fees for me?
+    - How much does tuition cost per year?
+    - What’s the tuition for a full-time student?
+    - Are there any additional fees included in the tuition?
+    - What is the standard tuition fee for students?
+    - Do all students pay the same tuition fee?
+    - Can I get a general estimate of the tuition fees?
+    - How do I find out the tuition cost for my program?
+    
+- synonym: computer science
+  examples: |
+    - CS
+    - BSCS
+    - BS CS
+    - cs
+    - bscs
+    - bs cs
+    - bs-cs
+    - Bachelor of Science in Computer Science
+    - comsci
+    - com sci
+    - comp sci
+    - comsci
+    - B.S. Computer Science
+    - CompSc
+    - Computer Sci
+    - Comp Science
+    - Computer Studies
+    - Computing Science
+    - Comp Sci Degree
+    - Bachelor Computer Science
+    - Computer Sci BS
+    - Bachelor in CS
+    - Bachelor’s in Computer Science
+    - Comp Sci
+
+- synonym: education
+  examples: |
+    - education
+    - edu
+    - Bachelor of Science in Education
+    - Bachelor’s in Education
+    - B.S. Education
+    - BS in Education
+    - Bachelor of Education
+    - Bachelor Education Degree
+    - Education Degree
+    - Bachelor’s Education
+    - elementary education
+    - elem ed
+    - BS Elementary Education
+    - Bachelor in Elementary Education
+    - BSEEd
+    - Bachelor of Science in Elementary Education
+    - Elementary Ed
+    - B.S. Elementary Education
+    - Bachelor’s Elementary Education
+    - Elementary Teaching
+    - secondary education
+    - secondary ed
+    - BS Secondary Education
+    - Bachelor in Secondary Education
+    - BSEd
+    - Bachelor of Science in Secondary Education
+    - Secondary Ed
+    - B.S. Secondary Education
+    - Bachelor’s Secondary Education
+    - Secondary Teaching
+    - secondary education major in english
+    - Secondary Ed English
+    - Bachelor in Secondary Education - English
+    - BS Ed English
+    - English Secondary Education
+    - Bachelor’s Secondary Ed in English
+    - Secondary English Teaching
+    - Secondary English Major
+    - Secondary Education English
+    - secondary education major in science
+    - Secondary Ed Science
+    - Bachelor in Secondary Education - Science
+    - BS Ed Science
+    - Science Secondary Education
+    - Bachelor’s Secondary Ed in Science
+    - Secondary Science Teaching
+    - Secondary Science Major
+    - Secondary Education Science
+    - secondary education major in social studies
+    - Secondary Ed Social Studies
+    - Bachelor in Secondary Education - Social Studies
+    - BS Ed Social Studies
+    - Social Studies Secondary Education
+    - Bachelor’s Secondary Ed in Social Studies
+    - Secondary Social Studies Teaching
+    - Secondary Social Studies Major
+    - Secondary Education Social Studies
+    - secondary education major in filipino
+    - Secondary Ed Filipino
+    - Bachelor in Secondary Education - Filipino
+    - BS Ed Filipino
+    - Filipino Secondary Education
+    - Bachelor’s Secondary Ed in Filipino
+    - Secondary Filipino Teaching
+    - Secondary Filipino Major
+    - Secondary Education Filipino
+    - secondary education major in mathematics
+    - Secondary Ed Mathematics
+    - Bachelor in Secondary Education - Mathematics
+    - BS Ed Math
+    - Math Secondary Education
+    - Bachelor’s Secondary Ed in Mathematics
+    - Secondary Mathematics Teaching
+    - Secondary Mathematics Major
+    - Secondary Education Mathematics
+
+- synonym: hospitality management
+  examples: |
+    - hospitality management
+    - BS in Hospitality Management
+    - Bachelor of Science in Hospitality Management
+    - B.S. Hospitality Management
+    - Hospitality Studies
+    - Hospitality and Tourism Management
+    - Hospitality Business Management
+    - Bachelor in Hospitality Management
+    - BSHM
+    - Bachelor of Hospitality Management
+    - Hospitality Administration
+    - Hotel and Restaurant Management
+    - Bachelor of Science in Hotel and Restaurant Management
+    - BS Hotel and Restaurant Management
+    - BSHRM
+    - Hotel Management
+    - Restaurant Management
+    - Hospitality Industry Management
+    - Hospitality Operations
+    - B.S. in Hospitality Management
+    - Bachelor’s in Hospitality Management  - hospitality management
+    - BS in Hospitality Management
+    - Bachelor of Science in Hospitality Management
+    - B.S. Hospitality Management
+    - Hospitality Studies
+    - Hospitality and Tourism Management
+    - Hospitality Business Management
+    - Bachelor in Hospitality Management
+    - BSHM
+    - Bachelor of Hospitality Management
+    - Hospitality Administration
+    - Hotel and Restaurant Management
+    - Bachelor of Science in Hotel and Restaurant Management
+    - BS Hotel and Restaurant Management
+    - BSHRM
+    - Hotel Management
+    - Restaurant Management
+    - Hospitality Industry Management
+    - Hospitality Operations
+    - B.S. in Hospitality Management
+    - Bachelor’s in Hospitality Management
+
+- synonym: business administration
+  examples: |
+    - business administration
+    - BS in Business Administration
+    - Bachelor of Science in Business Administration
+    - B.S. Business Administration
+    - Business Studies
+    - Business Management
+    - Bachelor in Business Administration
+    - BBA
+    - Bachelor of Business Administration
+    - Bachelor’s in Business Administration
+    - B.S. in Business Administration
+    - Business Administration Degree
+    - Business Admin
+    - Business Management Studies
+    - Bachelor of Science in Business Management
+    - BSBA
+    - Business Administration Major
+    - Business Leadership
+    - Business Administration Program
+    - Business Admin Degree
+
+- synonym: engineering
+  examples: |
+    - eng
+    - engineering
+    - engg
+    - BSENG
+    - Bachelor of Science in Engineering
+    - BS in Engineering
+    - Engineering Studies
+    - Engineering Science
+    - B.Sc. Engineering
+    - General Engineering
+    - EE
+    - ElecEng
+    - BSEE
+    - BS in Electrical Engineering
+    - Bachelor of Science in Electrical Engineering
+    - Electrical Eng
+    - Elec Engineering
+    - Electrical Sci
+    - E.E.
+    - Electrical Engineering
+    - CE
+    - CompEng
+    - BSCompE
+    - BS in Computer Engineering
+    - Bachelor of Science in Computer Engineering
+    - Computer Eng
+    - Comp Engineering
+    - CmpEng
+    - Computer Engineering
+    - ECE
+    - ElecE
+    - BSECE
+    - BS in Electronics Engineering
+    - Bachelor of Science in Electronics Engineering
+    - Electronics Eng
+    - Elec Engineering
+    - Electronics Engineering
+
+- synonym: psychology
+  examples: |
+    - psychology
+    - Bachelor of Arts in Psychology
+    - BA in Psychology
+    - B.A. in Psychology
+    - Bachelor’s in Psychology
+    - B.A. Psychology
+    - Psychology Degree
+    - Bachelor of Arts in Psychological Science
+    - Bachelor of Psychology
+    - Bachelor’s in Psychological Science
+    - BAPsy
+    - BA Psychology
+    - Psychology Studies
+    - Psychology and Behavioral Science
+    - Psychology Major
+    - Psychology Program
+    - Behavioral Psychology
+    - Psychological Science
+    - Bachelor of Science in Psychology
+    - Psychology (B.A.)
+
+- synonym: nursing
+  examples: |
+    - nursing
+    - Bachelor of Science in Nursing
+    - BS in Nursing
+    - B.S. Nursing
+    - Bachelor of Nursing
+    - Bachelor’s in Nursing
+    - B.S. in Nursing
+    - Nursing Degree
+    - Bachelor of Science in Nursing Practice
+    - Nursing Science
+    - Bachelor of Science in Nursing Science
+    - BSN
+    - Nursing Studies
+    - Nursing Administration
+    - Nursing Program
+    - Registered Nurse Degree
+    - RN Degree
+    - Nursing Major
+    - Nursing Practice
+    - Nursing (B.S.)
+
+# - intent: ask_tuition_computer_science
+# - intent: ask_tuition_education
+# - intent: ask_tuition_hospitality_management
+# - intent: ask_tuition_business_administration
+# - intent: ask_tuition_engineering
+# - intent: ask_tuition_psychology
+# - intent: ask_tuition_nursing
