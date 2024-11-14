@@ -102,7 +102,6 @@ nlu:
     - What is the chatbot's coverage regarding enrollment processes?
     - Does the chatbot cover student support services?
     - How can the chatbot help me with class schedules?
-    - Can the chatbot answer questions about school policies and rules?
     - Can the chatbot help me with questions about academic advising?
 
 # - intent: ask_sfac_vision

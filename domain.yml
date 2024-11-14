@@ -72,6 +72,7 @@ responses:
     - title: "School contact"
       payload: "ask school contact"
 
+
   utter_bot_coverage:
   - text: |
       Would you like to know what admission-related topics do I cover?
@@ -81,45 +82,22 @@ responses:
       - Available Discounts
       - General Inquiries
       - Tuition Prices of the Courses
+
+      Here it is, so just ask any questions!
     
-  
-
-  # utter_tuition_course_price_clarification:
-  # - text: "May I know which course are you inquiring to?"
-  #   buttons:
-  #   - title: "Nursing"
-  #     payload: "ask nursing tuition"
-  #   - title: "Computer Science"
-  #     payload: "ask Computer Science tuition"
-  #   - title: "Psychology"
-  #     payload: "ask Psychology tuition"
-  #   - title: "Engineering"
-  #     payload: "ask Engineering tuition"
-  #   - title: "Education"
-  #     payload: "ask Education tuition"
-  #   - title: "Business Administration"
-  #     payload: "ask Business Administration tuition"
-  #   - title: "Hospitality Management"
-  #     payload: "ask Hospitality Management tuition"
-  #   - title: "General / All"
-  #     payload: "ask All tuition prices"
-
-
-  # utter_admission_coverage:
-  # - text: |
 
   # config.yml/FallbackClassifier response for questions out of the intent
   utter_please_rephrase:
   - text: I'm sorry, I didn't quite understand that. Could you rephrase?
 
 ###  DEFAULT RASA DATA BELOW:
-  utter_did_that_help:
-  - text: "Did that help you?"
+  utter_confirm_response:
+  - text: "Did the chatbot give correct response for your inquiry?"
     buttons:
     - title: "Yes"
-      payload: "affirm"
+      payload: "Yes"
     - title: "No"
-      payload: "deny"
+      payload: "No"
 
   # utter_greet:
   # - text: "Hey! How are you?"

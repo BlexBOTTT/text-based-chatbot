@@ -5,37 +5,87 @@ stories:
 # NLU: admission.yml
 
 # MongoDB action START
-- story: ask admission about process
+##################################################################################################
+- story: ask admission about process - BOT RESPONSE PASS
   steps:
     - intent: ask_admission_process
     - action: action_fetch_dynamic_response
-    - action: utter_did_that_help
+    - action: utter_confirm_response
+    - intent: affirm
     - action: action_iterate_helpful_counter
 
-- story: ask admission about requirements
+- story: ask admission about process - BOT RESPONSE FAIL
+  steps:
+    - intent: ask_admission_process
+    - action: action_fetch_dynamic_response
+    - action: utter_confirm_response
+    - intent: deny
+    - action: action_iterate_helpful_counter
+##################################################################################################
+- story: ask admission about requirements - BOT RESPONSE PASS
   steps:
     - intent: ask_admission_requirements
     - action: action_fetch_dynamic_response
-    - action: utter_did_that_help
+    - action: utter_confirm_response
+    - intent: affirm
     - action: action_iterate_helpful_counter
-- story: ask admission about online registration of application
+
+- story: ask admission about requirements - BOT RESPONSE FAIL
+  steps:
+    - intent: ask_admission_requirements
+    - action: action_fetch_dynamic_response
+    - action: utter_confirm_response
+    - intent: deny
+    - action: action_iterate_helpful_counter
+##################################################################################################
+- story: ask admission about online registration of application - BOT RESPONSE PASS
   steps:
     - intent: ask_admission_online_registration
     - action: action_fetch_dynamic_response
-    - action: utter_did_that_help
+    - action: utter_confirm_response
+    - intent: affirm
     - action: action_iterate_helpful_counter
 
-- story: ask admission about transferee enrollment
+- story: ask admission about online registration of application - BOT RESPONSE FAIL
+  steps:
+    - intent: ask_admission_online_registration
+    - action: action_fetch_dynamic_response
+    - action: utter_confirm_response
+    - intent: deny
+    - action: action_iterate_helpful_counter
+##################################################################################################   
+- story: ask admission about transferee enrollment - BOT RESPONSE PASS
   steps:
     - intent: ask_admission_transferee_enrollment
     - action: action_fetch_dynamic_response
-    - action: utter_did_that_help
+    - action: utter_confirm_response
+    - intent: affirm
     - action: action_iterate_helpful_counter
 
-- story: ask admission about working student
+- story: ask admission about transferee enrollment - BOT RESPONSE FAIL
+  steps:
+    - intent: ask_admission_transferee_enrollment
+    - action: action_fetch_dynamic_response
+    - action: utter_confirm_response
+    - intent: deny
+    - action: action_iterate_helpful_counter
+
+##################################################################################################   
+- story: ask admission about working student - BOT RESPONSE PASS
   steps:
     - intent: ask_admission_working_student
     - action: action_fetch_dynamic_response
-    - action: utter_did_that_help
+    - action: utter_confirm_response
+    - intent: affirm
     - action: action_iterate_helpful_counter
+
+- story: ask admission about working student - BOT RESPONSE FAIL
+  steps:
+    - intent: ask_admission_working_student
+    - action: action_fetch_dynamic_response
+    - action: utter_confirm_response
+    - intent: deny
+    - action: action_iterate_helpful_counter
+
+##################################################################################################   
 # MongoDB action END

@@ -9,6 +9,8 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
+from rasa_sdk.events import EventType
+
 # DO NOT DELETE:For integration of mongodb, and fetching intent-responses back to the chatbot
 from pymongo import MongoClient, errors
 import os
@@ -66,7 +68,7 @@ class ActionFetchDynamicResponse(Action):
         intent = tracker.latest_message['intent']['name']
 
         # debugger print on which intent is selected
-        print("Detected intent:", intent)
+        print("Action: AFDR Detected intent:", intent)
 
         # Loop through all collections in the database
         for collection_name in self.db.list_collection_names():
@@ -119,7 +121,7 @@ class ActionFetchDynamicResponse(Action):
 
                     elif collection_name == "tuition_prices":
                         response = result.get('utter_tuition_price_specific', 'No tuition available.')
-                        if intent == "ask_tuition_general":
+                        if intent == "ask_tuition_price_general":
                             response = result.get('utter_tuition_price_general', 'No tuition available.')
 
 
@@ -139,7 +141,47 @@ class ActionFetchDynamicResponse(Action):
 ############################################################################################################################
 ############################################################################################################################
 
-# action_feedback_counter is in actions_2.py
+class ActionIterateHelpfulCounter(Action):
+    def name(self) -> str:
+        return "action_iterate_helpful_counter"
+
+    def __init__(self):
+        # MongoDB connection setup
+        self.client = MongoClient("mongodb://localhost:27017/")
+        self.db = self.client["admission_chatbot"]
+        self.collection = self.db["feedback"]
+
+        # Triggers if there is no helpful_counter ID in the collection feedback
+        if not self.collection.find_one({"_id": "helpful_counter"}):
+            self.collection.insert_one({"_id": "helpful_counter", "yes_count": 0, "no_count": 0})
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: dict) -> list[EventType]:
+        # Get the user's intent from the latest message
+        user_intent = tracker.latest_message['intent']['name']
+
+        print("Action: AIHC Detected intent:", user_intent) # debugging line
+
+        try:
+            # Update counter based on user intent
+            if user_intent == "affirm":
+                result = self.collection.update_one({"_id": "helpful_counter"}, {"$inc": {"yes_count": 1}})
+                # print(f"Update result: {result.modified_count}")  # Debugging line
+                dispatcher.utter_message(text="Thank you for your feedback! Please do continue asking inquiries!")
+
+            elif user_intent == "deny":
+                result = self.collection.update_one({"_id": "helpful_counter"}, {"$inc": {"no_count": 1}})
+                # print(f"Update result: {result.modified_count}")  # Debugging line
+                dispatcher.utter_message(text="Thank you for letting us know! We'll keep improving.")
+
+            # # DEBUG: Fetch the updated document to confirm the count
+            # feedback_counter = self.collection.find_one({"_id": "helpful_counter"})
+            # print(f"Updated document: {feedback_counter}")  # Debugging line
+
+        except Exception as e:
+            dispatcher.utter_message(text="Sorry, there was an error processing your feedback.")
+            print(f"Error updating feedback counter: {e}")
+
+        return []
 
 ############################################################################################################################
 ############################################################################################################################

@@ -5,16 +5,40 @@ stories:
 # MongoDB action START
 
 # school location
-- story: User asks for school's physical location
+##################################################################################################
+- story: User asks for school's physical location - BOT RESPONSE PASS
   steps:
   - intent: ask_school_location
   - action: action_fetch_dynamic_response
+  - action: utter_confirm_response
+  - intent: affirm
+  - action: action_iterate_helpful_counter
 
-- story: User asks for school's contact information
+- story: User asks for school's physical location - BOT RESPONSE FAIL
   steps:
-  - intent: ask_school_contact
+  - intent: ask_school_location
   - action: action_fetch_dynamic_response
+  - action: utter_confirm_response
+  - intent: deny
+  - action: action_iterate_helpful_counter
 
+##################################################################################################
+- story: User asks for school's contact information - BOT RESPONSE PASS
+  steps:
+    - intent: ask_school_contact
+    - action: action_fetch_dynamic_response
+    - action: utter_confirm_response
+    - intent: affirm
+    - action: action_iterate_helpful_counter
+
+- story: User asks for school's contact information - BOT RESPONSE FAIL
+  steps:
+    - intent: ask_school_contact
+    - action: action_fetch_dynamic_response
+    - action: utter_confirm_response
+    - intent: deny
+    - action: action_iterate_helpful_counter
+##################################################################################################
 # MongoDB action END
 
 # school contact
