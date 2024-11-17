@@ -24,6 +24,7 @@ def build_query(intent: str, collection_name: str) -> dict:
         "admission": ["rasa_intent"],
         "courses": ["rasa_intent"],
         "discounts": ["rasa_intent"],
+        "feedback": ["rasa_intent"],
         "general": ["rasa_intent"],
         "tuition_prices": ["rasa_intent", "course", "synonyms"],
         # Add other collections and their respective fields as needed, MANUALLY!
@@ -75,21 +76,22 @@ class ActionFetchDynamicResponse(Action):
             # Fetch the course name from the tracker slot
             collection = self.db[collection_name]
 
-            # Special handling for the 'courses' collection when asking about tuition
-            if collection_name == "tuition_prices" and intent == "ask_tuition_specific":
-                # Fetch the course slot value from the data/nlu/tuition.yml
-                course_name = tracker.get_slot('course')  
-            
-                print("detected course:", course_name)
+            response = "I'm sorry, I couldn't find the information you're looking for."  # Default response
 
-                 # Use the course_name in the query if it's available
+            # Special handling for the 'courses' collection when asking about tuition
+            if collection_name == "tuition_prices" and intent == "ask_tuition_price_specific":
+                course_name = tracker.get_slot('course')
+                print("Detected course:", course_name)
+
+                # Ensure that the course_name slot is used when available
                 if course_name:
                     query = {
                         "course": {"$regex": course_name, "$options": "i"}
                     }
                 else:
-                    # If no course name is available, fallback to a broader query
+                    # Fallback to general tuition query if no course name is available
                     query = build_query(intent, collection_name)
+
             else: 
                 # Use the helper function to build the query, fallback to a broader query
                 query = build_query(intent, collection_name)
@@ -100,8 +102,8 @@ class ActionFetchDynamicResponse(Action):
 
                 # Check if a result was found
                 if result:
-                # Format response based on collection type
 
+                     # Format response based on collection type
                     if collection_name == "admission":    
                         response = f"{result.get('utter_admission', 'No details available.')}"
 
@@ -111,14 +113,26 @@ class ActionFetchDynamicResponse(Action):
                     elif collection_name == "discounts":    
                         response = f"{result.get('utter_discounts', 'No details available.')}"
 
+                    elif collection_name == "feedback":    
+                        yes_count = result.get('yes_count', 0)  # Default to 0 if not found
+                        no_count = result.get('no_count', 0)   # Default to 0 if not found
+
+                        response = f"Correct Response: {yes_count}\nWrong Response: {no_count}"
+
                     elif collection_name == "general":
                         if intent == "ask_school_location":
                             response = result.get('utter_school_location', 'Location details not available.')
-                        elif intent == "ask_contact":
+                        elif intent == "ask_school_contact":
                             response = result.get('utter_ask_contact', 'Contact details not available.')
+                        elif intent == "ask_chatbot_coverage":
+                            response = result.get('utter_chatbot_coverage', 'Contact details not available.')
+                        elif intent == "ask_speak_to_staff":
+                            response = result.get('utter_speak_to_staff', 'Contact details not available.')
+                        elif intent == "ask_why_should_i_enroll":
+                            response = result.get('utter_why_should_i_enroll', 'Contact details not available.')
                         else:
                             response = result.get('No general details available.')  
-
+                
                     elif collection_name == "tuition_prices":
                         response = result.get('utter_tuition_price_specific', 'No tuition available.')
                         if intent == "ask_tuition_price_general":
@@ -173,12 +187,15 @@ class ActionIterateHelpfulCounter(Action):
                 # print(f"Update result: {result.modified_count}")  # Debugging line
                 dispatcher.utter_message(text="Thank you for letting us know! We'll keep improving.")
 
+            else:
+                response = 'No tuition details available.'
+
             # # DEBUG: Fetch the updated document to confirm the count
             # feedback_counter = self.collection.find_one({"_id": "helpful_counter"})
             # print(f"Updated document: {feedback_counter}")  # Debugging line
 
         except Exception as e:
-            dispatcher.utter_message(text="Sorry, there was an error processing your feedback.")
+            dispatcher.utter_message(text=response)
             print(f"Error updating feedback counter: {e}")
 
         return []

@@ -10,14 +10,17 @@ intents:
   - ask_admission_working_student
   - ask_courses_list
   - ask_available_discounts
+  - ask_rasa_feedback_count
   - ask_school_location 
   - ask_school_contact
-  - ask_bot_coverage
+  - ask_chatbot_coverage
+  - ask_speak_to_staff
+  - ask_why_should_i_enroll
   - greet
-  - goodbye
+#  - goodbye
   - affirm
   - deny
-  - mood_great
+#  - mood_great
   - ask_tuition_price_specific
   - ask_tuition_price_general
 
@@ -71,20 +74,8 @@ responses:
       payload: "ask school location"
     - title: "School contact"
       payload: "ask school contact"
-
-
-  utter_bot_coverage:
-  - text: |
-      Would you like to know what admission-related topics do I cover?
-      Here they are below Here are the contact details for the school:
-      - Admission-related Inquiries and FAQs
-      - Course/Program Lists
-      - Available Discounts
-      - General Inquiries
-      - Tuition Prices of the Courses
-
-      Here it is, so just ask any questions!
-    
+    - title: "Can I talk to a real staff instead?"
+      payload: "Can I talk to a real staff instead?"
 
   # config.yml/FallbackClassifier response for questions out of the intent
   utter_please_rephrase:

@@ -1,0 +1,10 @@
+version: "3.1"
+
+nlu:
+
+#SFAC-LP Related:
+
+# Las Pinas Campus
+- intent: ask_rasa_feedback_count
+  examples: |
+    - feedback count

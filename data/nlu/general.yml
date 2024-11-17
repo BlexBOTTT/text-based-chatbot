@@ -71,9 +71,11 @@ nlu:
     - How do I get in touch with the financial aid office?
     - What’s the contact number for student support at the school?
 
-- intent: ask_bot_coverage
+- intent: ask_chatbot_coverage
   examples: |
     - ask bot coverage
+    - ask chatbot coverage
+    - chatbot coverage
     - bot coverage
     - What topics does the chatbot cover?
     - What can the chatbot help me with?
@@ -103,6 +105,75 @@ nlu:
     - Does the chatbot cover student support services?
     - How can the chatbot help me with class schedules?
     - Can the chatbot help me with questions about academic advising?
+
+- intent: ask_speak_to_staff
+  examples: |
+    - ask speak to staff
+    - speak to real staff
+    - speak to staff
+    - Can I speak to a real person?
+    - I want to talk to someone, not a bot.
+    - Is there a human I can talk to?
+    - Can I speak with a representative?
+    - I need to talk to a person.
+    - Can you connect me to a real person?
+    - I’d prefer to speak to a human, please.
+    - Could you transfer me to someone?
+    - I don’t want to talk to a bot. Can you help me with that?
+    - Can I get a human on the line?
+    - I need assistance from a person, not a bot.
+    - Can you direct me to someone who can help?
+    - Is there a customer service agent available?
+    - I’d like to speak to a live representative.
+    - Can you hand me over to a person?
+    - I need human support, please.
+    - Could you please connect me with a real person?
+    - I prefer speaking to an actual person.
+    - Can I be transferred to someone who can help?
+    - I don’t need a bot, I need a person!
+    - Can you get me a live person to help me?
+    - I want to talk to a human, not an AI.
+    - Could you put me in touch with a real person?
+    - Is there a live agent I can speak with?
+    - Can I talk to a human operator?
+    - I would like to speak with a human representative.
+    - Can you hand me over to someone real?
+    - I don’t want to deal with a chatbot, I need a person.
+    - Can you transfer me to a person who can assist me?
+
+- intent: ask_why_should_i_enroll
+  examples: |
+    - why should i enroll in school
+    - why should i enroll in sfac
+    - why sfac
+    - Why is this school a good choice for me?
+    - What makes this school better?
+    - why should I enroll to this school
+    - What makes SFAC better than other schools?
+    - Why is Saint Francis of Assisi College a good option?
+    - Why should I choose Saint Francis of Assisi College?
+    - What sets SFAC apart from other schools?
+    - Why should I pick this school over another school?
+    - Can you tell me why this school is a good choice?
+    - What are the benefits of enrolling in SFAC?
+    - Why should I attend this school and not another?
+    - What are the reasons to enroll here instead of elsewhere?
+    - Why should I consider this school for my education?
+    - What makes this school the best choice for me?
+    - Why should I pick this school for my studies?
+    - What’s special about this school compared to others?
+    - Why should I choose SFAC for my education?
+    - What advantages does Saint Francis of Assisi College offer?
+    - What makes SFAC stand out from other schools?
+    - Why should I enroll in Saint Francis of Assisi College instead of another school?
+    - What’s unique about this school that makes it worth enrolling in?
+    - What are the top reasons to study at this school?
+    - Why should I pick this college over others in the area?
+    - What’s the edge of SFAC compared to other schools?
+    - Why should I choose this institution for my future?
+    - Can you convince me to enroll in SFAC?
+    - Why should I enroll in Saint Francis of Assisi College?
+  
 
 # - intent: ask_sfac_vision
 # - intent: ask_sfac_mission

@@ -1,9 +1,0 @@
-version: "3.1"
-
-rules:
-
-##  Admission Chatbot Coverage:
-- rule: welcome and greet user at start
-  steps:
-  - intent: ask_bot_coverage
-  - action: utter_bot_coverage

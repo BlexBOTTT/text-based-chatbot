@@ -5,36 +5,202 @@ nlu:
 # Tuition prices - Las Pinas
 - intent: ask_tuition_price_specific
   examples: |
-    - ask tuition price specific
-    - tuition price specific
-    - What is the tuition for [course] course?
-    - Could you provide the tuition details for [course]?
-    - How much do I need to pay for the [course] program?
-    - Can you tell me the tuition fees for the [course] course?
-    - I'm interested in the tuition for [course]. What is it?
-    - How much is the tuition for [course] at your university?
-    - What are the costs associated with the [course] course?
-    - Can you break down the tuition fees for [course]?
-    - Is there a difference in tuition for [course] if I take it online?
-    - What's the total tuition cost for the entire [course] program?
-    - How much will I pay for the [course] course tuition?
-    - What's the tuition fee for the [course] program at your school?
-    - Could you give me a breakdown of the [course] course fees?
-    - What are the total costs for the [course] program per semester?
-    - How much do I need to budget for tuition for [course]?
-    - What's the estimated tuition for [course]?
-    - Are there any hidden fees for the [course] program’s tuition?
-    - How much do I pay for a year of [course] study?
-    - What’s the tuition fee for the full duration of the [course] program?
-    - Do you have any discounts for the [course] tuition?
-    - Is the tuition for the [course] course the same for all students?
-    - Can you list the costs for [course] tuition for international students?
-    - What is the average tuition cost for the [course] course?
-    - Do students taking the [course] course on a part-time basis pay the same tuition fee?
-    - Is there a payment plan for tuition in the [course] program?
-    - Can I get an estimate for the tuition fees for [course]?
-    - What is the tuition for [course] per credit hour?
-    - How do I apply for financial aid for the [course] program's tuition?
+    - What is the tuition for [computer science](course) course?
+    - Could you provide the tuition details for [computer science](course)?
+    - How much do I need to pay for the [computer science](course) program?
+    - Can you tell me the tuition fees for the [computer science](course) course?
+    - I'm interested in the tuition for [computer science](course). What is it?
+    - How much is the tuition for [computer science](course) at your university?
+    - What are the costs associated with the [computer science](course) course?
+    - Can you break down the tuition fees for [computer science](course)?
+    - Is there a difference in tuition for [computer science](course) if I take it online?
+    - What's the total tuition cost for the entire [computer science](course) program?
+    - How much will I pay for the [computer science](course) course tuition?
+    - What's the tuition fee for the [computer science](course) program at your school?
+    - Could you give me a breakdown of the [computer science](course) course fees?
+    - What are the total costs for the [computer science](course) program per semester?
+    - How much do I need to budget for tuition for [computer science](course)?
+    - What's the estimated tuition for [computer science](course)?
+    - Are there any hidden fees for the [computer science](course) program’s tuition?
+    - How much do I pay for a year of [computer science](course) study?
+    - What’s the tuition fee for the full duration of the [computer science](course) program?
+    - Do you have any discounts for the [computer science](course) tuition?
+    - Is the tuition for the [computer science](course) course the same for all students?
+    - Can you list the costs for [computer science](course) tuition for international students?
+    - What is the average tuition cost for the [computer science](course) course?
+    - Do students taking the [computer science](course) course on a part-time basis pay the same tuition fee?
+    - Is there a payment plan for tuition in the [computer science](course) program?
+    - Can I get an estimate for the tuition fees for [computer science](course)?
+    - What is the tuition for [computer science](course) per credit hour?
+    - How do I apply for financial aid for the [computer science](course) program's tuition?
+    - What is the tuition for [education](course) course?
+    - Could you provide the tuition details for [education](course)?
+    - How much do I need to pay for the [education](course) program?
+    - Can you tell me the tuition fees for the [education](course) course?
+    - I'm interested in the tuition for [education](course). What is it?
+    - How much is the tuition for [education](course) at your university?
+    - What are the costs associated with the [education](course) course?
+    - Can you break down the tuition fees for [education](course)?
+    - Is there a difference in tuition for [education](course) if I take it online?
+    - What's the total tuition cost for the entire [education](course) program?
+    - How much will I pay for the [education](course) course tuition?
+    - What's the tuition fee for the [education](course) program at your school?
+    - Could you give me a breakdown of the [education](course) course fees?
+    - What are the total costs for the [education](course) program per semester?
+    - How much do I need to budget for tuition for [education](course)?
+    - What's the estimated tuition for [education](course)?
+    - Are there any hidden fees for the [education](course) program’s tuition?
+    - How much do I pay for a year of [education](course) study?
+    - What’s the tuition fee for the full duration of the [education](course) program?
+    - Do you have any discounts for the [education](course) tuition?
+    - Is the tuition for the [education](course) course the same for all students?
+    - Can you list the costs for [education](course) tuition for international students?
+    - What is the average tuition cost for the [education](course) course?
+    - Do students taking the [education](course) course on a part-time basis pay the same tuition fee?
+    - Is there a payment plan for tuition in the [education](course) program?
+    - Can I get an estimate for the tuition fees for [education](course)?
+    - What is the tuition for [education](course) per credit hour?
+    - How do I apply for financial aid for the [education](course) program's tuition?
+    - What is the tuition for [hospitality management](course) course?
+    - Could you provide the tuition details for [hospitality management](course)?
+    - How much do I need to pay for the [hospitality management](course) program?
+    - Can you tell me the tuition fees for the [hospitality management](course) course?
+    - I'm interested in the tuition for [hospitality management](course). What is it?
+    - How much is the tuition for [hospitality management](course) at your university?
+    - What are the costs associated with the [hospitality management](course) course?
+    - Can you break down the tuition fees for [hospitality management](course)?
+    - Is there a difference in tuition for [hospitality management](course) if I take it online?
+    - What's the total tuition cost for the entire [hospitality management](course) program?
+    - How much will I pay for the [hospitality management](course) course tuition?
+    - What's the tuition fee for the [hospitality management](course) program at your school?
+    - Could you give me a breakdown of the [hospitality management](course) course fees?
+    - What are the total costs for the [hospitality management](course) program per semester?
+    - How much do I need to budget for tuition for [hospitality management](course)?
+    - What's the estimated tuition for [hospitality management](course)?
+    - Are there any hidden fees for the [hospitality management](course) program’s tuition?
+    - How much do I pay for a year of [hospitality management](course) study?
+    - What’s the tuition fee for the full duration of the [hospitality management](course) program?
+    - Do you have any discounts for the [hospitality management](course) tuition?
+    - Is the tuition for the [hospitality management](course) course the same for all students?
+    - Can you list the costs for [hospitality management](course) tuition for international students?
+    - What is the average tuition cost for the [hospitality management](course) course?
+    - Do students taking the [hospitality management](course) course on a part-time basis pay the same tuition fee?
+    - Is there a payment plan for tuition in the [hospitality management](course) program?
+    - Can I get an estimate for the tuition fees for [hospitality management](course)?
+    - What is the tuition for [hospitality management](course) per credit hour?
+    - How do I apply for financial aid for the [hospitality management](course) program's tuition?
+    - What is the tuition for [business administration](course) course?
+    - Could you provide the tuition details for [business administration](course)?
+    - How much do I need to pay for the [business administration](course) program?
+    - Can you tell me the tuition fees for the [business administration](course) course?
+    - I'm interested in the tuition for [business administration](course). What is it?
+    - How much is the tuition for [business administration](course) at your university?
+    - What are the costs associated with the [business administration](course) course?
+    - Can you break down the tuition fees for [business administration](course)?
+    - Is there a difference in tuition for [business administration](course) if I take it online?
+    - What's the total tuition cost for the entire [business administration](course) program?
+    - How much will I pay for the [business administration](course) course tuition?
+    - What's the tuition fee for the [business administration](course) program at your school?
+    - Could you give me a breakdown of the [business administration](course) course fees?
+    - What are the total costs for the [business administration](course) program per semester?
+    - How much do I need to budget for tuition for [business administration](course)?
+    - What's the estimated tuition for [business administration](course)?
+    - Are there any hidden fees for the [business administration](course) program’s tuition?
+    - How much do I pay for a year of [business administration](course) study?
+    - What’s the tuition fee for the full duration of the [business administration](course) program?
+    - Do you have any discounts for the [business administration](course) tuition?
+    - Is the tuition for the [business administration](course) course the same for all students?
+    - Can you list the costs for [business administration](course) tuition for international students?
+    - What is the average tuition cost for the [business administration](course) course?
+    - Do students taking the [business administration](course) course on a part-time basis pay the same tuition fee?
+    - Is there a payment plan for tuition in the [business administration](course) program?
+    - Can I get an estimate for the tuition fees for [business administration](course)?
+    - What is the tuition for [business administration](course) per credit hour?
+    - How do I apply for financial aid for the [business administration](course) program's tuition?
+    - What is the tuition for [engineering](course) course?
+    - Could you provide the tuition details for [engineering](course)?
+    - How much do I need to pay for the [engineering](course) program?
+    - Can you tell me the tuition fees for the [engineering](course) course?
+    - I'm interested in the tuition for [engineering](course). What is it?
+    - How much is the tuition for [engineering](course) at your university?
+    - What are the costs associated with the [engineering](course) course?
+    - Can you break down the tuition fees for [engineering](course)?
+    - Is there a difference in tuition for [engineering](course) if I take it online?
+    - What's the total tuition cost for the entire [engineering](course) program?
+    - How much will I pay for the [engineering](course) course tuition?
+    - What's the tuition fee for the [engineering](course) program at your school?
+    - Could you give me a breakdown of the [engineering](course) course fees?
+    - What are the total costs for the [engineering](course) program per semester?
+    - How much do I need to budget for tuition for [engineering](course)?
+    - What's the estimated tuition for [engineering](course)?
+    - Are there any hidden fees for the [engineering](course) program’s tuition?
+    - How much do I pay for a year of [engineering](course) study?
+    - What’s the tuition fee for the full duration of the [engineering](course) program?
+    - Do you have any discounts for the [engineering](course) tuition?
+    - Is the tuition for the [engineering](course) course the same for all students?
+    - Can you list the costs for [engineering](course) tuition for international students?
+    - What is the average tuition cost for the [engineering](course) course?
+    - Do students taking the [engineering](course) course on a part-time basis pay the same tuition fee?
+    - Is there a payment plan for tuition in the [engineering](course) program?
+    - Can I get an estimate for the tuition fees for [engineering](course)?
+    - What is the tuition for [engineering](course) per credit hour?
+    - How do I apply for financial aid for the [engineering](course) program's tuition?
+    - What is the tuition for [psychology](course) course?
+    - Could you provide the tuition details for [psychology](course)?
+    - How much do I need to pay for the [psychology](course) program?
+    - Can you tell me the tuition fees for the [psychology](course) course?
+    - I'm interested in the tuition for [psychology](course). What is it?
+    - How much is the tuition for [psychology](course) at your university?
+    - What are the costs associated with the [psychology](course) course?
+    - Can you break down the tuition fees for [psychology](course)?
+    - Is there a difference in tuition for [psychology](course) if I take it online?
+    - What's the total tuition cost for the entire [psychology](course) program?
+    - How much will I pay for the [psychology](course) course tuition?
+    - What's the tuition fee for the [psychology](course) program at your school?
+    - Could you give me a breakdown of the [psychology](course) course fees?
+    - What are the total costs for the [psychology](course) program per semester?
+    - How much do I need to budget for tuition for [psychology](course)?
+    - What's the estimated tuition for [psychology](course)?
+    - Are there any hidden fees for the [psychology](course) program’s tuition?
+    - How much do I pay for a year of [psychology](course) study?
+    - What’s the tuition fee for the full duration of the [psychology](course) program?
+    - Do you have any discounts for the [psychology](course) tuition?
+    - Is the tuition for the [psychology](course) course the same for all students?
+    - Can you list the costs for [psychology](course) tuition for international students?
+    - What is the average tuition cost for the [psychology](course) course?
+    - Do students taking the [psychology](course) course on a part-time basis pay the same tuition fee?
+    - Is there a payment plan for tuition in the [psychology](course) program?
+    - Can I get an estimate for the tuition fees for [psychology](course)?
+    - What is the tuition for [psychology](course) per credit hour?
+    - How do I apply for financial aid for the [psychology](course) program's tuition?
+    - What is the tuition for [nursing](course) course?
+    - Could you provide the tuition details for [nursing](course)?
+    - How much do I need to pay for the [nursing](course) program?
+    - Can you tell me the tuition fees for the [nursing](course) course?
+    - I'm interested in the tuition for [nursing](course). What is it?
+    - How much is the tuition for [nursing](course) at your university?
+    - What are the costs associated with the [nursing](course) course?
+    - Can you break down the tuition fees for [nursing](course)?
+    - Is there a difference in tuition for [nursing](course) if I take it online?
+    - What's the total tuition cost for the entire [nursing](course) program?
+    - How much will I pay for the [nursing](course) course tuition?
+    - What's the tuition fee for the [nursing](course) program at your school?
+    - Could you give me a breakdown of the [nursing](course) course fees?
+    - What are the total costs for the [nursing](course) program per semester?
+    - How much do I need to budget for tuition for [nursing](course)?
+    - What's the estimated tuition for [nursing](course)?
+    - Are there any hidden fees for the [nursing](course) program’s tuition?
+    - How much do I pay for a year of [nursing](course) study?
+    - What’s the tuition fee for the full duration of the [nursing](course) program?
+    - Do you have any discounts for the [nursing](course) tuition?
+    - Is the tuition for the [nursing](course) course the same for all students?
+    - Can you list the costs for [nursing](course) tuition for international students?
+    - What is the average tuition cost for the [nursing](course) course?
+    - Do students taking the [nursing](course) course on a part-time basis pay the same tuition fee?
+    - Is there a payment plan for tuition in the [nursing](course) program?
+    - Can I get an estimate for the tuition fees for [nursing](course)?
+    - What is the tuition for [nursing](course) per credit hour?
+    - How do I apply for financial aid for the [nursing](course) program's tuition?
 
 - intent: ask_tuition_price_general
   examples: |
@@ -176,6 +342,7 @@ nlu:
 
 - synonym: hospitality management
   examples: |
+    - HM
     - hospitality management
     - BS in Hospitality Management
     - Bachelor of Science in Hospitality Management
@@ -196,7 +363,6 @@ nlu:
     - Hospitality Industry Management
     - Hospitality Operations
     - B.S. in Hospitality Management
-    - Bachelor’s in Hospitality Management  - hospitality management
     - BS in Hospitality Management
     - Bachelor of Science in Hospitality Management
     - B.S. Hospitality Management
@@ -214,12 +380,12 @@ nlu:
     - Hotel Management
     - Restaurant Management
     - Hospitality Industry Management
-    - Hospitality Operations
     - B.S. in Hospitality Management
     - Bachelor’s in Hospitality Management
 
 - synonym: business administration
   examples: |
+    - BA
     - business administration
     - BS in Business Administration
     - Bachelor of Science in Business Administration
@@ -283,6 +449,7 @@ nlu:
 
 - synonym: psychology
   examples: |
+    - Psych
     - psychology
     - Bachelor of Arts in Psychology
     - BA in Psychology

@@ -38,10 +38,61 @@ stories:
     - action: utter_confirm_response
     - intent: deny
     - action: action_iterate_helpful_counter
+
+##################################################################################################
+- story: User asks for chatbot response coverage - BOT RESPONSE PASS
+  steps:
+    - intent: ask_chatbot_coverage
+    - action: action_fetch_dynamic_response
+    - action: utter_confirm_response
+    - intent: affirm
+    - action: action_iterate_helpful_counter
+
+- story: User asks for chatbot response coverage - BOT RESPONSE FAIL
+  steps:
+    - intent: ask_chatbot_coverage
+    - action: action_fetch_dynamic_response
+    - action: utter_confirm_response
+    - intent: deny
+    - action: action_iterate_helpful_counter
+
+##################################################################################################
+- story: User asks to talk to a real staff instead of the chatbot - BOT RESPONSE PASS
+  steps:
+    - intent: ask_speak_to_staff
+    - action: action_fetch_dynamic_response
+    - action: utter_confirm_response
+    - intent: affirm
+    - action: action_iterate_helpful_counter
+
+- story: User asks to talk to a real staff instead of the chatbot - BOT RESPONSE FAIL
+  steps:
+    - intent: ask_speak_to_staff
+    - action: action_fetch_dynamic_response
+    - action: utter_confirm_response
+    - intent: deny
+    - action: action_iterate_helpful_counter
+
+##################################################################################################
+- story: User asks why to enroll in sfac - BOT RESPONSE PASS
+  steps:
+    - intent: ask_why_should_i_enroll
+    - action: action_fetch_dynamic_response
+    - action: utter_confirm_response
+    - intent: affirm
+    - action: action_iterate_helpful_counter
+
+- story: User asks why to enroll in sfac - BOT RESPONSE FAIL
+  steps:
+    - intent: ask_why_should_i_enroll
+    - action: action_fetch_dynamic_response
+    - action: utter_confirm_response
+    - intent: deny
+    - action: action_iterate_helpful_counter
+
 ##################################################################################################
 # MongoDB action END
 
-# school contact
 
 
 
