@@ -35,17 +35,6 @@ slots:
     mappings:
       - type: from_entity
         entity: course
-  
-  helpful_feedback:
-    type: text
-    influence_conversation: false
-    mappings:
-      - type: from_intent
-        intent: affirm
-        value: "yes"
-      - type: from_intent
-        intent: deny
-        value: "no"
 
 actions:
   - action_fetch_dynamic_response
