@@ -5,8 +5,9 @@ nlu:
 # Las Pinas Campus
 - intent: ask_admission_process
   examples: |
-    - ask admission process
-    - admission process
+    - Ask admission process
+    - Admission process
+    - How to process admission
     - Can you explain the admission process?
     - What are the steps to apply for admission?
     - How do I enroll in the school?
@@ -36,6 +37,25 @@ nlu:
     - Is there an application form I need to fill out?
     - Can I know the admission process?
     - Is there some kind of process for the admission?
+    - What are the prerequisites for the admission process?
+    - How do I prepare for admission to your school?
+    - Where can I find the admission guidelines?
+    - What are the key steps to getting admitted here?
+    - Do I need to meet someone in person for admission?
+    - Can I complete the admission process entirely online?
+    - Are there any additional steps after submitting the application?
+    - What do I need to know about your admission process?
+    - Can you explain the registration process for new students?
+    - What should I do first to apply for admission?
+    - What are the key deadlines for the admission process?
+    - Are there any priority dates for submitting applications?
+    - Is the admission process the same for graduate students?
+    - How do I know if my application is complete?
+    - What happens after I apply for admission?
+    - Do I need to create an account to apply online?
+    - Are there any required forms I need to fill out before applying?
+    - How does your school handle late applications?
+    - Is there a waiting list as part of the admission process?
 
 - intent: ask_admission_requirements
   examples: |
@@ -70,6 +90,26 @@ nlu:
     - Can I submit my application if I don’t meet all the requirements yet?
     - Are there specific admission requirements should I get?
     - What are the requirements for the admission?
+    - Do I need an ID for the application process?
+    - Are there extra requirements for specific courses or programs?
+    - Do I need proof of extracurricular activities?
+    - What is required to qualify for admission to this school?
+    - Are there additional requirements for honors programs?
+    - Can you explain what documents are non-negotiable for admission?
+    - Are there any character references needed for admission?
+    - What are the requirements for re-admission for former students?
+    - Are there different requirements for graduate program applicants?
+    - Do international students need a visa to meet admission criteria?
+    - Are there requirements specific to working professionals?
+    - Are digital copies of documents accepted for admission?
+    - Do I need a physical medical examination certificate?
+    - Are essays mandatory for the application process?
+    - Is community service experience a requirement for admission?
+    - Do I need to prove English proficiency for admission?
+    - Are parental consent forms required for minors applying?
+    - Is there a criminal background check for admission?
+    - Are proof of vaccinations necessary to complete admission?
+    - Do exchange students need special documentation for admission?
 
 - intent: ask_admission_online_registration
   examples: |
@@ -103,6 +143,27 @@ nlu:
     - What is the deadline for online registration?
     - Is online registration available for international students?
     - Can you tell me about the online registration?
+    - What do I need to complete the online registration?
+    - Is online registration open for all courses?
+    - Can I register online if I am a transfer student?
+    - Are there any guides for completing the online registration process?
+    - What should I prepare before starting the online registration?
+    - How can I reset my account for online registration?
+    - Is there a helpline for issues with online registration?
+    - Can I update my online registration details after submission?
+    - Are there any technical requirements for online registration?
+    - Do I need to upload specific documents during online registration?
+    - Can I track my registration status online?
+    - Is there a confirmation email after registering online?
+    - What happens if I miss the online registration deadline?
+    - Are returning students allowed to register online?
+    - How do I access the payment portal for online registration?
+    - Are online registration details secure and private?
+    - Can I register online for multiple courses at once?
+    - Are there tutorials on how to navigate the online registration system?
+    - Can parents assist with online registration?
+    - Does the online registration portal support mobile access?
+    - Is there a checklist available for online registration steps?
 
 - intent: ask_admission_transferee_enrollment
   examples: |
@@ -137,6 +198,26 @@ nlu:
     - Are transfer students eligible for financial aid?
     - What is the transfer process for international students?
     - Can you tell me about more in transferees?
+    - Can I transfer from a different country to your university?
+    - Do I need to submit my previous university’s syllabus for course transfer?
+    - Are there any restrictions on transferring between specific courses or programs?
+    - Can I be admitted as a transferee if I have been dismissed from another institution?
+    - How do I check the status of my transfer application?
+    - Can I request a transfer to a different department or course once admitted?
+    - Is there a maximum number of transfer students accepted each year?
+    - Can I apply for a specific academic year as a transfer student?
+    - What is the process for transferring to a different program after enrollment?
+    - Is it possible to transfer after completing one semester at another school?
+    - What is the eligibility criteria for transferring as a sophomore or junior?
+    - Are transfer students required to meet any additional academic requirements?
+    - Is there a transfer fee for enrolling as a transferee?
+    - Do I need to meet specific language proficiency requirements as a transferee?
+    - How can I check if my previous credits are transferable to your school?
+    - Can I transfer if I’ve attended multiple schools before?
+    - How will transferring affect my graduation timeline?
+    - Are there specific programs or degrees that do not accept transferees?
+    - What are the benefits of transferring to your school compared to other universities?
+    - Can I complete my entire degree program at your institution as a transferee?
 
 - intent: ask_admission_working_student
   examples: |
@@ -171,3 +252,23 @@ nlu:
     - What should working students know about your school’s schedule and programs?
     - Can I combine work and study in your flexible programs?
     - Is the working students applicable to get into admission process?
+    - Do you offer night classes for full-time employees?
+    - Can working students enroll in online programs to suit their work schedules?
+    - What are the working student options for evening and weekend courses?
+    - Are there internships or job placements for working students?
+    - How do I request a flexible schedule as a working student?
+    - Can I work full-time and still graduate on time at your institution?
+    - Is there a support system in place for working students?
+    - Are there scholarships or financial aid options for working students?
+    - Do you provide any career services for working students?
+    - How do I apply for financial aid as a working student?
+    - What are the attendance policies for working students?
+    - Are there any restrictions on working students applying for full-time courses?
+    - How can I manage my academic requirements while working?
+    - Do working students have to take the same number of units as full-time students?
+    - Can I switch from part-time to full-time after enrolling as a working student?
+    - Are there accommodations for working students in terms of deadlines or exam schedules?
+    - How do I find out if the courses I want fit my work schedule?
+    - Can I get a leave of absence if my work schedule conflicts with classes?
+    - What resources are available to working students to help with time management?
+    - Can I transfer from part-time to full-time enrollment as a working student?

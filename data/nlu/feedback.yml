@@ -8,3 +8,4 @@ nlu:
 - intent: ask_rasa_feedback_count
   examples: |
     - feedback count
+    - feedback counter

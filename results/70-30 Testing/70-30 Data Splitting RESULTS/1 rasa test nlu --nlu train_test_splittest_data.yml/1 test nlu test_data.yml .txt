@@ -1,0 +1,56 @@
+rasa test nlu --nlu train_test_split/test_data.yml
+
+continuation from "0 70-30 split CLI results"
+
+PS C:\Users\Quirante\Documents\admi-chatbot> rasa test nlu --nlu train_test_split/test_data.yml
+C:\Users\Quirante\Documents\admi-chatbot\venv\lib\site-packages\rasa\core\tracker_store.py:1044: MovedIn20Warning: Deprecated API features detected! These feature(s) are not compatible with SQLAlchemy 2.0. To prevent incompatible upgrades prior to updating applications, ensure requirements files are pinned to "sqlalchemy<2.0". Set environment variable SQLALCHEMY_WARN_20=1 to show all deprecation warnings.  Set environment variable SQLALCHEMY_SILENCE_UBER_WARNING=1 to silence this message. (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  Base: DeclarativeMeta = declarative_base()
+C:\Users\Quirante\Documents\admi-chatbot\venv\lib\site-packages\rasa\shared\utils\validation.py:134: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+C:\Users\Quirante\Documents\admi-chatbot\venv\lib\site-packages\pkg_resources\__init__.py:3154: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('mpl_toolkits')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+C:\Users\Quirante\Documents\admi-chatbot\venv\lib\site-packages\pkg_resources\__init__.py:3154: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('ruamel')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+C:\Users\Quirante\Documents\admi-chatbot\venv\lib\site-packages\tensorflow\lite\python\util.py:52: DeprecationWarning: jax.xla_computation is deprecated. Please use the AOT APIs.
+  from jax import xla_computation as _xla_computation
+2024-11-20 11:17:43 INFO     rasa.core.processor  - Loading model models\20241120-102406-ragged-graph.tar.gz...
+2024-11-20 11:18:19 WARNING  rasa.shared.utils.common  - The UnexpecTED Intent Policy is currently experimental and might change or be removed in the future 🔬 Please share your feedback on it in the forum (https://forum.rasa.com) to help us make this feature ready for production.
+2024-11-20 11:18:28 INFO     rasa.nlu.test  - Running model for predictions:
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 321/321 [00:02<00:00, 113.00it/s]
+2024-11-20 11:18:30 INFO     rasa.nlu.test  - Intent evaluation results:
+2024-11-20 11:18:30 INFO     rasa.nlu.test  - Intent Evaluation: Only considering those 321 examples that have a defined intent out of 321 examples.
+2024-11-20 11:18:31 INFO     rasa.nlu.test  - Classification report saved to results\intent_report.json.
+2024-11-20 11:18:31 INFO     rasa.nlu.test  - Every intent was predicted correctly by the model.
+2024-11-20 11:18:31 INFO     rasa.utils.plotting  - Confusion matrix, without normalization: 
+[[ 15   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0]
+ [  0  16   0   0   0   0   0   0   0   0   0   0   0   0   0   0]
+ [  0   0  15   0   0   0   0   0   0   0   0   0   0   0   0   0]
+ [  0   0   0  15   0   0   0   0   0   0   0   0   0   0   0   0]
+ [  0   0   0   0  16   0   0   0   0   0   0   0   0   0   0   0]
+ [  0   0   0   0   0  16   0   0   0   0   0   0   0   0   0   0]
+ [  0   0   0   0   0   0  16   0   0   0   0   0   0   0   0   0]
+ [  0   0   0   0   0   0   0  16   0   0   0   0   0   0   0   0]
+ [  0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0]
+ [  0   0   0   0   0   0   0   0   0  15   0   0   0   0   0   0]
+ [  0   0   0   0   0   0   0   0   0   0  16   0   0   0   0   0]
+ [  0   0   0   0   0   0   0   0   0   0   0  15   0   0   0   0]
+ [  0   0   0   0   0   0   0   0   0   0   0   0  16   0   0   0]
+ [  0   0   0   0   0   0   0   0   0   0   0   0   0 114   0   0]
+ [  0   0   0   0   0   0   0   0   0   0   0   0   0   0  15   0]
+ [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   4]]
+C:\Users\Quirante\Documents\admi-chatbot\venv\lib\site-packages\rasa\utils\plotting.py:286: UserWarning: Attempting to set identical left == right 
+== 0 results in singular transformations; automatically expanding.
+  axes[side].set(yticks=yticks, xlim=(0, x_ranges[side]), ylim=y_range)
+2024-11-20 11:18:33 INFO     rasa.nlu.test  - Entity evaluation results:
+2024-11-20 11:18:33 INFO     rasa.nlu.test  - Evaluation for entity extractor: DIETClassifier 
+2024-11-20 11:18:33 INFO     rasa.nlu.test  - Classification report saved to results\DIETClassifier_report.json.
+2024-11-20 11:18:33 INFO     rasa.nlu.test  - Every entity was predicted correctly by the model.
+2024-11-20 11:18:33 INFO     rasa.utils.plotting  - Confusion matrix, without normalization: 
+[[ 168    0]
+ [   0 2880]]
+C:\Users\Quirante\Documents\admi-chatbot\venv\lib\site-packages\rasa\utils\plotting.py:286: UserWarning: Attempting to set identical left == right 
+== 0 results in singular transformations; automatically expanding.
+  axes[side].set(yticks=yticks, xlim=(0, x_ranges[side]), ylim=y_range)
+PS C:\Users\Quirante\Documents\admi-chatbot> 

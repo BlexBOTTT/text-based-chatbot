@@ -4,36 +4,9 @@ stories:
 
 # MongoDB action START
 ##################################################################################################
-- story: user asks for the list of courses/programs offered - BOT RESPONSE PASS
+- story: user asks for the list of courses/programs offered
   steps:
     - intent: ask_courses_list
     - action: action_fetch_dynamic_response
-    - action: utter_confirm_response
-    - intent: affirm
-    - action: action_iterate_helpful_counter
 
-- story: user asks for the list of courses/programs offered - BOT RESPONSE FAIL
-  steps:
-    - intent: ask_courses_list
-    - action: action_fetch_dynamic_response
-    - action: utter_confirm_response
-    - intent: deny
-    - action: action_iterate_helpful_counter
-##################################################################################################
-
-- story: user asks to talk to real staff instead of the chatbot - BOT RESPONSE PASS
-  steps:
-    - intent: ask_speak_to_staff
-    - action: action_fetch_dynamic_response
-    - action: utter_confirm_response
-    - intent: affirm
-    - action: action_iterate_helpful_counter
-
-- story: user asks to talk to real staff instead of the chatbot - BOT RESPONSE FAIL
-  steps:
-    - intent: ask_speak_to_staff
-    - action: action_fetch_dynamic_response
-    - action: utter_confirm_response
-    - intent: deny
-    - action: action_iterate_helpful_counter
 ##################################################################################################

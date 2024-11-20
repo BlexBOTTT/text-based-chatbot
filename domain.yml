@@ -18,8 +18,8 @@ intents:
   - ask_why_should_i_enroll
   - greet
 #  - goodbye
-  - affirm
-  - deny
+  # - affirm
+  # - deny
 #  - mood_great
   - ask_tuition_price_specific
   - ask_tuition_price_general
@@ -38,7 +38,7 @@ slots:
 
 actions:
   - action_fetch_dynamic_response
-  - action_iterate_helpful_counter
+  # - action_iterate_helpful_counter
 
 responses:
 
@@ -71,13 +71,13 @@ responses:
   - text: I'm sorry, I didn't quite understand that. Could you rephrase?
 
 ###  DEFAULT RASA DATA BELOW:
-  utter_confirm_response:
-  - text: "Did the chatbot give correct response for your inquiry?"
-    buttons:
-    - title: "Yes"
-      payload: "Yes"
-    - title: "No"
-      payload: "No"
+  # utter_confirm_response:
+  # - text: "Did the chatbot give correct response for your inquiry?"
+  #   buttons:
+  #   - title: "Yes"
+  #     payload: "Yes"
+  #   - title: "No"
+  #     payload: "No"
 
   # utter_greet:
   # - text: "Hey! How are you?"

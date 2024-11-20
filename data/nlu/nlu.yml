@@ -35,32 +35,32 @@ nlu:
 #     - farewell
 #     - goodbye
 
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-    - yeah
-    - ye
-    - yea
-    - yeh
-    - yah
-    - fine
+# - intent: affirm
+#   examples: |
+#     - yes
+#     - y
+#     - indeed
+#     - of course
+#     - that sounds good
+#     - correct
+#     - yeah
+#     - ye
+#     - yea
+#     - yeh
+#     - yah
+#     - fine
 
-- intent: deny
-  examples: |
-    - nope
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-    - nah
+# - intent: deny
+#   examples: |
+#     - nope
+#     - no
+#     - n
+#     - never
+#     - I don't think so
+#     - don't like that
+#     - no way
+#     - not really
+#     - nah
 
 # - intent: mood_great
 #   examples: |

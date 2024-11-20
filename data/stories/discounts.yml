@@ -4,20 +4,10 @@ stories:
 
 # MongoDB action START
 ##################################################################################################
-- story: Handle discount inquiries - BOT RESPONSE PASS
+- story: User asks about available discount inquiries
   steps:
     - intent: ask_available_discounts
     - action: action_fetch_dynamic_response
-    - action: utter_confirm_response
-    - intent: affirm
-    - action: action_iterate_helpful_counter
 
-- story: Handle discount inquiries - BOT RESPONSE FAIL
-  steps:
-    - intent: ask_available_discounts
-    - action: action_fetch_dynamic_response
-    - action: utter_confirm_response
-    - intent: deny
-    - action: action_iterate_helpful_counter
 ##################################################################################################
 # MongoDB action END:

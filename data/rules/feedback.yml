@@ -3,7 +3,7 @@ version: "3.1"
 rules:
 
 # config.yml/FallbackClassifier rule mapping for questions out of the intents
-- rule: developer option - show bot response correct/wrong response count
+- rule: show bot response correct/wrong response count
   steps:
   - intent: ask_rasa_feedback_count
   - action: action_fetch_dynamic_response

@@ -21,9 +21,9 @@ nlu:
     - What are the total costs for the [computer science](course) program per semester?
     - How much do I need to budget for tuition for [computer science](course)?
     - What's the estimated tuition for [computer science](course)?
-    - Are there any hidden fees for the [computer science](course) program’s tuition?
+    - Are there any hidden fees for the [computer science](course) program's tuition?
     - How much do I pay for a year of [computer science](course) study?
-    - What’s the tuition fee for the full duration of the [computer science](course) program?
+    - What's the tuition fee for the full duration of the [computer science](course) program?
     - Do you have any discounts for the [computer science](course) tuition?
     - Is the tuition for the [computer science](course) course the same for all students?
     - Can you list the costs for [computer science](course) tuition for international students?
@@ -33,6 +33,30 @@ nlu:
     - Can I get an estimate for the tuition fees for [computer science](course)?
     - What is the tuition for [computer science](course) per credit hour?
     - How do I apply for financial aid for the [computer science](course) program's tuition?
+    - What's the tuition fee per semester for the [computer science](course) program?
+    - Can you provide the fee structure for the [computer science](course) course?
+    - How much do I pay for each year of [computer science](course) studies?
+    - Are there any additional fees for the [computer science](course) program besides tuition?
+    - Does the [computer science](course) course offer any financial assistance?
+    - What is the estimated total cost for a [computer science](course) degree?
+    - Can you provide a detailed breakdown of the tuition for [computer science](course)?
+    - Are the [computer science](course) tuition fees refundable in case of withdrawal?
+    - What are the tuition fees for [computer science](course) for the next academic year?
+    - Are there any scholarships available to cover [computer science](course) tuition fees?
+    - Can I pay the [computer science](course) tuition in installments?
+    - Is there an application fee for the [computer science](course) program?
+    - How much is the deposit for enrolling in [computer science](course)?
+    - What's the annual tuition rate for the [computer science](course) program?
+    - How does the tuition cost for [computer science](course) compare to other courses?
+    - Can you tell me if the tuition for [computer science](course) is higher for out-of-state students?
+    - Does the tuition cost for the [computer science](course) program vary by location?
+    - How much would it cost for me to finish the entire [computer science](course) degree program?
+    - Are there any grants available for students enrolled in [computer science](course)?
+    - Does the [computer science](course) program offer tuition discounts for early payment?
+    - How much will the total tuition for [computer science](course) be over four years?
+    - Is the [computer science](course) program eligible for financial aid assistance?
+    - Can I pay for [computer science](course) tuition using my scholarship funds?
+
     - What is the tuition for [education](course) course?
     - Could you provide the tuition details for [education](course)?
     - How much do I need to pay for the [education](course) program?
@@ -49,9 +73,9 @@ nlu:
     - What are the total costs for the [education](course) program per semester?
     - How much do I need to budget for tuition for [education](course)?
     - What's the estimated tuition for [education](course)?
-    - Are there any hidden fees for the [education](course) program’s tuition?
+    - Are there any hidden fees for the [education](course) program's tuition?
     - How much do I pay for a year of [education](course) study?
-    - What’s the tuition fee for the full duration of the [education](course) program?
+    - What's the tuition fee for the full duration of the [education](course) program?
     - Do you have any discounts for the [education](course) tuition?
     - Is the tuition for the [education](course) course the same for all students?
     - Can you list the costs for [education](course) tuition for international students?
@@ -61,6 +85,34 @@ nlu:
     - Can I get an estimate for the tuition fees for [education](course)?
     - What is the tuition for [education](course) per credit hour?
     - How do I apply for financial aid for the [education](course) program's tuition?
+    - What's the tuition fee per semester for the [education](course) program?
+    - Can you provide the fee structure for the [education](course) course?
+    - How much do I pay for each year of [education](course) studies?
+    - Are there any additional fees for the [education](course) program besides tuition?
+    - Does the [education](course) course offer any financial assistance?
+    - What is the estimated total cost for a [education](course) degree?
+    - Can you provide a detailed breakdown of the tuition for [education](course)?
+    - Are the [education](course) tuition fees refundable in case of withdrawal?
+    - What are the tuition fees for [education](course) for the next academic year?
+    - Are there any scholarships available to cover [education](course) tuition fees?
+    - Can I pay the [education](course) tuition in installments?
+    - Is there an application fee for the [education](course) program?
+    - How much is the deposit for enrolling in [education](course)?
+    - What's the annual tuition rate for the [education](course) program?
+    - How does the tuition cost for [education](course) compare to other courses?
+    - Can you tell me if the tuition for [education](course) is higher for out-of-state students?
+    - Does the tuition cost for the [education](course) program vary by location?
+    - What are the refund policies for the [education](course) tuition fees?
+    - How much would it cost for me to finish the entire [education](course) degree program?
+    - Are there any grants available for students enrolled in [education](course)?
+    - Is there a price difference for [education](course) courses based on the specialization?
+    - Does the [education](course) program offer tuition discounts for early payment?
+    - How much will the total tuition for [education](course) be over four years?
+    - Is the [education](course) program eligible for financial aid assistance?
+    - What is the cost per semester for [education](course) for international students?
+    - Do I need to pay extra for lab fees in the [education](course) program?
+    - Can I pay for [education](course) tuition using my scholarship funds?
+
     - What is the tuition for [hospitality management](course) course?
     - Could you provide the tuition details for [hospitality management](course)?
     - How much do I need to pay for the [hospitality management](course) program?
@@ -77,9 +129,9 @@ nlu:
     - What are the total costs for the [hospitality management](course) program per semester?
     - How much do I need to budget for tuition for [hospitality management](course)?
     - What's the estimated tuition for [hospitality management](course)?
-    - Are there any hidden fees for the [hospitality management](course) program’s tuition?
+    - Are there any hidden fees for the [hospitality management](course) program's tuition?
     - How much do I pay for a year of [hospitality management](course) study?
-    - What’s the tuition fee for the full duration of the [hospitality management](course) program?
+    - What's the tuition fee for the full duration of the [hospitality management](course) program?
     - Do you have any discounts for the [hospitality management](course) tuition?
     - Is the tuition for the [hospitality management](course) course the same for all students?
     - Can you list the costs for [hospitality management](course) tuition for international students?
@@ -89,6 +141,34 @@ nlu:
     - Can I get an estimate for the tuition fees for [hospitality management](course)?
     - What is the tuition for [hospitality management](course) per credit hour?
     - How do I apply for financial aid for the [hospitality management](course) program's tuition?
+    - What's the tuition fee per semester for the [hospitality management](course) program?
+    - Can you provide the fee structure for the [hospitality management](course) course?
+    - How much do I pay for each year of [hospitality management](course) studies?
+    - Are there any additional fees for the [hospitality management](course) program besides tuition?
+    - Does the [hospitality management](course) course offer any financial assistance?
+    - What is the estimated total cost for a [hospitality management](course) degree?
+    - Can you provide a detailed breakdown of the tuition for [hospitality management](course)?
+    - Are the [hospitality management](course) tuition fees refundable in case of withdrawal?
+    - What are the tuition fees for [hospitality management](course) for the next academic year?
+    - Are there any scholarships available to cover [hospitality management](course) tuition fees?
+    - Can I pay the [hospitality management](course) tuition in installments?
+    - Is there an application fee for the [hospitality management](course) program?
+    - How much is the deposit for enrolling in [hospitality management](course)?
+    - What's the annual tuition rate for the [hospitality management](course) program?
+    - How does the tuition cost for [hospitality management](course) compare to other courses?
+    - Can you tell me if the tuition for [hospitality management](course) is higher for out-of-state students?
+    - Does the tuition cost for the [hospitality management](course) program vary by location?
+    - What are the refund policies for the [hospitality management](course) tuition fees?
+    - How much would it cost for me to finish the entire [hospitality management](course) degree program?
+    - Are there any grants available for students enrolled in [hospitality management](course)?
+    - Is there a price difference for [hospitality management](course) courses based on the specialization?
+    - Does the [hospitality management](course) program offer tuition discounts for early payment?
+    - How much will the total tuition for [hospitality management](course) be over four years?
+    - Is the [hospitality management](course) program eligible for financial aid assistance?
+    - What is the cost per semester for [hospitality management](course) for international students?
+    - Do I need to pay extra for lab fees in the [hospitality management](course) program?
+    - Can I pay for [hospitality management](course) tuition using my scholarship funds?
+
     - What is the tuition for [business administration](course) course?
     - Could you provide the tuition details for [business administration](course)?
     - How much do I need to pay for the [business administration](course) program?
@@ -105,9 +185,9 @@ nlu:
     - What are the total costs for the [business administration](course) program per semester?
     - How much do I need to budget for tuition for [business administration](course)?
     - What's the estimated tuition for [business administration](course)?
-    - Are there any hidden fees for the [business administration](course) program’s tuition?
+    - Are there any hidden fees for the [business administration](course) program's tuition?
     - How much do I pay for a year of [business administration](course) study?
-    - What’s the tuition fee for the full duration of the [business administration](course) program?
+    - What's the tuition fee for the full duration of the [business administration](course) program?
     - Do you have any discounts for the [business administration](course) tuition?
     - Is the tuition for the [business administration](course) course the same for all students?
     - Can you list the costs for [business administration](course) tuition for international students?
@@ -117,6 +197,34 @@ nlu:
     - Can I get an estimate for the tuition fees for [business administration](course)?
     - What is the tuition for [business administration](course) per credit hour?
     - How do I apply for financial aid for the [business administration](course) program's tuition?
+    - What's the tuition fee per semester for the [business administration](course) program?
+    - Can you provide the fee structure for the [business administration](course) course?
+    - How much do I pay for each year of [business administration](course) studies?
+    - Are there any additional fees for the [business administration](course) program besides tuition?
+    - Does the [business administration](course) course offer any financial assistance?
+    - What is the estimated total cost for a [business administration](course) degree?
+    - Can you provide a detailed breakdown of the tuition for [business administration](course)?
+    - Are the [business administration](course) tuition fees refundable in case of withdrawal?
+    - What are the tuition fees for [business administration](course) for the next academic year?
+    - Are there any scholarships available to cover [business administration](course) tuition fees?
+    - Can I pay the [business administration](course) tuition in installments?
+    - Is there an application fee for the [business administration](course) program?
+    - How much is the deposit for enrolling in [business administration](course)?
+    - What's the annual tuition rate for the [business administration](course) program?
+    - How does the tuition cost for [business administration](course) compare to other courses?
+    - Can you tell me if the tuition for [business administration](course) is higher for out-of-state students?
+    - Does the tuition cost for the [business administration](course) program vary by location?
+    - What are the refund policies for the [business administration](course) tuition fees?
+    - How much would it cost for me to finish the entire [business administration](course) degree program?
+    - Are there any grants available for students enrolled in [business administration](course)?
+    - Is there a price difference for [business administration](course) courses based on the specialization?
+    - Does the [business administration](course) program offer tuition discounts for early payment?
+    - How much will the total tuition for [business administration](course) be over four years?
+    - Is the [business administration](course) program eligible for financial aid assistance?
+    - What is the cost per semester for [business administration](course) for international students?
+    - Do I need to pay extra for lab fees in the [business administration](course) program?
+    - Can I pay for [business administration](course) tuition using my scholarship funds?
+
     - What is the tuition for [engineering](course) course?
     - Could you provide the tuition details for [engineering](course)?
     - How much do I need to pay for the [engineering](course) program?
@@ -133,9 +241,9 @@ nlu:
     - What are the total costs for the [engineering](course) program per semester?
     - How much do I need to budget for tuition for [engineering](course)?
     - What's the estimated tuition for [engineering](course)?
-    - Are there any hidden fees for the [engineering](course) program’s tuition?
+    - Are there any hidden fees for the [engineering](course) program's tuition?
     - How much do I pay for a year of [engineering](course) study?
-    - What’s the tuition fee for the full duration of the [engineering](course) program?
+    - What's the tuition fee for the full duration of the [engineering](course) program?
     - Do you have any discounts for the [engineering](course) tuition?
     - Is the tuition for the [engineering](course) course the same for all students?
     - Can you list the costs for [engineering](course) tuition for international students?
@@ -145,6 +253,34 @@ nlu:
     - Can I get an estimate for the tuition fees for [engineering](course)?
     - What is the tuition for [engineering](course) per credit hour?
     - How do I apply for financial aid for the [engineering](course) program's tuition?
+    - What's the tuition fee per semester for the [engineering](course) program?
+    - Can you provide the fee structure for the [engineering](course) course?
+    - How much do I pay for each year of [engineering](course) studies?
+    - Are there any additional fees for the [engineering](course) program besides tuition?
+    - Does the [engineering](course) course offer any financial assistance?
+    - What is the estimated total cost for a [engineering](course) degree?
+    - Can you provide a detailed breakdown of the tuition for [engineering](course)?
+    - Are the [engineering](course) tuition fees refundable in case of withdrawal?
+    - What are the tuition fees for [engineering](course) for the next academic year?
+    - Are there any scholarships available to cover [engineering](course) tuition fees?
+    - Can I pay the [engineering](course) tuition in installments?
+    - Is there an application fee for the [engineering](course) program?
+    - How much is the deposit for enrolling in [engineering](course)?
+    - What's the annual tuition rate for the [engineering](course) program?
+    - How does the tuition cost for [engineering](course) compare to other courses?
+    - Can you tell me if the tuition for [engineering](course) is higher for out-of-state students?
+    - Does the tuition cost for the [engineering](course) program vary by location?
+    - What are the refund policies for the [engineering](course) tuition fees?
+    - How much would it cost for me to finish the entire [engineering](course) degree program?
+    - Are there any grants available for students enrolled in [engineering](course)?
+    - Is there a price difference for [engineering](course) courses based on the specialization?
+    - Does the [engineering](course) program offer tuition discounts for early payment?
+    - How much will the total tuition for [engineering](course) be over four years?
+    - Is the [engineering](course) program eligible for financial aid assistance?
+    - What is the cost per semester for [engineering](course) for international students?
+    - Do I need to pay extra for lab fees in the [engineering](course) program?
+    - Can I pay for [engineering](course) tuition using my scholarship funds?
+    
     - What is the tuition for [psychology](course) course?
     - Could you provide the tuition details for [psychology](course)?
     - How much do I need to pay for the [psychology](course) program?
@@ -161,9 +297,9 @@ nlu:
     - What are the total costs for the [psychology](course) program per semester?
     - How much do I need to budget for tuition for [psychology](course)?
     - What's the estimated tuition for [psychology](course)?
-    - Are there any hidden fees for the [psychology](course) program’s tuition?
+    - Are there any hidden fees for the [psychology](course) program's tuition?
     - How much do I pay for a year of [psychology](course) study?
-    - What’s the tuition fee for the full duration of the [psychology](course) program?
+    - What's the tuition fee for the full duration of the [psychology](course) program?
     - Do you have any discounts for the [psychology](course) tuition?
     - Is the tuition for the [psychology](course) course the same for all students?
     - Can you list the costs for [psychology](course) tuition for international students?
@@ -173,6 +309,34 @@ nlu:
     - Can I get an estimate for the tuition fees for [psychology](course)?
     - What is the tuition for [psychology](course) per credit hour?
     - How do I apply for financial aid for the [psychology](course) program's tuition?
+    - What's the tuition fee per semester for the [psychology](course) program?
+    - Can you provide the fee structure for the [psychology](course) course?
+    - How much do I pay for each year of [psychology](course) studies?
+    - Are there any additional fees for the [psychology](course) program besides tuition?
+    - Does the [psychology](course) course offer any financial assistance?
+    - What is the estimated total cost for a [psychology](course) degree?
+    - Can you provide a detailed breakdown of the tuition for [psychology](course)?
+    - Are the [psychology](course) tuition fees refundable in case of withdrawal?
+    - What are the tuition fees for [psychology](course) for the next academic year?
+    - Are there any scholarships available to cover [psychology](course) tuition fees?
+    - Can I pay the [psychology](course) tuition in installments?
+    - Is there an application fee for the [psychology](course) program?
+    - How much is the deposit for enrolling in [psychology](course)?
+    - What's the annual tuition rate for the [psychology](course) program?
+    - How does the tuition cost for [psychology](course) compare to other courses?
+    - Can you tell me if the tuition for [psychology](course) is higher for out-of-state students?
+    - Does the tuition cost for the [psychology](course) program vary by location?
+    - What are the refund policies for the [psychology](course) tuition fees?
+    - How much would it cost for me to finish the entire [psychology](course) degree program?
+    - Are there any grants available for students enrolled in [psychology](course)?
+    - Is there a price difference for [psychology](course) courses based on the specialization?
+    - Does the [psychology](course) program offer tuition discounts for early payment?
+    - How much will the total tuition for [psychology](course) be over four years?
+    - Is the [psychology](course) program eligible for financial aid assistance?
+    - What is the cost per semester for [psychology](course) for international students?
+    - Do I need to pay extra for lab fees in the [psychology](course) program?
+    - Can I pay for [psychology](course) tuition using my scholarship funds?
+
     - What is the tuition for [nursing](course) course?
     - Could you provide the tuition details for [nursing](course)?
     - How much do I need to pay for the [nursing](course) program?
@@ -189,9 +353,9 @@ nlu:
     - What are the total costs for the [nursing](course) program per semester?
     - How much do I need to budget for tuition for [nursing](course)?
     - What's the estimated tuition for [nursing](course)?
-    - Are there any hidden fees for the [nursing](course) program’s tuition?
+    - Are there any hidden fees for the [nursing](course) program's tuition?
     - How much do I pay for a year of [nursing](course) study?
-    - What’s the tuition fee for the full duration of the [nursing](course) program?
+    - What's the tuition fee for the full duration of the [nursing](course) program?
     - Do you have any discounts for the [nursing](course) tuition?
     - Is the tuition for the [nursing](course) course the same for all students?
     - Can you list the costs for [nursing](course) tuition for international students?
@@ -201,6 +365,34 @@ nlu:
     - Can I get an estimate for the tuition fees for [nursing](course)?
     - What is the tuition for [nursing](course) per credit hour?
     - How do I apply for financial aid for the [nursing](course) program's tuition?
+    - What's the tuition fee per semester for the [nursing](course) program?
+    - Can you provide the fee structure for the [nursing](course) course?
+    - How much do I pay for each year of [nursing](course) studies?
+    - Are there any additional fees for the [nursing](course) program besides tuition?
+    - Does the [nursing](course) course offer any financial assistance?
+    - What is the estimated total cost for a [nursing](course) degree?
+    - Can you provide a detailed breakdown of the tuition for [nursing](course)?
+    - Are the [nursing](course) tuition fees refundable in case of withdrawal?
+    - What are the tuition fees for [nursing](course) for the next academic year?
+    - Are there any scholarships available to cover [nursing](course) tuition fees?
+    - Can I pay the [nursing](course) tuition in installments?
+    - Is there an application fee for the [nursing](course) program?
+    - How much is the deposit for enrolling in [nursing](course)?
+    - What's the annual tuition rate for the [nursing](course) program?
+    - How does the tuition cost for [nursing](course) compare to other courses?
+    - Can you tell me if the tuition for [nursing](course) is higher for out-of-state students?
+    - Does the tuition cost for the [nursing](course) program vary by location?
+    - What are the refund policies for the [nursing](course) tuition fees?
+    - How much would it cost for me to finish the entire [nursing](course) degree program?
+    - Are there any grants available for students enrolled in [nursing](course)?
+    - Is there a price difference for [nursing](course) courses based on the specialization?
+    - Does the [nursing](course) program offer tuition discounts for early payment?
+    - How much will the total tuition for [nursing](course) be over four years?
+    - Is the [nursing](course) program eligible for financial aid assistance?
+    - What is the cost per semester for [nursing](course) for international students?
+    - Do I need to pay extra for lab fees in the [nursing](course) program?
+    - Can I pay for [nursing](course) tuition using my scholarship funds?
+
 
 - intent: ask_tuition_price_general
   examples: |
@@ -211,46 +403,61 @@ nlu:
     - Can you tell me the tuition cost?
     - Could you provide information on tuition fees?
     - What are the tuition fees at your university?
-    - I’d like to know the tuition cost.
+    - I'd like to know the tuition cost.
     - How much do I need to pay in tuition?
-    - What’s the cost of tuition?
+    - What's the cost of tuition?
     - How much is the general tuition fee?
     - Can you give me the tuition details?
-    - What’s the average tuition fee at your university?
+    - What's the average tuition fee at your university?
     - Could you tell me the tuition fees for all courses?
     - How much is the tuition for undergraduate programs?
     - What are the costs of tuition at your school?
     - Can you share the tuition fees for different courses?
-    - I’d like to know the general tuition rate.
+    - I'd like to know the general tuition rate.
     - How much tuition is required for a semester?
     - How do tuition fees work at your university?
     - What are the annual tuition fees?
     - Is there an average tuition cost for most programs?
     - Can you break down the tuition fees for me?
     - How much does tuition cost per year?
-    - What’s the tuition for a full-time student?
+    - What's the tuition for a full-time student?
     - Are there any additional fees included in the tuition?
     - What is the standard tuition fee for students?
     - Do all students pay the same tuition fee?
     - Can I get a general estimate of the tuition fees?
     - How do I find out the tuition cost for my program?
-    
+    - What's the overall tuition fee for the semester?
+    - Can you explain the tuition pricing structure?
+    - Is tuition charged by credit hour or semester?
+    - What are the payment options for tuition?
+    - What does the tuition fee include?
+    - Can you tell me if tuition fees vary by program?
+    - How does the tuition fee change for international students?
+    - Are there scholarships or financial aid for tuition?
+    - What's the estimated cost for an entire academic year?
+    - How much does the tuition cost for a part-time student?
+    - Are there different tuition rates for graduate and undergraduate students?
+    - Is the tuition fee different for local and out-of-state students?
+    - How can I find the tuition for my specific course or program?
+    - Does the tuition fee cover textbooks and materials?
+    - What's the cost of tuition for non-degree programs?
+    - How can I pay for tuition?
+    - Is there a difference in tuition fees between online and in-person courses?
+    - Do tuition fees increase every year?
+    - Can you explain if there are any hidden costs besides tuition?
+    - What's the breakdown of tuition fees per semester or year?
+    - Are there any early payment discounts for tuition?
+    - What are the tuition fees for specialized courses or programs?
+    - How do I get an exact quote for my tuition fees?
+
 - synonym: computer science
   examples: |
     - CS
-    - BSCS
-    - BS CS
-    - cs
-    - bscs
-    - bs cs
-    - bs-cs
     - Bachelor of Science in Computer Science
-    - comsci
     - com sci
     - comp sci
     - comsci
     - B.S. Computer Science
-    - CompSc
     - Computer Sci
     - Comp Science
     - Computer Studies
@@ -259,7 +466,7 @@ nlu:
     - Bachelor Computer Science
     - Computer Sci BS
     - Bachelor in CS
-    - Bachelor’s in Computer Science
+    - Bachelor's in Computer Science
     - Comp Sci
 
 - synonym: education
@@ -267,13 +474,13 @@ nlu:
     - education
     - edu
     - Bachelor of Science in Education
-    - Bachelor’s in Education
+    - Bachelor's in Education
     - B.S. Education
     - BS in Education
     - Bachelor of Education
     - Bachelor Education Degree
     - Education Degree
-    - Bachelor’s Education
+    - Bachelor's Education
     - elementary education
     - elem ed
     - BS Elementary Education
@@ -282,7 +489,7 @@ nlu:
     - Bachelor of Science in Elementary Education
     - Elementary Ed
     - B.S. Elementary Education
-    - Bachelor’s Elementary Education
+    - Bachelor's Elementary Education
     - Elementary Teaching
     - secondary education
     - secondary ed
@@ -292,14 +499,14 @@ nlu:
     - Bachelor of Science in Secondary Education
     - Secondary Ed
     - B.S. Secondary Education
-    - Bachelor’s Secondary Education
+    - Bachelor's Secondary Education
     - Secondary Teaching
     - secondary education major in english
     - Secondary Ed English
     - Bachelor in Secondary Education - English
     - BS Ed English
     - English Secondary Education
-    - Bachelor’s Secondary Ed in English
+    - Bachelor's Secondary Ed in English
     - Secondary English Teaching
     - Secondary English Major
     - Secondary Education English
@@ -308,7 +515,7 @@ nlu:
     - Bachelor in Secondary Education - Science
     - BS Ed Science
     - Science Secondary Education
-    - Bachelor’s Secondary Ed in Science
+    - Bachelor's Secondary Ed in Science
     - Secondary Science Teaching
     - Secondary Science Major
     - Secondary Education Science
@@ -317,7 +524,7 @@ nlu:
     - Bachelor in Secondary Education - Social Studies
     - BS Ed Social Studies
     - Social Studies Secondary Education
-    - Bachelor’s Secondary Ed in Social Studies
+    - Bachelor's Secondary Ed in Social Studies
     - Secondary Social Studies Teaching
     - Secondary Social Studies Major
     - Secondary Education Social Studies
@@ -326,7 +533,7 @@ nlu:
     - Bachelor in Secondary Education - Filipino
     - BS Ed Filipino
     - Filipino Secondary Education
-    - Bachelor’s Secondary Ed in Filipino
+    - Bachelor's Secondary Ed in Filipino
     - Secondary Filipino Teaching
     - Secondary Filipino Major
     - Secondary Education Filipino
@@ -335,7 +542,7 @@ nlu:
     - Bachelor in Secondary Education - Mathematics
     - BS Ed Math
     - Math Secondary Education
-    - Bachelor’s Secondary Ed in Mathematics
+    - Bachelor's Secondary Ed in Mathematics
     - Secondary Mathematics Teaching
     - Secondary Mathematics Major
     - Secondary Education Mathematics
@@ -381,7 +588,7 @@ nlu:
     - Restaurant Management
     - Hospitality Industry Management
     - B.S. in Hospitality Management
-    - Bachelor’s in Hospitality Management
+    - Bachelor's in Hospitality Management
 
 - synonym: business administration
   examples: |
@@ -395,7 +602,7 @@ nlu:
     - Bachelor in Business Administration
     - BBA
     - Bachelor of Business Administration
-    - Bachelor’s in Business Administration
+    - Bachelor's in Business Administration
     - B.S. in Business Administration
     - Business Administration Degree
     - Business Admin
@@ -454,12 +661,12 @@ nlu:
     - Bachelor of Arts in Psychology
     - BA in Psychology
     - B.A. in Psychology
-    - Bachelor’s in Psychology
+    - Bachelor's in Psychology
     - B.A. Psychology
     - Psychology Degree
     - Bachelor of Arts in Psychological Science
     - Bachelor of Psychology
-    - Bachelor’s in Psychological Science
+    - Bachelor's in Psychological Science
     - BAPsy
     - BA Psychology
     - Psychology Studies
@@ -478,7 +685,7 @@ nlu:
     - BS in Nursing
     - B.S. Nursing
     - Bachelor of Nursing
-    - Bachelor’s in Nursing
+    - Bachelor's in Nursing
     - B.S. in Nursing
     - Nursing Degree
     - Bachelor of Science in Nursing Practice

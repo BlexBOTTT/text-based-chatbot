@@ -1,0 +1,161 @@
+{
+  "ask_tuition_price_general": {
+    "precision": 0.98,
+    "recall": 0.9245283018867925,
+    "f1-score": 0.9514563106796116,
+    "support": 53,
+    "confused_with": {
+      "ask_tuition_price_specific": 1,
+      "ask_courses_list": 1
+    }
+  },
+  "ask_speak_to_staff": {
+    "precision": 0.9215686274509803,
+    "recall": 0.94,
+    "f1-score": 0.9306930693069307,
+    "support": 50,
+    "confused_with": {
+      "ask_school_contact": 2,
+      "ask_admission_transferee_enrollment": 1
+    }
+  },
+  "ask_school_location": {
+    "precision": 0.9423076923076923,
+    "recall": 0.9423076923076923,
+    "f1-score": 0.9423076923076923,
+    "support": 52,
+    "confused_with": {
+      "ask_speak_to_staff": 1,
+      "ask_admission_process": 1
+    }
+  },
+  "ask_available_discounts": {
+    "precision": 0.9811320754716981,
+    "recall": 0.9811320754716981,
+    "f1-score": 0.9811320754716981,
+    "support": 53,
+    "confused_with": {
+      "ask_tuition_price_general": 1
+    }
+  },
+  "ask_school_contact": {
+    "precision": 0.9591836734693877,
+    "recall": 0.9038461538461539,
+    "f1-score": 0.9306930693069307,
+    "support": 52,
+    "confused_with": {
+      "ask_chatbot_coverage": 2,
+      "ask_speak_to_staff": 1
+    }
+  },
+  "ask_admission_working_student": {
+    "precision": 0.9615384615384616,
+    "recall": 0.9803921568627451,
+    "f1-score": 0.970873786407767,
+    "support": 51,
+    "confused_with": {
+      "ask_courses_list": 1
+    }
+  },
+  "ask_admission_transferee_enrollment": {
+    "precision": 0.8571428571428571,
+    "recall": 0.8235294117647058,
+    "f1-score": 0.84,
+    "support": 51,
+    "confused_with": {
+      "ask_admission_requirements": 5,
+      "ask_admission_process": 3
+    }
+  },
+  "ask_admission_requirements": {
+    "precision": 0.6585365853658537,
+    "recall": 0.5294117647058824,
+    "f1-score": 0.5869565217391304,
+    "support": 51,
+    "confused_with": {
+      "ask_admission_process": 18,
+      "ask_admission_transferee_enrollment": 4
+    }
+  },
+  "ask_admission_process": {
+    "precision": 0.5230769230769231,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.5862068965517241,
+    "support": 51,
+    "confused_with": {
+      "ask_admission_requirements": 9,
+      "ask_admission_online_registration": 3
+    }
+  },
+  "ask_courses_list": {
+    "precision": 0.9411764705882353,
+    "recall": 0.8888888888888888,
+    "f1-score": 0.9142857142857143,
+    "support": 54,
+    "confused_with": {
+      "ask_tuition_price_specific": 3,
+      "ask_admission_process": 3
+    }
+  },
+  "ask_why_should_i_enroll": {
+    "precision": 0.9803921568627451,
+    "recall": 0.9803921568627451,
+    "f1-score": 0.9803921568627451,
+    "support": 51,
+    "confused_with": {
+      "ask_admission_process": 1
+    }
+  },
+  "greet": {
+    "precision": 1.0,
+    "recall": 0.9285714285714286,
+    "f1-score": 0.962962962962963,
+    "support": 14,
+    "confused_with": {
+      "ask_admission_process": 1
+    }
+  },
+  "ask_tuition_price_specific": {
+    "precision": 0.9896103896103896,
+    "recall": 1.0,
+    "f1-score": 0.9947780678851175,
+    "support": 381,
+    "confused_with": {}
+  },
+  "ask_chatbot_coverage": {
+    "precision": 0.9636363636363636,
+    "recall": 1.0,
+    "f1-score": 0.9814814814814815,
+    "support": 53,
+    "confused_with": {}
+  },
+  "ask_admission_online_registration": {
+    "precision": 0.9019607843137255,
+    "recall": 0.9019607843137255,
+    "f1-score": 0.9019607843137255,
+    "support": 51,
+    "confused_with": {
+      "ask_admission_process": 4,
+      "ask_school_location": 1
+    }
+  },
+  "accuracy": 0.9250936329588015,
+  "macro avg": {
+    "precision": 0.9040842040556875,
+    "recall": 0.8927751654766084,
+    "f1-score": 0.8970787059708822,
+    "support": 1068
+  },
+  "weighted avg": {
+    "precision": 0.9277610802456334,
+    "recall": 0.9250936329588015,
+    "f1-score": 0.9254921792234216,
+    "support": 1068
+  },
+  "micro avg": {
+    "precision": 0.9250936329588015,
+    "recall": 0.9250936329588015,
+    "f1-score": 0.9250936329588015,
+    "support": 1068
+  }
+}

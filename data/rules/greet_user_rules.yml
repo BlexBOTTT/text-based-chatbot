@@ -11,4 +11,3 @@ rules:
   steps:
   - intent: greet
   - action: utter_welcome_greet
-  # continued with greet_user_stories.yml

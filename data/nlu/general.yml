@@ -37,6 +37,28 @@ nlu:
     - Can you share the campus location of your university?
     - Is the Las Piñas campus near any major roads or highways?
     - Can you provide me with a map of the school’s location?
+    - What’s the best way to get to the school from the city center?
+    - How do I get to the campus by car?
+    - What’s the address for the campus?
+    - Are there any landmarks near the campus?
+    - Can I take a jeepney to get to the school?
+    - How far is the campus from the nearest bus station?
+    - Can you tell me which subway station is closest to the campus?
+    - Is the campus located near any malls or shopping areas?
+    - Can you provide a specific address for the campus?
+    - Where exactly is your campus in relation to the city center?
+    - Can you guide me to the main campus using public transportation?
+    - How do I get to the campus from the airport?
+    - What is the easiest way to reach the school from nearby towns?
+    - Is there a taxi service available to take me to the campus?
+    - Can I find the campus near any well-known restaurants or cafes?
+    - Where is the school located in relation to the nearest university?
+    - What is the distance from the nearest bus stop to the campus?
+    - Can you provide the coordinates or GPS address of the school?
+    - How do I access the campus from nearby provinces?
+    - What is the public transportation schedule for the school’s location?
+    - Are there clear signages to the school from the main road?
+    - Is there a student shuttle service to the campus?
 
 - intent: ask_school_contact
   examples: |
@@ -70,6 +92,28 @@ nlu:
     - Can I contact the school through WhatsApp or other messaging apps?
     - How do I get in touch with the financial aid office?
     - What’s the contact number for student support at the school?
+    - Can I contact the school via Skype or Zoom?
+    - What’s the best way to contact the admissions team?
+    - How can I reach the career services department?
+    - Can I message the school’s contact via Facebook?
+    - How do I get in touch with the IT support team at the school?
+    - Is there a toll-free number for school inquiries?
+    - How can I contact the library for support?
+    - What is the contact info for campus security?
+    - Can I contact the school by post mail? What’s the address?
+    - Where can I find the contact details for the campus store?
+    - How can I contact the registrar for academic records?
+    - Is there a contact number for course-related questions?
+    - Can I use email to contact the student council?
+    - How do I contact someone in the international student office?
+    - Is there a dedicated contact for alumni relations?
+    - What’s the contact for student accommodation inquiries?
+    - Can I reach out to the school using a contact app or chatbot?
+    - Where can I find the administrative office's phone number?
+    - Can I schedule an appointment with the school via email?
+    - What’s the school’s general customer service contact?
+    - How do I contact the office for events or activities?
+    - Are there different contacts for various departments at the school
 
 - intent: ask_chatbot_coverage
   examples: |
@@ -105,6 +149,27 @@ nlu:
     - Does the chatbot cover student support services?
     - How can the chatbot help me with class schedules?
     - Can the chatbot help me with questions about academic advising?
+    - Does the chatbot help with inquiries about student loans?
+    - Can the chatbot provide details about campus facilities?
+    - How does the chatbot assist with information on tuition payment?
+    - Can the chatbot help me with exam schedules and registration?
+    - Does the chatbot provide details about student organizations?
+    - Can the chatbot help me with my academic transcript inquiries?
+    - Can the chatbot provide info on the student handbook?
+    - What financial assistance details can I ask the chatbot about?
+    - How can the chatbot assist with international student questions?
+    - Can the chatbot help me find the student portal login information?
+    - Does the chatbot cover information on campus health services?
+    - Can I ask the chatbot about the application process for new students?
+    - Can the chatbot guide me on how to submit my application?
+    - Does the chatbot cover questions related to course offerings by semester?
+    - How can the chatbot assist with understanding academic policies?
+    - What specific programs can I ask the chatbot about?
+    - Does the chatbot provide any information on academic probation?
+    - Can the chatbot assist with finding part-time job opportunities on campus?
+    - Can the chatbot guide me on how to apply for student housing?
+    - Does the chatbot answer questions about graduation requirements?
+    - Can I ask the chatbot about student orientation activities?
 
 - intent: ask_speak_to_staff
   examples: |
@@ -140,6 +205,24 @@ nlu:
     - Can you hand me over to someone real?
     - I don’t want to deal with a chatbot, I need a person.
     - Can you transfer me to a person who can assist me?
+    - I prefer speaking to a human, not a bot.
+    - How can I speak to a staff member directly?
+    - Can I speak to someone who works at the school?
+    - Can I talk to an actual staff member?
+    - Can you get me someone from the administration?
+    - Can you provide me with a direct contact to a human?
+    - How do I reach a human representative from the school?
+    - I want to connect with someone from your team.
+    - Can you get me in touch with a real person at the school?
+    - Is there someone I can talk to about my issue?
+    - I would prefer to talk to someone in person.
+    - Can I get human support with my inquiry?
+    - Can I speak with someone who can help me with this?
+    - I need to contact a staff member directly.
+    - How can I talk to a staff member about my concern?
+    - Can you get me in touch with a person who knows about this?
+    - How can I speak to an employee about my question?
+    - I would like to be transferred to someone who can assist me.
 
 - intent: ask_why_should_i_enroll
   examples: |
@@ -173,11 +256,24 @@ nlu:
     - Why should I choose this institution for my future?
     - Can you convince me to enroll in SFAC?
     - Why should I enroll in Saint Francis of Assisi College?
-  
-
-# - intent: ask_sfac_vision
-# - intent: ask_sfac_mission
-# - intent: ask_sfac_vision
-# - intent: ask_inquire_LP_staff
-
-
+    - What makes this college a great choice for my education?
+    - Why is SFAC a top pick for students in the area?
+    - How does Saint Francis of Assisi College benefit its students?
+    - What are the top qualities of this school that make it worth considering?
+    - What are the advantages of studying at this particular school?
+    - Why is SFAC considered a leading institution for higher education?
+    - What makes Saint Francis of Assisi College stand out from other colleges?
+    - How does enrolling in SFAC help students in their future careers?
+    - Why should I choose SFAC over other local schools?
+    - What are the unique opportunities that SFAC offers its students?
+    - Why is SFAC a great choice for a rewarding educational experience?
+    - What makes SFAC a good investment in my future?
+    - What benefits will I get from enrolling in Saint Francis of Assisi College?
+    - Why should I consider SFAC as my first choice for education?
+    - What makes this school an ideal place for my personal and academic growth?
+    - Why do students prefer enrolling in SFAC over other colleges?
+    - What does SFAC offer that other schools don't?
+    - How is SFAC different from other institutions in the area?
+    - What makes SFAC a top choice for my education?
+    - Why should I consider SFAC over other universities?
+    - How does enrolling at SFAC help me stand out in my career path?

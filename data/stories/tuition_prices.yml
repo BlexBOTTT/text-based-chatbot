@@ -2,35 +2,15 @@ version: "3.1"
 
 stories:
 ##################################################################################################
-- story: ask tuition price of a specific course - BOT RESPONSE PASS
+- story: ask tuition price of a specific course
   steps:
     - intent: ask_tuition_price_specific
     - action: action_fetch_dynamic_response
-    - action: utter_confirm_response
-    - intent: affirm
-    - action: action_iterate_helpful_counter
 
-- story: ask tuition price of a specific course - BOT RESPONSE FAIL
-  steps:
-    - intent: ask_tuition_price_specific
-    - action: action_fetch_dynamic_response
-    - action: utter_confirm_response
-    - intent: deny
-    - action: action_iterate_helpful_counter
 ##################################################################################################
-- story: ask tuition price of a general course - BOT RESPONSE PASS
+- story: ask tuition price of a general course
   steps:
     - intent: ask_tuition_price_general
     - action: action_fetch_dynamic_response
-    - action: utter_confirm_response
-    - intent: affirm
-    - action: action_iterate_helpful_counter
 
-- story: ask tuition price of a general course - BOT RESPONSE FAIL
-  steps:
-    - intent: ask_tuition_price_general
-    - action: action_fetch_dynamic_response
-    - action: utter_confirm_response
-    - intent: deny
-    - action: action_iterate_helpful_counter
 ##################################################################################################
