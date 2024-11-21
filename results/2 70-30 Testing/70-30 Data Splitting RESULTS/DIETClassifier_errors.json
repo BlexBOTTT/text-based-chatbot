@@ -1,0 +1,33 @@
+[
+  {
+    "text": "What resources are available to working students to help with time management?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "course",
+        "start": 67,
+        "end": 77,
+        "confidence_entity": 0.8928351998329163,
+        "value": "management",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Do you offer continuing education courses for professionals?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "course",
+        "start": 24,
+        "end": 33,
+        "confidence_entity": 0.981368362903595,
+        "value": "education",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,111 @@
+[
+  {
+    "text": "Do you offer continuing education courses for professionals?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "course",
+        "start": 24,
+        "end": 33,
+        "confidence_entity": 0.8537182211875916,
+        "value": "education",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Do you offer courses in fields like business, engineering, or technology?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "course",
+        "start": 36,
+        "end": 44,
+        "confidence_entity": 0.9994698166847229,
+        "value": "business",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "course",
+        "start": 46,
+        "end": 57,
+        "confidence_entity": 0.9998258948326111,
+        "value": "engineering",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "course",
+        "start": 62,
+        "end": 72,
+        "confidence_entity": 0.9728295207023621,
+        "value": "technology",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Where can I reach the school administration online?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "course",
+        "start": 29,
+        "end": 43,
+        "confidence_entity": 0.969255268573761,
+        "value": "administration",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How can I get support from the Las Piñas administration?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "course",
+        "start": 41,
+        "end": 55,
+        "confidence_entity": 0.909806489944458,
+        "value": "administration",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What resources are available to working students to help with time management?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "course",
+        "start": 67,
+        "end": 77,
+        "confidence_entity": 0.6560660004615784,
+        "value": "management",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What are the general education courses required at your school?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "course",
+        "start": 21,
+        "end": 30,
+        "confidence_entity": 0.8291618227958679,
+        "value": "education",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]

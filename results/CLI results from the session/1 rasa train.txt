@@ -1,0 +1,67 @@
+rasa train
+
+PS C:\Users\Quirante\Documents\admi-chatbot> rasa train
+C:\Users\Quirante\Documents\admi-chatbot\venv\lib\site-packages\rasa\core\tracker_store.py:1044: MovedIn20Warning: Deprecated API features detected! These feature(s) are not compatible with SQLAlchemy 2.0. To prevent incompatible upgrades prior to updating applications, ensure requirements files are pinned to "sqlalchemy<2.0". Set environment variable SQLALCHEMY_WARN_20=1 to show all deprecation warnings.  Set environment variable SQLALCHEMY_SILENCE_UBER_WARNING=1 to silence this message. (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  Base: DeclarativeMeta = declarative_base()
+C:\Users\Quirante\Documents\admi-chatbot\venv\lib\site-packages\rasa\shared\utils\validation.py:134: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+C:\Users\Quirante\Documents\admi-chatbot\venv\lib\site-packages\pkg_resources\__init__.py:3154: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('mpl_toolkits')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+C:\Users\Quirante\Documents\admi-chatbot\venv\lib\site-packages\pkg_resources\__init__.py:3154: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('ruamel')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+2024-11-21 09:13:53 INFO     rasa.cli.train  - Started validating domain and training data...
+C:\Users\Quirante\Documents\admi-chatbot\venv\lib\site-packages\tensorflow\lite\python\util.py:52: DeprecationWarning: jax.xla_computation is deprecated. Please use the AOT APIs.
+  from jax import xla_computation as _xla_computation
+C:\Users\Quirante\Documents\admi-chatbot\venv\lib\site-packages\rasa\shared\utils\io.py:99: UserWarning: Issue found while processing 'data\nlu\tuition_prices.yml': The item 'ask_tuition_price_specific' contains an example that doesn't start with a '-' symbol: 
+This training example will be skipped.
+  More info at https://rasa.com/docs/rasa/training-data-format
+2024-11-21 09:13:57 INFO     rasa.validator  - Validating intents...
+2024-11-21 09:13:57 INFO     rasa.validator  - Validating uniqueness of intents and stories...
+2024-11-21 09:13:57 INFO     rasa.validator  - Validating utterances...
+2024-11-21 09:13:57 INFO     rasa.validator  - Story structure validation...
+Processed story blocks: 100%|██████████████████████████████████████████████████████████████████████| 14/14 [00:00<00:00, 4677.04it/s, # trackers=1]
+2024-11-21 09:13:57 INFO     rasa.core.training.story_conflict  - Considering all preceding turns for conflict analysis.
+2024-11-21 09:13:57 INFO     rasa.validator  - No story structure conflicts found.
+C:\Users\Quirante\Documents\admi-chatbot\venv\lib\site-packages\rasa\shared\utils\io.py:99: UserWarning: Issue found while processing 'data\nlu\tuition_prices.yml': The item 'ask_tuition_price_specific' contains an example that doesn't start with a '-' symbol:
+This training example will be skipped.
+  More info at https://rasa.com/docs/rasa/training-data-format
+2024-11-21 09:14:00 INFO     rasa.engine.training.hooks  - Restored component 'RegexFeaturizer' from cache.
+2024-11-21 09:14:00 INFO     rasa.engine.training.hooks  - Restored component 'LexicalSyntacticFeaturizer' from cache.
+2024-11-21 09:14:00 INFO     rasa.engine.training.hooks  - Restored component 'CountVectorsFeaturizer' from cache.
+2024-11-21 09:14:02 INFO     rasa.engine.training.hooks  - Starting to train component 'DIETClassifier'.
+Epochs: 100%|██████████████████████████████████████████████████████████████| 100/100 [03:32<00:00,  2.12s/it, t_loss=1.08, i_acc=0.993, e_f1=0.998]
+2024-11-21 09:17:34 INFO     rasa.engine.training.hooks  - Finished training component 'DIETClassifier'.
+2024-11-21 09:17:34 INFO     rasa.engine.training.hooks  - Starting to train component 'EntitySynonymMapper'.
+2024-11-21 09:17:35 INFO     rasa.engine.training.hooks  - Finished training component 'EntitySynonymMapper'.
+2024-11-21 09:17:35 INFO     rasa.engine.training.hooks  - Starting to train component 'ResponseSelector'.
+2024-11-21 09:17:35 INFO     rasa.nlu.selectors.response_selector  - Retrieval intent parameter was left to its default value. This response selector will be trained on training examples combining all retrieval intents.
+2024-11-21 09:17:35 INFO     rasa.engine.training.hooks  - Finished training component 'ResponseSelector'.
+Processed story blocks: 100%|██████████████████████████████████████████████████████████████████████| 14/14 [00:00<00:00, 4662.56it/s, # trackers=1]
+Processed story blocks: 100%|██████████████████████████████████████████████████████████████████████| 14/14 [00:00<00:00, 736.17it/s, # trackers=14] 
+Processed story blocks: 100%|██████████████████████████████████████████████████████████████████████| 14/14 [00:00<00:00, 181.65it/s, # trackers=50]
+Processed story blocks: 100%|██████████████████████████████████████████████████████████████████████| 14/14 [00:00<00:00, 147.23it/s, # trackers=50]
+Processed rules: 100%|███████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 1997.76it/s, # trackers=1] 
+2024-11-21 09:17:35 INFO     rasa.engine.training.hooks  - Starting to train component 'MemoizationPolicy'.
+Processed trackers: 100%|███████████████████████████████████████████████████████████████████████████| 14/14 [00:00<00:00, 3497.13it/s, # action=29]
+Processed actions: 29it [00:00, 9657.39it/s, # examples=29]
+2024-11-21 09:17:36 INFO     rasa.engine.training.hooks  - Finished training component 'MemoizationPolicy'.
+2024-11-21 09:17:36 INFO     rasa.engine.training.hooks  - Starting to train component 'RulePolicy'.
+Processed trackers: 100%|██████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 1998.72it/s, # action=6]
+Processed actions: 6it [00:00, ?it/s, # examples=5]
+Processed trackers: 100%|███████████████████████████████████████████████████████████████████████████| 14/14 [00:00<00:00, 4661.82it/s, # action=29] 
+Processed trackers: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 1996.34it/s] 
+Processed trackers: 100%|████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:00<00:00, 3997.91it/s] 
+2024-11-21 09:17:36 INFO     rasa.engine.training.hooks  - Finished training component 'RulePolicy'.
+2024-11-21 09:17:36 INFO     rasa.engine.training.hooks  - Starting to train component 'TEDPolicy'.
+Processed trackers: 100%|███████████████████████████████████████████████████████████████████████| 514/514 [00:00<00:00, 2402.14it/s, # action=1113]
+Epochs: 100%|██████████████████████████████████████████████████████████████████| 100/100 [00:32<00:00,  3.08it/s, t_loss=0.12, loss=0.00606, acc=1]
+2024-11-21 09:18:09 INFO     rasa.engine.training.hooks  - Finished training component 'TEDPolicy'.
+2024-11-21 09:18:10 INFO     rasa.engine.training.hooks  - Starting to train component 'UnexpecTEDIntentPolicy'.
+2024-11-21 09:18:10 WARNING  rasa.shared.utils.common  - The UnexpecTED Intent Policy is currently experimental and might change or be removed in the future 🔬 Please share your feedback on it in the forum (https://forum.rasa.com) to help us make this feature ready for production.
+Processed trackers: 100%|████████████████████████████████████████████████████████████████████████| 514/514 [00:00<00:00, 4799.36it/s, # intent=108]
+Epochs: 100%|███████████████████████████████████████████████████████████████| 100/100 [00:12<00:00,  8.10it/s, t_loss=0.618, loss=0.524, acc=0.657]
+2024-11-21 09:18:25 INFO     rasa.engine.training.hooks  - Finished training component 'UnexpecTEDIntentPolicy'.
+Your Rasa model is trained and saved at 'models\20241121-091359-current-joist.tar.gz'.
+PS C:\Users\Quirante\Documents\admi-chatbot> 

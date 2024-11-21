@@ -24,10 +24,9 @@ def build_query(intent: str, collection_name: str) -> dict:
         "admission": ["rasa_intent"],
         "courses": ["rasa_intent"],
         "discounts": ["rasa_intent"],
-        "feedback": ["rasa_intent"],
         "general": ["rasa_intent"],
         "tuition_prices": ["rasa_intent", "course", "synonyms"],
-        # Add other collections and their respective fields as needed, MANUALLY!
+        # Add other collections and their respective fields as needed!
     }
 
     # Construct the query dynamically based on the provided collection name
@@ -125,13 +124,6 @@ class ActionFetchDynamicResponse(Action):
                     elif collection_name == "discounts":    
                         if rasa_intent == "ask_available_discounts":
                             response = result.get('utter_discounts', 'Discount details not available.')
-                    
-                    # only to show the feedback yes/no response counter:
-                    elif collection_name == "feedback":    
-                        yes_count = result.get('yes_count', 0)  # Default to 0 if not found
-                        no_count = result.get('no_count', 0)   # Default to 0 if not found
-
-                        response = f"Correct Response: {yes_count}\nWrong Response: {no_count}"
 
                     elif collection_name == "general":
                         if rasa_intent == "ask_school_location":

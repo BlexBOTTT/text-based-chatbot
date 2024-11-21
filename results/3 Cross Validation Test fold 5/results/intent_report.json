@@ -1,0 +1,152 @@
+{
+  "ask_admission_process": {
+    "precision": 0.6111111111111112,
+    "recall": 0.6470588235294118,
+    "f1-score": 0.6285714285714287,
+    "support": 51,
+    "confused_with": {
+      "ask_admission_requirements": 10,
+      "ask_admission_online_registration": 5
+    }
+  },
+  "ask_speak_to_staff": {
+    "precision": 0.9591836734693877,
+    "recall": 0.94,
+    "f1-score": 0.9494949494949495,
+    "support": 50,
+    "confused_with": {
+      "ask_school_contact": 2,
+      "ask_admission_transferee_enrollment": 1
+    }
+  },
+  "greet": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 14,
+    "confused_with": {}
+  },
+  "ask_courses_list": {
+    "precision": 0.9272727272727272,
+    "recall": 0.9444444444444444,
+    "f1-score": 0.9357798165137615,
+    "support": 54,
+    "confused_with": {
+      "ask_why_should_i_enroll": 1,
+      "ask_tuition_price_specific": 1
+    }
+  },
+  "ask_school_location": {
+    "precision": 0.9615384615384616,
+    "recall": 0.9615384615384616,
+    "f1-score": 0.9615384615384616,
+    "support": 52,
+    "confused_with": {
+      "ask_school_contact": 2
+    }
+  },
+  "ask_admission_working_student": {
+    "precision": 0.9622641509433962,
+    "recall": 1.0,
+    "f1-score": 0.9807692307692307,
+    "support": 51,
+    "confused_with": {}
+  },
+  "ask_tuition_price_general": {
+    "precision": 1.0,
+    "recall": 0.9056603773584906,
+    "f1-score": 0.9504950495049505,
+    "support": 53,
+    "confused_with": {
+      "ask_tuition_price_specific": 2,
+      "ask_courses_list": 1
+    }
+  },
+  "ask_available_discounts": {
+    "precision": 0.9814814814814815,
+    "recall": 1.0,
+    "f1-score": 0.9906542056074767,
+    "support": 53,
+    "confused_with": {}
+  },
+  "ask_tuition_price_specific": {
+    "precision": 0.9896103896103896,
+    "recall": 1.0,
+    "f1-score": 0.9947780678851175,
+    "support": 381,
+    "confused_with": {}
+  },
+  "ask_school_contact": {
+    "precision": 0.9230769230769231,
+    "recall": 0.9230769230769231,
+    "f1-score": 0.9230769230769231,
+    "support": 52,
+    "confused_with": {
+      "ask_chatbot_coverage": 2,
+      "ask_speak_to_staff": 1
+    }
+  },
+  "ask_admission_transferee_enrollment": {
+    "precision": 0.9038461538461539,
+    "recall": 0.9215686274509803,
+    "f1-score": 0.9126213592233009,
+    "support": 51,
+    "confused_with": {
+      "ask_admission_requirements": 3,
+      "ask_admission_process": 1
+    }
+  },
+  "ask_admission_online_registration": {
+    "precision": 0.8823529411764706,
+    "recall": 0.8823529411764706,
+    "f1-score": 0.8823529411764706,
+    "support": 51,
+    "confused_with": {
+      "ask_admission_process": 4,
+      "ask_school_location": 1
+    }
+  },
+  "ask_admission_requirements": {
+    "precision": 0.6666666666666666,
+    "recall": 0.5490196078431373,
+    "f1-score": 0.6021505376344086,
+    "support": 51,
+    "confused_with": {
+      "ask_admission_process": 16,
+      "ask_admission_transferee_enrollment": 3
+    }
+  },
+  "ask_why_should_i_enroll": {
+    "precision": 0.9807692307692307,
+    "recall": 1.0,
+    "f1-score": 0.9902912621359222,
+    "support": 51,
+    "confused_with": {}
+  },
+  "ask_chatbot_coverage": {
+    "precision": 0.9636363636363636,
+    "recall": 1.0,
+    "f1-score": 0.9814814814814815,
+    "support": 53,
+    "confused_with": {}
+  },
+  "accuracy": 0.9363295880149812,
+  "macro avg": {
+    "precision": 0.9141873516399174,
+    "recall": 0.9116480137612213,
+    "f1-score": 0.912270380974259,
+    "support": 1068
+  },
+  "weighted avg": {
+    "precision": 0.9349459158793683,
+    "recall": 0.9363295880149812,
+    "f1-score": 0.9351604168588449,
+    "support": 1068
+  },
+  "micro avg": {
+    "precision": 0.9363295880149812,
+    "recall": 0.9363295880149812,
+    "f1-score": 0.9363295880149812,
+    "support": 1068
+  }
+}

@@ -1,0 +1,27 @@
+rasa data validate
+
+PS C:\Users\Quirante\Documents\admi-chatbot> rasa data validate
+C:\Users\Quirante\Documents\admi-chatbot\venv\lib\site-packages\rasa\core\tracker_store.py:1044: MovedIn20Warning: Deprecated API features detected! These feature(s) are not compatible with SQLAlchemy 2.0. To prevent incompatible upgrades prior to updating applications, ensure requirements files are pinned to "sqlalchemy<2.0". Set environment variable SQLALCHEMY_WARN_20=1 to show all deprecation warnings.  Set environment variable SQLALCHEMY_SILENCE_UBER_WARNING=1 to silence this message. (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  Base: DeclarativeMeta = declarative_base()
+C:\Users\Quirante\Documents\admi-chatbot\venv\lib\site-packages\rasa\shared\utils\validation.py:134: DeprecationWarning: pkg_resources is deprecated as an API. See 
+https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+C:\Users\Quirante\Documents\admi-chatbot\venv\lib\site-packages\pkg_resources\__init__.py:3154: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('mpl_toolkits')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+C:\Users\Quirante\Documents\admi-chatbot\venv\lib\site-packages\pkg_resources\__init__.py:3154: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('ruamel')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+C:\Users\Quirante\Documents\admi-chatbot\venv\lib\site-packages\tensorflow\lite\python\util.py:52: DeprecationWarning: jax.xla_computation is deprecated. Please use the AOT APIs.
+  from jax import xla_computation as _xla_computation
+C:\Users\Quirante\Documents\admi-chatbot\venv\lib\site-packages\rasa\shared\utils\io.py:99: UserWarning: Issue found while processing 'data\nlu\tuition_prices.yml': The item 'ask_tuition_price_specific' contains an example that doesn't start with a '-' symbol:
+This training example will be skipped.
+  More info at https://rasa.com/docs/rasa/training-data-format
+2024-11-21 09:03:00 INFO     rasa.validator  - Validating intents...
+2024-11-21 09:03:00 INFO     rasa.validator  - Validating uniqueness of intents and stories...
+2024-11-21 09:03:00 INFO     rasa.validator  - Validating utterances...
+2024-11-21 09:03:00 INFO     rasa.validator  - Story structure validation...
+Processed story blocks: 100%|█████████████████████████████████████████████████████████| 14/14 [00:00<00:00, 4662.93it/s, # trackers=1]
+2024-11-21 09:03:00 INFO     rasa.core.training.story_conflict  - Considering all preceding turns for conflict analysis.
+2024-11-21 09:03:00 INFO     rasa.validator  - No story structure conflicts found.
+PS C:\Users\Quirante\Documents\admi-chatbot>

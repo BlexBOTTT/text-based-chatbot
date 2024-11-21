@@ -1,0 +1,218 @@
+[
+  {
+    "text": "Can I be transferred to someone who can help?",
+    "intent": "ask_speak_to_staff",
+    "intent_prediction": {
+      "name": "ask_admission_transferee_enrollment",
+      "confidence": 0.9890650510787964
+    }
+  },
+  {
+    "text": "Could you transfer me to someone?",
+    "intent": "ask_speak_to_staff",
+    "intent_prediction": {
+      "name": "ask_admission_transferee_enrollment",
+      "confidence": 0.9808781147003174
+    }
+  },
+  {
+    "text": "Can you transfer me to a person who can assist me?",
+    "intent": "ask_speak_to_staff",
+    "intent_prediction": {
+      "name": "ask_admission_transferee_enrollment",
+      "confidence": 0.935161292552948
+    }
+  },
+  {
+    "text": "I would like to be transferred to someone who can assist me.",
+    "intent": "ask_speak_to_staff",
+    "intent_prediction": {
+      "name": "ask_admission_transferee_enrollment",
+      "confidence": 0.9217481017112732
+    }
+  },
+  {
+    "text": "Can I complete the admission process entirely online?",
+    "intent": "ask_admission_process",
+    "intent_prediction": {
+      "name": "ask_admission_online_registration",
+      "confidence": 0.93979811668396
+    }
+  },
+  {
+    "text": "Do I need to meet someone in person for admission?",
+    "intent": "ask_admission_process",
+    "intent_prediction": {
+      "name": "ask_speak_to_staff",
+      "confidence": 0.9911500215530396
+    }
+  },
+  {
+    "text": "Do I need to take an entrance exam before applying?",
+    "intent": "ask_admission_process",
+    "intent_prediction": {
+      "name": "ask_admission_requirements",
+      "confidence": 0.999852180480957
+    }
+  },
+  {
+    "text": "Do I need to create an account to apply online?",
+    "intent": "ask_admission_process",
+    "intent_prediction": {
+      "name": "ask_admission_online_registration",
+      "confidence": 0.9898237586021423
+    }
+  },
+  {
+    "text": "Are there any entrance exams for admission?",
+    "intent": "ask_admission_process",
+    "intent_prediction": {
+      "name": "ask_admission_requirements",
+      "confidence": 0.8664419651031494
+    }
+  },
+  {
+    "text": "What is the process for transferring to your school?",
+    "intent": "ask_admission_process",
+    "intent_prediction": {
+      "name": "ask_admission_transferee_enrollment",
+      "confidence": 0.9998095631599426
+    }
+  },
+  {
+    "text": "Can you explain the registration process for new students?",
+    "intent": "ask_admission_process",
+    "intent_prediction": {
+      "name": "ask_admission_online_registration",
+      "confidence": 0.9946427345275879
+    }
+  },
+  {
+    "text": "Do I need to submit transcripts for admission?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_transferee_enrollment",
+      "confidence": 0.850681722164154
+    }
+  },
+  {
+    "text": "Can I submit my application if I don’t meet all the requirements yet?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_transferee_enrollment",
+      "confidence": 0.2914298474788666
+    }
+  },
+  {
+    "text": "What are the specific eligibility criteria for international students?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.34733787178993225
+    }
+  },
+  {
+    "text": "What kind of academic records do I need for admission?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.45686882734298706
+    }
+  },
+  {
+    "text": "Do international students need a visa to meet admission criteria?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_transferee_enrollment",
+      "confidence": 0.5691149830818176
+    }
+  },
+  {
+    "text": "What documents should I prepare for admission?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.9708716869354248
+    }
+  },
+  {
+    "text": "Do exchange students need special documentation for admission?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.9808228611946106
+    }
+  },
+  {
+    "text": "Can I apply without a recommendation letter?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.9389489889144897
+    }
+  },
+  {
+    "text": "Can I sign up through your website?",
+    "intent": "ask_admission_online_registration",
+    "intent_prediction": {
+      "name": "ask_school_location",
+      "confidence": 0.24918831884860992
+    }
+  },
+  {
+    "text": "Can I register online if I am a transfer student?",
+    "intent": "ask_admission_online_registration",
+    "intent_prediction": {
+      "name": "ask_admission_transferee_enrollment",
+      "confidence": 0.6576308608055115
+    }
+  },
+  {
+    "text": "Can I complete the entire application process online?",
+    "intent": "ask_admission_online_registration",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.5183330178260803
+    }
+  },
+  {
+    "text": "What are the reasons to enroll here instead of elsewhere?",
+    "intent": "ask_why_should_i_enroll",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.666120707988739
+    }
+  },
+  {
+    "text": "Can you share the school's email address?",
+    "intent": "ask_school_contact",
+    "intent_prediction": {
+      "name": "ask_school_location",
+      "confidence": 0.9901342988014221
+    }
+  },
+  {
+    "text": "How can I get in touch with the school directly?",
+    "intent": "ask_school_contact",
+    "intent_prediction": {
+      "name": "ask_speak_to_staff",
+      "confidence": 0.9949722290039062
+    }
+  },
+  {
+    "text": "Do you offer discounts for transferring students?",
+    "intent": "ask_available_discounts",
+    "intent_prediction": {
+      "name": "ask_admission_transferee_enrollment",
+      "confidence": 0.5874909162521362
+    }
+  },
+  {
+    "text": "Do you offer continuing education courses for professionals?",
+    "intent": "ask_courses_list",
+    "intent_prediction": {
+      "name": "ask_tuition_price_specific",
+      "confidence": 0.9975928664207458
+    }
+  }
+]

@@ -10,7 +10,6 @@ intents:
   - ask_admission_working_student
   - ask_courses_list
   - ask_available_discounts
-  - ask_rasa_feedback_count
   - ask_school_location 
   - ask_school_contact
   - ask_chatbot_coverage
@@ -38,14 +37,15 @@ slots:
 
 actions:
   - action_fetch_dynamic_response
-  # - action_iterate_helpful_counter
 
 responses:
 
   # MongoDB Responses includes:
   # - Admission related inquiry and FAQs
-  # - Tuition
-  # - Couse/Program Lists
+  # - Courses
+  # - Discounts
+  # - General Inquiries
+  # - Specific Couse/Program Prices
 
   # initial welcome reply to user after opening the website
   utter_welcome_greet:

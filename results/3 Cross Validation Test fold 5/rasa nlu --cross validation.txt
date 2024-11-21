@@ -1,0 +1,169 @@
+rasa test nlu --nlu data/nlu --cross-validation --folds 5
+
+PS C:\Users\Quirante\Documents\admi-chatbot> rasa test nlu --nlu data/nlu --cross-validation --folds 5
+C:\Users\Quirante\Documents\admi-chatbot\venv\lib\site-packages\rasa\core\tracker_store.py:1044: MovedIn20Warning: Deprecated API features detected! These feature(s) are not compatible with SQLAlchemy 2.0. To prevent incompatible upgrades prior to updating applications, ensure requirements files are pinned to "sqlalchemy<2.0". Set environment variable SQLALCHEMY_WARN_20=1 to show all deprecation warnings.  Set environment variable SQLALCHEMY_SILENCE_UBER_WARNING=1 to silence this message. (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  Base: DeclarativeMeta = declarative_base()
+C:\Users\Quirante\Documents\admi-chatbot\venv\lib\site-packages\rasa\shared\utils\validation.py:134: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+C:\Users\Quirante\Documents\admi-chatbot\venv\lib\site-packages\pkg_resources\__init__.py:3154: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('mpl_toolkits')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+C:\Users\Quirante\Documents\admi-chatbot\venv\lib\site-packages\pkg_resources\__init__.py:3154: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('ruamel')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+C:\Users\Quirante\Documents\admi-chatbot\venv\lib\site-packages\tensorflow\lite\python\util.py:52: DeprecationWarning: jax.xla_computation is deprecated. Please use the AOT APIs.
+  from jax import xla_computation as _xla_computation
+C:\Users\Quirante\Documents\admi-chatbot\venv\lib\site-packages\rasa\shared\utils\io.py:99: UserWarning: Issue found while processing 'data/nlu\tuition_prices.yml': The item 'ask_tuition_price_specific' contains an example that doesn't start with a '-' symbol:
+This training example will be skipped.
+  More info at https://rasa.com/docs/rasa/training-data-format
+2024-11-21 09:21:51 INFO     rasa.cli.test  - Test model using cross validation.
+2024-11-21 09:21:52 INFO     rasa.engine.training.hooks  - Starting to train component 'RegexFeaturizer'.
+2024-11-21 09:21:52 INFO     rasa.engine.training.hooks  - Finished training component 'RegexFeaturizer'.
+2024-11-21 09:21:52 INFO     rasa.engine.training.hooks  - Starting to train component 'LexicalSyntacticFeaturizer'.
+2024-11-21 09:21:52 INFO     rasa.engine.training.hooks  - Finished training component 'LexicalSyntacticFeaturizer'.
+2024-11-21 09:21:53 INFO     rasa.engine.training.hooks  - Starting to train component 'CountVectorsFeaturizer'.
+2024-11-21 09:21:53 INFO     rasa.nlu.featurizers.sparse_featurizer.count_vectors_featurizer  - 4161 vocabulary items were created for text attribute.
+2024-11-21 09:21:53 INFO     rasa.engine.training.hooks  - Finished training component 'CountVectorsFeaturizer'.
+2024-11-21 09:21:54 INFO     rasa.engine.training.hooks  - Starting to train component 'DIETClassifier'.
+Epochs: 100%|██████████████████████████████████████████████████████████████████████| 100/100 [02:56<00:00,  1.77s/it, t_loss=1.02, i_acc=1, e_f1=1]
+2024-11-21 09:24:51 INFO     rasa.engine.training.hooks  - Finished training component 'DIETClassifier'.
+2024-11-21 09:24:52 INFO     rasa.engine.training.hooks  - Starting to train component 'EntitySynonymMapper'.
+2024-11-21 09:24:52 INFO     rasa.engine.training.hooks  - Finished training component 'EntitySynonymMapper'.
+2024-11-21 09:24:52 INFO     rasa.engine.training.hooks  - Starting to train component 'ResponseSelector'.
+2024-11-21 09:24:53 INFO     rasa.nlu.selectors.response_selector  - Retrieval intent parameter was left to its default value. This response selector will be trained on training examples combining all retrieval intents.
+2024-11-21 09:24:53 INFO     rasa.engine.training.hooks  - Finished training component 'ResponseSelector'.
+Your Rasa model is trained and saved at 'C:\Users\Quirante\AppData\Local\Temp\tmpdljc78ro\nlu-20241121-092152-convex-arcade.tar.gz'.
+2024-11-21 09:24:56 INFO     rasa.core.processor  - Loading model C:\Users\Quirante\AppData\Local\Temp\tmpdljc78ro\nlu-20241121-092152-convex-arcade.tar.gz...
+2024-11-21 09:25:18 INFO     rasa.nlu.test  - Running model for predictions:
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████| 854/854 [00:06<00:00, 124.66it/s]
+2024-11-21 09:25:25 INFO     rasa.nlu.test  - Running model for predictions:
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████| 214/214 [00:01<00:00, 119.91it/s]
+2024-11-21 09:25:28 INFO     rasa.engine.training.hooks  - Starting to train component 'RegexFeaturizer'.
+2024-11-21 09:25:28 INFO     rasa.engine.training.hooks  - Finished training component 'RegexFeaturizer'.
+2024-11-21 09:25:28 INFO     rasa.engine.training.hooks  - Starting to train component 'LexicalSyntacticFeaturizer'.
+2024-11-21 09:25:28 INFO     rasa.engine.training.hooks  - Finished training component 'LexicalSyntacticFeaturizer'.
+2024-11-21 09:25:29 INFO     rasa.engine.training.hooks  - Starting to train component 'CountVectorsFeaturizer'.
+2024-11-21 09:25:29 INFO     rasa.nlu.featurizers.sparse_featurizer.count_vectors_featurizer  - 4223 vocabulary items were created for text attribute.
+2024-11-21 09:25:29 INFO     rasa.engine.training.hooks  - Finished training component 'CountVectorsFeaturizer'.
+2024-11-21 09:25:30 INFO     rasa.engine.training.hooks  - Starting to train component 'DIETClassifier'.
+Epochs: 100%|█████████████████████████████████████████████████████████████████████| 100/100 [02:57<00:00,  1.77s/it, t_loss=0.992, i_acc=1, e_f1=1]
+2024-11-21 09:28:28 INFO     rasa.engine.training.hooks  - Finished training component 'DIETClassifier'.
+2024-11-21 09:28:28 INFO     rasa.engine.training.hooks  - Starting to train component 'EntitySynonymMapper'.
+2024-11-21 09:28:28 INFO     rasa.engine.training.hooks  - Finished training component 'EntitySynonymMapper'.
+2024-11-21 09:28:28 INFO     rasa.engine.training.hooks  - Starting to train component 'ResponseSelector'.
+2024-11-21 09:28:28 INFO     rasa.nlu.selectors.response_selector  - Retrieval intent parameter was left to its default value. This response selector will be trained on training examples combining all retrieval intents.
+2024-11-21 09:28:28 INFO     rasa.engine.training.hooks  - Finished training component 'ResponseSelector'.
+Your Rasa model is trained and saved at 'C:\Users\Quirante\AppData\Local\Temp\tmpdljc78ro\nlu-20241121-092527-descriptive-classic.tar.gz'.
+2024-11-21 09:28:32 INFO     rasa.core.processor  - Loading model C:\Users\Quirante\AppData\Local\Temp\tmpdljc78ro\nlu-20241121-092527-descriptive-classic.tar.gz...
+2024-11-21 09:28:53 INFO     rasa.nlu.test  - Running model for predictions:
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████| 854/854 [00:07<00:00, 119.52it/s]
+2024-11-21 09:29:01 INFO     rasa.nlu.test  - Running model for predictions:
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████| 214/214 [00:01<00:00, 118.95it/s]
+2024-11-21 09:29:04 INFO     rasa.engine.training.hooks  - Starting to train component 'RegexFeaturizer'.
+2024-11-21 09:29:04 INFO     rasa.engine.training.hooks  - Finished training component 'RegexFeaturizer'.
+2024-11-21 09:29:04 INFO     rasa.engine.training.hooks  - Starting to train component 'LexicalSyntacticFeaturizer'.
+2024-11-21 09:29:04 INFO     rasa.engine.training.hooks  - Finished training component 'LexicalSyntacticFeaturizer'.
+2024-11-21 09:29:05 INFO     rasa.engine.training.hooks  - Starting to train component 'CountVectorsFeaturizer'.
+2024-11-21 09:29:05 INFO     rasa.nlu.featurizers.sparse_featurizer.count_vectors_featurizer  - 4110 vocabulary items were created for text attribute.
+2024-11-21 09:29:05 INFO     rasa.engine.training.hooks  - Finished training component 'CountVectorsFeaturizer'.
+2024-11-21 09:29:06 INFO     rasa.engine.training.hooks  - Starting to train component 'DIETClassifier'.
+Epochs: 100%|██████████████████████████████████████████████████████████████████████| 100/100 [03:15<00:00,  1.95s/it, t_loss=0.94, i_acc=1, e_f1=1]
+2024-11-21 09:32:22 INFO     rasa.engine.training.hooks  - Finished training component 'DIETClassifier'.
+2024-11-21 09:32:22 INFO     rasa.engine.training.hooks  - Starting to train component 'EntitySynonymMapper'.
+2024-11-21 09:32:22 INFO     rasa.engine.training.hooks  - Finished training component 'EntitySynonymMapper'.
+2024-11-21 09:32:22 INFO     rasa.engine.training.hooks  - Starting to train component 'ResponseSelector'.
+2024-11-21 09:32:22 INFO     rasa.nlu.selectors.response_selector  - Retrieval intent parameter was left to its default value. This response selector will be trained on training examples combining all retrieval intents.
+2024-11-21 09:32:22 INFO     rasa.engine.training.hooks  - Finished training component 'ResponseSelector'.
+Your Rasa model is trained and saved at 'C:\Users\Quirante\AppData\Local\Temp\tmpdljc78ro\nlu-20241121-092904-boxy-heel.tar.gz'.
+2024-11-21 09:32:26 INFO     rasa.core.processor  - Loading model C:\Users\Quirante\AppData\Local\Temp\tmpdljc78ro\nlu-20241121-092904-boxy-heel.tar.gz...
+2024-11-21 09:32:47 INFO     rasa.nlu.test  - Running model for predictions:
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████| 854/854 [00:07<00:00, 115.43it/s]
+2024-11-21 09:32:55 INFO     rasa.nlu.test  - Running model for predictions:
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████| 214/214 [00:01<00:00, 115.72it/s]
+2024-11-21 09:32:58 INFO     rasa.engine.training.hooks  - Starting to train component 'RegexFeaturizer'.
+2024-11-21 09:32:58 INFO     rasa.engine.training.hooks  - Finished training component 'RegexFeaturizer'.
+2024-11-21 09:32:58 INFO     rasa.engine.training.hooks  - Starting to train component 'LexicalSyntacticFeaturizer'.
+2024-11-21 09:32:58 INFO     rasa.engine.training.hooks  - Finished training component 'LexicalSyntacticFeaturizer'.
+2024-11-21 09:32:59 INFO     rasa.engine.training.hooks  - Starting to train component 'CountVectorsFeaturizer'.
+2024-11-21 09:32:59 INFO     rasa.nlu.featurizers.sparse_featurizer.count_vectors_featurizer  - 4221 vocabulary items were created for text attribute.
+2024-11-21 09:32:59 INFO     rasa.engine.training.hooks  - Finished training component 'CountVectorsFeaturizer'.
+2024-11-21 09:33:00 INFO     rasa.engine.training.hooks  - Starting to train component 'DIETClassifier'.
+Epochs: 100%|█████████████████████████████████████████████████████████████████| 100/100 [03:12<00:00,  1.92s/it, t_loss=0.998, i_acc=0.999, e_f1=1]
+2024-11-21 09:36:13 INFO     rasa.engine.training.hooks  - Finished training component 'DIETClassifier'.
+2024-11-21 09:36:14 INFO     rasa.engine.training.hooks  - Starting to train component 'EntitySynonymMapper'.
+2024-11-21 09:36:14 INFO     rasa.engine.training.hooks  - Finished training component 'EntitySynonymMapper'.
+2024-11-21 09:36:14 INFO     rasa.engine.training.hooks  - Starting to train component 'ResponseSelector'.
+2024-11-21 09:36:14 INFO     rasa.nlu.selectors.response_selector  - Retrieval intent parameter was left to its default value. This response selector will be trained on training examples combining all retrieval intents.
+2024-11-21 09:36:14 INFO     rasa.engine.training.hooks  - Finished training component 'ResponseSelector'.
+Your Rasa model is trained and saved at 'C:\Users\Quirante\AppData\Local\Temp\tmpdljc78ro\nlu-20241121-093258-amicable-actuary.tar.gz'.
+2024-11-21 09:36:17 INFO     rasa.core.processor  - Loading model C:\Users\Quirante\AppData\Local\Temp\tmpdljc78ro\nlu-20241121-093258-amicable-actuary.tar.gz...
+2024-11-21 09:36:38 INFO     rasa.nlu.test  - Running model for predictions:
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████| 855/855 [00:07<00:00, 116.52it/s]
+2024-11-21 09:36:46 INFO     rasa.nlu.test  - Running model for predictions:
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████| 213/213 [00:01<00:00, 106.94it/s]
+2024-11-21 09:36:49 INFO     rasa.engine.training.hooks  - Starting to train component 'RegexFeaturizer'.
+2024-11-21 09:36:49 INFO     rasa.engine.training.hooks  - Finished training component 'RegexFeaturizer'.
+2024-11-21 09:36:49 INFO     rasa.engine.training.hooks  - Starting to train component 'LexicalSyntacticFeaturizer'.
+2024-11-21 09:36:49 INFO     rasa.engine.training.hooks  - Finished training component 'LexicalSyntacticFeaturizer'.
+2024-11-21 09:36:50 INFO     rasa.engine.training.hooks  - Starting to train component 'CountVectorsFeaturizer'.
+2024-11-21 09:36:50 INFO     rasa.nlu.featurizers.sparse_featurizer.count_vectors_featurizer  - 4199 vocabulary items were created for text attribute.
+2024-11-21 09:36:50 INFO     rasa.engine.training.hooks  - Finished training component 'CountVectorsFeaturizer'.
+2024-11-21 09:36:51 INFO     rasa.engine.training.hooks  - Starting to train component 'DIETClassifier'.
+Epochs: 100%|█████████████████████████████████████████████████████████████████████| 100/100 [03:06<00:00,  1.87s/it, t_loss=0.966, i_acc=1, e_f1=1]
+2024-11-21 09:39:58 INFO     rasa.engine.training.hooks  - Finished training component 'DIETClassifier'.
+2024-11-21 09:39:59 INFO     rasa.engine.training.hooks  - Starting to train component 'EntitySynonymMapper'.
+2024-11-21 09:39:59 INFO     rasa.engine.training.hooks  - Finished training component 'EntitySynonymMapper'.
+2024-11-21 09:39:59 INFO     rasa.engine.training.hooks  - Starting to train component 'ResponseSelector'.
+2024-11-21 09:39:59 INFO     rasa.nlu.selectors.response_selector  - Retrieval intent parameter was left to its default value. This response selector will be trained on training examples combining all retrieval intents.
+2024-11-21 09:39:59 INFO     rasa.engine.training.hooks  - Finished training component 'ResponseSelector'.
+Your Rasa model is trained and saved at 'C:\Users\Quirante\AppData\Local\Temp\tmpdljc78ro\nlu-20241121-093648-pale-oil.tar.gz'.
+2024-11-21 09:40:02 INFO     rasa.core.processor  - Loading model C:\Users\Quirante\AppData\Local\Temp\tmpdljc78ro\nlu-20241121-093648-pale-oil.tar.gz...
+2024-11-21 09:40:24 INFO     rasa.nlu.test  - Running model for predictions:
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████| 855/855 [00:07<00:00, 116.22it/s]
+2024-11-21 09:40:32 INFO     rasa.nlu.test  - Running model for predictions:
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████| 213/213 [00:01<00:00, 118.01it/s]
+2024-11-21 09:40:34 INFO     rasa.nlu.test  - Accumulated test folds intent evaluation results:
+2024-11-21 09:40:34 INFO     rasa.nlu.test  - Intent Evaluation: Only considering those 1068 examples that have a defined intent out of 1068 examples.
+2024-11-21 09:40:34 INFO     rasa.nlu.test  - Classification report saved to results\intent_report.json.
+2024-11-21 09:40:34 INFO     rasa.nlu.test  - Incorrect intent predictions saved to results\intent_errors.json.
+2024-11-21 09:40:35 INFO     rasa.utils.plotting  - Confusion matrix, without normalization: 
+[[ 45   4   0   0   0   0   0   1   0   1   0   0   0   0   0]
+ [  5  33  10   1   0   0   0   0   0   1   1   0   0   0   0]
+ [  0  16  28   3   1   0   0   2   0   0   0   0   1   0   0]
+ [  0   1   3  47   0   0   0   0   0   0   0   0   0   0   0]
+ [  0   0   0   0  51   0   0   0   0   0   0   0   0   0   0]
+ [  0   0   0   0   0  53   0   0   0   0   0   0   0   0   0]
+ [  0   0   0   0   0   0  53   0   0   0   0   0   0   0   0]
+ [  0   0   1   0   0   0   0  51   0   0   0   0   1   1   0]
+ [  1   0   0   0   0   0   2   0  48   0   1   0   0   0   0]
+ [  0   0   0   0   0   0   0   0   2  50   0   0   0   0   0]
+ [  0   0   0   1   0   0   0   0   2   0  47   0   0   0   0]
+ [  0   0   0   0   1   1   0   1   0   0   0  48   2   0   0]
+ [  0   0   0   0   0   0   0   0   0   0   0   0 381   0   0]
+ [  0   0   0   0   0   0   0   0   0   0   0   0   0  51   0]
+ [  0   0   0   0   0   0   0   0   0   0   0   0   0   0  14]]
+2024-11-21 09:40:37 INFO     rasa.nlu.test  - Accumulated test folds entity evaluation results:
+2024-11-21 09:40:37 INFO     rasa.nlu.test  - Evaluation for entity extractor: DIETClassifier 
+2024-11-21 09:40:37 INFO     rasa.nlu.test  - Classification report saved to results\DIETClassifier_report.json.
+2024-11-21 09:40:37 INFO     rasa.nlu.test  - Incorrect entity predictions saved to results\DIETClassifier_errors.json.
+2024-11-21 09:40:37 INFO     rasa.utils.plotting  - Confusion matrix, without normalization: 
+[[ 542    0]
+ [   8 9595]]
+2024-11-21 09:40:39 INFO     rasa.model_testing  - CV evaluation (n=5)
+2024-11-21 09:40:39 INFO     rasa.model_testing  - Intent evaluation results
+2024-11-21 09:40:39 INFO     rasa.nlu.test  - train Accuracy: 1.000 (0.000)
+2024-11-21 09:40:39 INFO     rasa.nlu.test  - train F1-score: 1.000 (0.000)
+2024-11-21 09:40:39 INFO     rasa.nlu.test  - train Precision: 1.000 (0.000)
+2024-11-21 09:40:39 INFO     rasa.nlu.test  - test Accuracy: 0.936 (0.010)
+2024-11-21 09:40:39 INFO     rasa.nlu.test  - test F1-score: 0.935 (0.010)
+2024-11-21 09:40:39 INFO     rasa.nlu.test  - test Precision: 0.938 (0.009)
+2024-11-21 09:40:39 INFO     rasa.model_testing  - Entity evaluation results
+2024-11-21 09:40:39 INFO     rasa.nlu.test  - Entity extractor: DIETClassifier
+2024-11-21 09:40:39 INFO     rasa.nlu.test  - train Accuracy: 1.000 (0.000)
+2024-11-21 09:40:39 INFO     rasa.nlu.test  - train F1-score: 1.000 (0.000)
+2024-11-21 09:40:39 INFO     rasa.nlu.test  - train Precision: 1.000 (0.000)
+2024-11-21 09:40:39 INFO     rasa.nlu.test  - Entity extractor: DIETClassifier
+2024-11-21 09:40:39 INFO     rasa.nlu.test  - test Accuracy: 0.999 (0.000)
+2024-11-21 09:40:39 INFO     rasa.nlu.test  - test F1-score: 0.993 (0.004)
+2024-11-21 09:40:39 INFO     rasa.nlu.test  - test Precision: 0.985 (0.007)
+PS C:\Users\Quirante\Documents\admi-chatbot> 

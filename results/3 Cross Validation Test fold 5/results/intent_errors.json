@@ -1,0 +1,546 @@
+[
+  {
+    "text": "Are there any specific qualifications needed to apply?",
+    "intent": "ask_admission_process",
+    "intent_prediction": {
+      "name": "ask_admission_requirements",
+      "confidence": 0.9995049238204956
+    }
+  },
+  {
+    "text": "How can I check my application status?",
+    "intent": "ask_admission_process",
+    "intent_prediction": {
+      "name": "ask_admission_requirements",
+      "confidence": 0.891920268535614
+    }
+  },
+  {
+    "text": "Are there any special requirements for international students?",
+    "intent": "ask_admission_process",
+    "intent_prediction": {
+      "name": "ask_admission_requirements",
+      "confidence": 0.9396018981933594
+    }
+  },
+  {
+    "text": "Can I complete the admission process entirely online?",
+    "intent": "ask_admission_process",
+    "intent_prediction": {
+      "name": "ask_admission_online_registration",
+      "confidence": 0.9820976853370667
+    }
+  },
+  {
+    "text": "Do I need to create an account to apply online?",
+    "intent": "ask_admission_process",
+    "intent_prediction": {
+      "name": "ask_admission_online_registration",
+      "confidence": 0.9720847010612488
+    }
+  },
+  {
+    "text": "Are there any special admission requirements for transfer students?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_transferee_enrollment",
+      "confidence": 0.9978837370872498
+    }
+  },
+  {
+    "text": "Are essays mandatory for the application process?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.9981379508972168
+    }
+  },
+  {
+    "text": "Do exchange students need special documentation for admission?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.7199747562408447
+    }
+  },
+  {
+    "text": "Can I enroll without going to campus?",
+    "intent": "ask_admission_online_registration",
+    "intent_prediction": {
+      "name": "ask_school_location",
+      "confidence": 0.9005332589149475
+    }
+  },
+  {
+    "text": "Can I complete the entire application process online?",
+    "intent": "ask_admission_online_registration",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.6884916424751282
+    }
+  },
+  {
+    "text": "What are the steps for transferring to your school?",
+    "intent": "ask_admission_transferee_enrollment",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.8374307751655579
+    }
+  },
+  {
+    "text": "Do I need to meet specific language proficiency requirements as a transferee?",
+    "intent": "ask_admission_transferee_enrollment",
+    "intent_prediction": {
+      "name": "ask_admission_requirements",
+      "confidence": 0.9333277344703674
+    }
+  },
+  {
+    "text": "Where can I call for assistance with school-related questions?",
+    "intent": "ask_school_contact",
+    "intent_prediction": {
+      "name": "ask_chatbot_coverage",
+      "confidence": 0.6361780166625977
+    }
+  },
+  {
+    "text": "I need to contact a staff member directly.",
+    "intent": "ask_speak_to_staff",
+    "intent_prediction": {
+      "name": "ask_school_contact",
+      "confidence": 0.952078104019165
+    }
+  },
+  {
+    "text": "Are there any early payment discounts for tuition?",
+    "intent": "ask_tuition_price_general",
+    "intent_prediction": {
+      "name": "ask_available_discounts",
+      "confidence": 0.9645088911056519
+    }
+  },
+  {
+    "text": "What documents do I need to submit for admission?",
+    "intent": "ask_admission_process",
+    "intent_prediction": {
+      "name": "ask_admission_requirements",
+      "confidence": 0.9988272786140442
+    }
+  },
+  {
+    "text": "Where can I find the admission guidelines?",
+    "intent": "ask_admission_process",
+    "intent_prediction": {
+      "name": "ask_admission_requirements",
+      "confidence": 0.5417000651359558
+    }
+  },
+  {
+    "text": "What are the prerequisites for applying?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.9989489912986755
+    }
+  },
+  {
+    "text": "Are there any specific courses I need before applying?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.9985472559928894
+    }
+  },
+  {
+    "text": "Can I submit my application if I don’t meet all the requirements yet?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.9936028122901917
+    }
+  },
+  {
+    "text": "Do I need an ID for the application process?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.999729573726654
+    }
+  },
+  {
+    "text": "Do international students need a visa to meet admission criteria?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.8742846250534058
+    }
+  },
+  {
+    "text": "Are there requirements specific to working professionals?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_working_student",
+      "confidence": 0.9956555366516113
+    }
+  },
+  {
+    "text": "Can I sign up through your website?",
+    "intent": "ask_admission_online_registration",
+    "intent_prediction": {
+      "name": "ask_courses_list",
+      "confidence": 0.6924511790275574
+    }
+  },
+  {
+    "text": "Can I apply for admission online through your website?",
+    "intent": "ask_admission_online_registration",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.6019508242607117
+    }
+  },
+  {
+    "text": "Do you offer courses in fields like business, engineering, or technology?",
+    "intent": "ask_courses_list",
+    "intent_prediction": {
+      "name": "ask_tuition_price_specific",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "How do I get to the school?",
+    "intent": "ask_school_location",
+    "intent_prediction": {
+      "name": "ask_school_contact",
+      "confidence": 0.5563231110572815
+    }
+  },
+  {
+    "text": "Can I take a jeepney to get to the school?",
+    "intent": "ask_school_location",
+    "intent_prediction": {
+      "name": "ask_school_contact",
+      "confidence": 0.6021809577941895
+    }
+  },
+  {
+    "text": "Could you transfer me to someone?",
+    "intent": "ask_speak_to_staff",
+    "intent_prediction": {
+      "name": "ask_admission_transferee_enrollment",
+      "confidence": 0.9033551216125488
+    }
+  },
+  {
+    "text": "How much is the tuition for undergraduate programs?",
+    "intent": "ask_tuition_price_general",
+    "intent_prediction": {
+      "name": "ask_tuition_price_specific",
+      "confidence": 0.8372572660446167
+    }
+  },
+  {
+    "text": "What's the estimated cost for an entire academic year?",
+    "intent": "ask_tuition_price_general",
+    "intent_prediction": {
+      "name": "ask_tuition_price_specific",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "How do I enroll in the school?",
+    "intent": "ask_admission_process",
+    "intent_prediction": {
+      "name": "ask_school_location",
+      "confidence": 0.5801442861557007
+    }
+  },
+  {
+    "text": "Is there an online application for admission?",
+    "intent": "ask_admission_process",
+    "intent_prediction": {
+      "name": "ask_admission_online_registration",
+      "confidence": 0.7099215388298035
+    }
+  },
+  {
+    "text": "What is the process for transferring to your school?",
+    "intent": "ask_admission_process",
+    "intent_prediction": {
+      "name": "ask_admission_transferee_enrollment",
+      "confidence": 0.9997361302375793
+    }
+  },
+  {
+    "text": "What are the steps to get enrolled after being accepted?",
+    "intent": "ask_admission_process",
+    "intent_prediction": {
+      "name": "ask_admission_requirements",
+      "confidence": 0.4555438756942749
+    }
+  },
+  {
+    "text": "Can you tell me what documents are needed to apply?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.9915494918823242
+    }
+  },
+  {
+    "text": "Do I need to submit a personal statement for admission?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.9287747144699097
+    }
+  },
+  {
+    "text": "Do I need to take any standardized tests?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_courses_list",
+      "confidence": 0.8936095833778381
+    }
+  },
+  {
+    "text": "Are there any specific language proficiency requirements?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_transferee_enrollment",
+      "confidence": 0.9229190945625305
+    }
+  },
+  {
+    "text": "What is required to qualify for admission to this school?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.3312723636627197
+    }
+  },
+  {
+    "text": "How do I apply online for admission?",
+    "intent": "ask_admission_online_registration",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.9148196578025818
+    }
+  },
+  {
+    "text": "Are transfer students required to meet any additional academic requirements?",
+    "intent": "ask_admission_transferee_enrollment",
+    "intent_prediction": {
+      "name": "ask_admission_requirements",
+      "confidence": 0.523329496383667
+    }
+  },
+  {
+    "text": "Where can I reach the school administration online?",
+    "intent": "ask_school_contact",
+    "intent_prediction": {
+      "name": "ask_admission_online_registration",
+      "confidence": 0.9883366227149963
+    }
+  },
+  {
+    "text": "Is there a customer service agent available?",
+    "intent": "ask_speak_to_staff",
+    "intent_prediction": {
+      "name": "ask_school_contact",
+      "confidence": 0.6463226675987244
+    }
+  },
+  {
+    "text": "How do tuition fees work at your university?",
+    "intent": "ask_tuition_price_general",
+    "intent_prediction": {
+      "name": "ask_admission_working_student",
+      "confidence": 0.7925291657447815
+    }
+  },
+  {
+    "text": "What are the tuition fees for specialized courses or programs?",
+    "intent": "ask_tuition_price_general",
+    "intent_prediction": {
+      "name": "ask_courses_list",
+      "confidence": 0.9861517548561096
+    }
+  },
+  {
+    "text": "Do I need to take an entrance exam before applying?",
+    "intent": "ask_admission_process",
+    "intent_prediction": {
+      "name": "ask_admission_requirements",
+      "confidence": 0.9993842840194702
+    }
+  },
+  {
+    "text": "Do I need a recommendation letter for admission?",
+    "intent": "ask_admission_process",
+    "intent_prediction": {
+      "name": "ask_admission_requirements",
+      "confidence": 0.9997928738594055
+    }
+  },
+  {
+    "text": "Can you explain the registration process for new students?",
+    "intent": "ask_admission_process",
+    "intent_prediction": {
+      "name": "ask_admission_online_registration",
+      "confidence": 0.992555558681488
+    }
+  },
+  {
+    "text": "Are there any required forms I need to fill out before applying?",
+    "intent": "ask_admission_process",
+    "intent_prediction": {
+      "name": "ask_admission_requirements",
+      "confidence": 0.9994049072265625
+    }
+  },
+  {
+    "text": "What kind of academic records do I need for admission?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.7044112682342529
+    }
+  },
+  {
+    "text": "Do I need an entrance exam for admission?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.982136070728302
+    }
+  },
+  {
+    "text": "What is the minimum GPA required for admission?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_transferee_enrollment",
+      "confidence": 0.9375947713851929
+    }
+  },
+  {
+    "text": "Do I need to prove English proficiency for admission?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_tuition_price_specific",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "What academic programs can I choose from?",
+    "intent": "ask_courses_list",
+    "intent_prediction": {
+      "name": "ask_why_should_i_enroll",
+      "confidence": 0.3524039089679718
+    }
+  },
+  {
+    "text": "Can I reach out to the school using a contact app or chatbot?",
+    "intent": "ask_school_contact",
+    "intent_prediction": {
+      "name": "ask_chatbot_coverage",
+      "confidence": 0.7766433358192444
+    }
+  },
+  {
+    "text": "Can I apply for admission online or in person?",
+    "intent": "ask_admission_process",
+    "intent_prediction": {
+      "name": "ask_admission_online_registration",
+      "confidence": 0.7280392050743103
+    }
+  },
+  {
+    "text": "What are the prerequisites for the admission process?",
+    "intent": "ask_admission_process",
+    "intent_prediction": {
+      "name": "ask_admission_requirements",
+      "confidence": 0.9634137153625488
+    }
+  },
+  {
+    "text": "Do I need to meet someone in person for admission?",
+    "intent": "ask_admission_process",
+    "intent_prediction": {
+      "name": "ask_speak_to_staff",
+      "confidence": 0.9995942711830139
+    }
+  },
+  {
+    "text": "Is there an age limit for applicants?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.5734323859214783
+    }
+  },
+  {
+    "text": "Do I need to submit transcripts for admission?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.9963275790214539
+    }
+  },
+  {
+    "text": "Do I need to take an interview as part of the admission process?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.9996896982192993
+    }
+  },
+  {
+    "text": "Do I need a physical medical examination certificate?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_courses_list",
+      "confidence": 0.7518119812011719
+    }
+  },
+  {
+    "text": "Is there a criminal background check for admission?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.9989609718322754
+    }
+  },
+  {
+    "text": "Can I submit all my documents online for admission?",
+    "intent": "ask_admission_online_registration",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.8787121772766113
+    }
+  },
+  {
+    "text": "What documents are required for transferring to your school?",
+    "intent": "ask_admission_transferee_enrollment",
+    "intent_prediction": {
+      "name": "ask_admission_requirements",
+      "confidence": 0.9652934074401855
+    }
+  },
+  {
+    "text": "What are the general education courses required at your school?",
+    "intent": "ask_courses_list",
+    "intent_prediction": {
+      "name": "ask_admission_requirements",
+      "confidence": 0.7930259704589844
+    }
+  },
+  {
+    "text": "How can I get in touch with the school directly?",
+    "intent": "ask_school_contact",
+    "intent_prediction": {
+      "name": "ask_speak_to_staff",
+      "confidence": 0.9261486530303955
+    }
+  }
+]
