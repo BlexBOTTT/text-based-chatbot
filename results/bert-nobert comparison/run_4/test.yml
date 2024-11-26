@@ -1,0 +1,471 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - good afternoon
+    - hello
+    - hey dude
+- intent: ask_speak_to_staff
+  examples: |
+    - I would like to be transferred to someone who can assist me.
+    - ask speak to staff
+    - I need assistance from a person, not a bot.
+    - I would like to speak with a human representative.
+    - Is there a live agent I can speak with?
+    - Can I be transferred to someone who can help?
+    - Can you direct me to someone who can help?
+    - I want to connect with someone from your team.
+    - Can you connect me to a real person?
+    - I want to talk to a human, not an AI.
+- intent: ask_admission_process
+  examples: |
+    - What are the key steps to getting admitted here?
+    - What are the key deadlines for the admission process?
+    - Admission process
+    - What is the process for transferring to your school?
+    - Is there an application form I need to fill out?
+    - How does your school handle late applications?
+    - Do I need to meet someone in person for admission?
+    - Are there any additional steps after submitting the application?
+    - Is there some kind of process for the admission?
+    - Is there a waiting list as part of the admission process?
+- intent: ask_admission_requirements
+  examples: |
+    - Can you explain what documents are non-negotiable for admission?
+    - Are parental consent forms required for minors applying?
+    - Do international students need a visa to meet admission criteria?
+    - Is there a criminal background check for admission?
+    - Do I need an entrance exam for admission?
+    - Is there an age limit for applicants?
+    - Can you tell me what documents are needed to apply?
+    - What kind of academic records do I need for admission?
+    - Are there requirements specific to working professionals?
+    - Are essays mandatory for the application process?
+    - Do I need an ID for the application process?
+- intent: ask_admission_online_registration
+  examples: |
+    - Can parents assist with online registration?
+    - Is there a checklist available for online registration steps?
+    - Can you tell me about the online registration?
+    - Are there online options for enrollment?
+    - How can I register online?
+    - Is it possible to register remotely?
+    - Can I register online if I am a transfer student?
+    - Does the online registration portal support mobile access?
+    - Is the registration process fully online?
+    - Can I sign up through your website?
+- intent: ask_admission_transferee_enrollment
+  examples: |
+    - Are there specific programs or degrees that do not accept transferees?
+    - Do you accept transferees for enrollment?
+    - What is the transfer process for international students?
+    - What are the necessary steps to transfer into your program?
+    - How can I apply for admission as a transferee?
+    - What is the eligibility criteria for transferring as a sophomore or junior?
+    - How long does the transfer admission process take?
+    - What requirements are needed for transferee enrollment?
+    - What are the benefits of transferring to your school compared to other universities?
+    - Can I transfer my courses from another university?
+- intent: ask_admission_working_student
+  examples: |
+    - Are there flexible course schedules for working professionals?
+    - What are the working student options for evening and weekend courses?
+    - admission working student
+    - Is there a part-time option for working students?
+    - Can I transfer from part-time to full-time enrollment as a working student?
+    - How do I find out if the courses I want fit my work schedule?
+    - Do working students have to take the same number of units as full-time students?
+    - How do working students enroll in your courses?
+    - How do I request a flexible schedule as a working student?
+    - Are there internships or job placements for working students?
+- intent: ask_why_should_i_enroll
+  examples: |
+    - Why should I enroll in Saint Francis of Assisi College?
+    - Why should I choose this institution for my future?
+    - Why should I pick this college over others in the area?
+    - What are the advantages of studying at this particular school?
+    - Why should I pick this school over another school?
+    - What’s unique about this school that makes it worth enrolling in?
+    - why should i enroll in school
+    - Why should I consider SFAC as my first choice for education?
+    - Can you convince me to enroll in SFAC?
+    - Why should I pick this school for my studies?
+- intent: ask_school_location
+  examples: |
+    - Can you give me directions to the Las Piñas campus?
+    - What’s the location of your main campus?
+    - Can you guide me to the main campus using public transportation?
+    - Could you provide the location of the university’s campuses?
+    - Where is the main campus situated?
+    - What is the exact address of the campus?
+    - Can you provide a specific address for the campus?
+    - How do I access the campus from nearby provinces?
+    - Where is the university’s campus located?
+    - Can I take a jeepney to get to the school?
+    - school location
+- intent: ask_school_contact
+  examples: |
+    - Can I schedule an appointment with the school via email?
+    - ask school contact
+    - Can I get the school's contact information?
+    - How can I reach the career services department?
+    - Who handles financial aid inquiries at Las Piñas?
+    - What’s the school’s general customer service contact?
+    - Can I contact the school by post mail? What’s the address?
+    - What is the email for inquiries about the school’s programs?
+    - What’s the best way to contact the admissions team?
+    - Where can I find the school's contact details?
+- intent: ask_available_discounts
+  examples: |
+    - Are there any discounts for students with disabilities?
+    - Are there discounts available for early enrollment?
+    - Do you offer any discounts on tuition fees?
+    - Are there any loyalty discounts for long-term students?
+    - Can I get a discount for enrolling in a particular department?
+    - Can I combine discounts with other financial aid?
+    - Is there a discount for students who pay their tuition early?
+    - What is the discount policy for new students?
+    - Do you have any promotional discounts available this year?
+    - Are there discounts for alumni or their family members?
+    - Is there a discount for students who refer others?
+- intent: ask_chatbot_coverage
+  examples: |
+    - What is the chatbot's coverage regarding enrollment processes?
+    - What specific programs can I ask the chatbot about?
+    - Does the chatbot help with inquiries about student loans?
+    - Does the chatbot cover student support services?
+    - Can the chatbot help me with information on campus locations?
+    - How can the chatbot assist with international student questions?
+    - Can I ask the chatbot about student orientation activities?
+    - What topics can I ask the chatbot about?
+    - What kind of academic programs can the chatbot tell me about?
+    - Can the chatbot guide me on how to submit my application?
+- intent: ask_tuition_price_general
+  examples: |
+    - Could you provide information on tuition fees?
+    - How much tuition is required for a semester?
+    - How much is the tuition for undergraduate programs?
+    - What are the annual tuition fees?
+    - What's the tuition for a full-time student?
+    - What's the average tuition fee at your university?
+    - What are the costs of tuition at your school?
+    - How can I pay for tuition?
+    - Can I get a general estimate of the tuition fees?
+    - How much do I need to pay in tuition?
+    - Can you explain the tuition pricing structure?
+- intent: ask_courses_list
+  examples: |
+    - course list
+    - Which courses are currently available?
+    - What is the complete list of academic courses?
+    - What are your specialized programs for international students?
+    - Could you provide a list of your courses?
+    - What kinds of interdisciplinary programs do you offer?
+    - Please give me the list of courses.
+    - What programs are available at your school?
+    - courses list
+    - Do you have a list of online courses I can take?
+    - Which courses do I need to take to graduate in my program?
+- intent: ask_tuition_price_specific
+  examples: |
+    - Are there any grants available for students enrolled in [business administration](course)?
+    - Is there an application fee for the [psychology](course) program?
+    - Are there any additional fees for the [business administration](course) program besides tuition?
+    - Do I need to pay extra for lab fees in the [engineering](course) program?
+    - What's the estimated tuition for [education](course)?
+    - Can you tell me if the tuition for [education](course) is higher for out-of-state students?
+    - How much do I need to pay for the [psychology](course) program?
+    - Is the [engineering](course) program eligible for financial aid assistance?
+    - What is the tuition for [psychology](course) per credit hour?
+    - How do I apply for financial aid for the [engineering](course) program's tuition?
+    - How does the tuition cost for [nursing](course) compare to other courses?
+    - How much would it cost for me to finish the entire [computer science](course) degree program?
+    - How much do I pay for a year of [psychology](course) study?
+    - Is there an application fee for the [education](course) program?
+    - What's the estimated tuition for [psychology](course)?
+    - How does the tuition cost for [engineering](course) compare to other courses?
+    - What's the tuition fee per semester for the [nursing](course) program?
+    - How much is the deposit for enrolling in [computer science](course)?
+    - Can I pay the [business administration](course) tuition in installments?
+    - Does the [business administration](course) program offer tuition discounts for early payment?
+    - I'm interested in the tuition for [nursing](course). What is it?
+    - Is there a price difference for [education](course) courses based on the specialization?
+    - Do you have any discounts for the [psychology](course) tuition?
+    - What's the estimated tuition for [hospitality management](course)?
+    - Can I pay for [education](course) tuition using my scholarship funds?
+    - Could you give me a breakdown of the [hospitality management](course) course fees?
+    - How much will I pay for the [education](course) course tuition?
+    - What are the total costs for the [hospitality management](course) program per semester?
+    - What's the tuition fee for the [business administration](course) program at your school?
+    - How much is the tuition for [psychology](course) at your university?
+    - What are the total costs for the [psychology](course) program per semester?
+    - What's the tuition fee per semester for the [hospitality management](course) program?
+    - What is the tuition for [business administration](course) course?
+    - Can I get an estimate for the tuition fees for [engineering](course)?
+    - Are there any scholarships available to cover [business administration](course) tuition fees?
+    - How much will I pay for the [psychology](course) course tuition?
+    - Are there any hidden fees for the [nursing](course) program's tuition?
+    - Does the tuition cost for the [computer science](course) program vary by location?
+    - Do students taking the [nursing](course) course on a part-time basis pay the same tuition fee?
+    - Do students taking the [psychology](course) course on a part-time basis pay the same tuition fee?
+    - Is there a payment plan for tuition in the [business administration](course) program?
+    - What's the tuition fee for the full duration of the [hospitality management](course) program?
+    - Are the [hospitality management](course) tuition fees refundable in case of withdrawal?
+    - What's the annual tuition rate for the [hospitality management](course) program?
+    - Is the [psychology](course) program eligible for financial aid assistance?
+    - Can you break down the tuition fees for [nursing](course)?
+    - How much is the tuition for [computer science](course) at your university?
+    - How much will the total tuition for [engineering](course) be over four years?
+    - Can you break down the tuition fees for [hospitality management](course)?
+    - Can you provide a detailed breakdown of the tuition for [computer science](course)?
+    - Can you list the costs for [computer science](course) tuition for international students?
+    - What's the total tuition cost for the entire [engineering](course) program?
+    - What is the estimated total cost for a [hospitality management](course) degree?
+    - Can you tell me if the tuition for [nursing](course) is higher for out-of-state students?
+    - How much is the tuition for [engineering](course) at your university?
+    - How does the tuition cost for [psychology](course) compare to other courses?
+    - What's the total tuition cost for the entire [business administration](course) program?
+    - Does the [computer science](course) program offer tuition discounts for early payment?
+    - Can I pay the [psychology](course) tuition in installments?
+    - Can you tell me the tuition fees for the [engineering](course) course?
+    - What are the total costs for the [engineering](course) program per semester?
+    - What is the tuition for [psychology](course) course?
+    - What's the tuition fee per semester for the [engineering](course) program?
+    - Could you give me a breakdown of the [psychology](course) course fees?
+    - How much do I need to pay for the [hospitality management](course) program?
+    - What's the tuition fee per semester for the [computer science](course) program?
+    - Do I need to pay extra for lab fees in the [nursing](course) program?
+    - Are the [nursing](course) tuition fees refundable in case of withdrawal?
+    - What are the tuition fees for [psychology](course) for the next academic year?
+    - Is there a payment plan for tuition in the [hospitality management](course) program?
+    - How do I apply for financial aid for the [psychology](course) program's tuition?
+    - What's the annual tuition rate for the [business administration](course) program?
+    - What's the estimated tuition for [engineering](course)?
+    - What are the tuition fees for [education](course) for the next academic year?
+    - Do students taking the [education](course) course on a part-time basis pay the same tuition fee?
+    - What is the tuition for [nursing](course) course?
+- synonym: computer science
+  examples: |
+    - CS
+    - Bachelor of Science in Computer Science
+    - com sci
+    - comp sci
+    - comsci
+    - B.S. Computer Science
+    - Computer Sci
+    - Comp Science
+    - Computer Studies
+    - Computing Science
+    - Comp Sci Degree
+    - Bachelor Computer Science
+    - Computer Sci BS
+    - Bachelor in CS
+    - Bachelor's in Computer Science
+    - Comp Sci
+- synonym: education
+  examples: |
+    - education
+    - edu
+    - Bachelor of Science in Education
+    - Bachelor's in Education
+    - B.S. Education
+    - BS in Education
+    - Bachelor of Education
+    - Bachelor Education Degree
+    - Education Degree
+    - Bachelor's Education
+    - elementary education
+    - elem ed
+    - BS Elementary Education
+    - Bachelor in Elementary Education
+    - BSEEd
+    - Bachelor of Science in Elementary Education
+    - Elementary Ed
+    - B.S. Elementary Education
+    - Bachelor's Elementary Education
+    - Elementary Teaching
+    - secondary education
+    - secondary ed
+    - BS Secondary Education
+    - Bachelor in Secondary Education
+    - BSEd
+    - Bachelor of Science in Secondary Education
+    - Secondary Ed
+    - B.S. Secondary Education
+    - Bachelor's Secondary Education
+    - Secondary Teaching
+    - secondary education major in english
+    - Secondary Ed English
+    - Bachelor in Secondary Education - English
+    - BS Ed English
+    - English Secondary Education
+    - Bachelor's Secondary Ed in English
+    - Secondary English Teaching
+    - Secondary English Major
+    - Secondary Education English
+    - secondary education major in science
+    - Secondary Ed Science
+    - Bachelor in Secondary Education - Science
+    - BS Ed Science
+    - Science Secondary Education
+    - Bachelor's Secondary Ed in Science
+    - Secondary Science Teaching
+    - Secondary Science Major
+    - Secondary Education Science
+    - secondary education major in social studies
+    - Secondary Ed Social Studies
+    - Bachelor in Secondary Education - Social Studies
+    - BS Ed Social Studies
+    - Social Studies Secondary Education
+    - Bachelor's Secondary Ed in Social Studies
+    - Secondary Social Studies Teaching
+    - Secondary Social Studies Major
+    - Secondary Education Social Studies
+    - secondary education major in filipino
+    - Secondary Ed Filipino
+    - Bachelor in Secondary Education - Filipino
+    - BS Ed Filipino
+    - Filipino Secondary Education
+    - Bachelor's Secondary Ed in Filipino
+    - Secondary Filipino Teaching
+    - Secondary Filipino Major
+    - Secondary Education Filipino
+    - secondary education major in mathematics
+    - Secondary Ed Mathematics
+    - Bachelor in Secondary Education - Mathematics
+    - BS Ed Math
+    - Math Secondary Education
+    - Bachelor's Secondary Ed in Mathematics
+    - Secondary Mathematics Teaching
+    - Secondary Mathematics Major
+    - Secondary Education Mathematics
+- synonym: hospitality management
+  examples: |
+    - HM
+    - hospitality management
+    - BS in Hospitality Management
+    - Bachelor of Science in Hospitality Management
+    - B.S. Hospitality Management
+    - Hospitality Studies
+    - Hospitality and Tourism Management
+    - Hospitality Business Management
+    - Bachelor in Hospitality Management
+    - BSHM
+    - Bachelor of Hospitality Management
+    - Hospitality Administration
+    - Hotel and Restaurant Management
+    - Bachelor of Science in Hotel and Restaurant Management
+    - BS Hotel and Restaurant Management
+    - BSHRM
+    - Hotel Management
+    - Restaurant Management
+    - Hospitality Industry Management
+    - Hospitality Operations
+    - B.S. in Hospitality Management
+    - Bachelor's in Hospitality Management
+- synonym: business administration
+  examples: |
+    - BA
+    - business administration
+    - BS in Business Administration
+    - Bachelor of Science in Business Administration
+    - B.S. Business Administration
+    - Business Studies
+    - Business Management
+    - Bachelor in Business Administration
+    - BBA
+    - Bachelor of Business Administration
+    - Bachelor's in Business Administration
+    - B.S. in Business Administration
+    - Business Administration Degree
+    - Business Admin
+    - Business Management Studies
+    - Bachelor of Science in Business Management
+    - BSBA
+    - Business Administration Major
+    - Business Leadership
+    - Business Administration Program
+    - Business Admin Degree
+- synonym: engineering
+  examples: |
+    - eng
+    - engineering
+    - engg
+    - BSENG
+    - Bachelor of Science in Engineering
+    - BS in Engineering
+    - Engineering Studies
+    - Engineering Science
+    - B.Sc. Engineering
+    - General Engineering
+    - EE
+    - ElecEng
+    - BSEE
+    - BS in Electrical Engineering
+    - Bachelor of Science in Electrical Engineering
+    - Electrical Eng
+    - Elec Engineering
+    - Electrical Sci
+    - E.E.
+    - Electrical Engineering
+    - CE
+    - CompEng
+    - BSCompE
+    - BS in Computer Engineering
+    - Bachelor of Science in Computer Engineering
+    - Computer Eng
+    - Comp Engineering
+    - CmpEng
+    - Computer Engineering
+    - ECE
+    - ElecE
+    - BSECE
+    - BS in Electronics Engineering
+    - Bachelor of Science in Electronics Engineering
+    - Electronics Eng
+    - Electronics Engineering
+- synonym: psychology
+  examples: |
+    - Psych
+    - psychology
+    - Bachelor of Arts in Psychology
+    - BA in Psychology
+    - B.A. in Psychology
+    - Bachelor's in Psychology
+    - B.A. Psychology
+    - Psychology Degree
+    - Bachelor of Arts in Psychological Science
+    - Bachelor of Psychology
+    - Bachelor's in Psychological Science
+    - BAPsy
+    - BA Psychology
+    - Psychology Studies
+    - Psychology and Behavioral Science
+    - Psychology Major
+    - Psychology Program
+    - Behavioral Psychology
+    - Psychological Science
+    - Bachelor of Science in Psychology
+    - Psychology (B.A.)
+- synonym: nursing
+  examples: |
+    - nursing
+    - Bachelor of Science in Nursing
+    - BS in Nursing
+    - B.S. Nursing
+    - Bachelor of Nursing
+    - Bachelor's in Nursing
+    - B.S. in Nursing
+    - Nursing Degree
+    - Bachelor of Science in Nursing Practice
+    - Nursing Science
+    - Bachelor of Science in Nursing Science
+    - BSN
+    - Nursing Studies
+    - Nursing Administration
+    - Nursing Program
+    - Registered Nurse Degree
+    - RN Degree
+    - Nursing Major
+    - Nursing Practice
+    - Nursing (B.S.)

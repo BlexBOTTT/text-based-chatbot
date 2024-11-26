@@ -1,0 +1,28 @@
+{
+  "course": {
+    "precision": 0.954954954954955,
+    "recall": 1.0,
+    "f1-score": 0.9769585253456221,
+    "support": 106,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 0.954954954954955,
+    "recall": 1.0,
+    "f1-score": 0.9769585253456221,
+    "support": 106
+  },
+  "macro avg": {
+    "precision": 0.954954954954955,
+    "recall": 1.0,
+    "f1-score": 0.9769585253456221,
+    "support": 106
+  },
+  "weighted avg": {
+    "precision": 0.954954954954955,
+    "recall": 1.0,
+    "f1-score": 0.9769585253456221,
+    "support": 106
+  },
+  "accuracy": 0.997559785261103
+}

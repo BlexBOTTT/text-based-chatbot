@@ -31,26 +31,12 @@ pipeline: # null
     epochs: 100
     constrain_similarities: true
 
-# FallbackClassifier: 
-# meant to trigger when all of the intent predictions are lower than the threshold configured below,
-# hence will trigger a response where it doesn't recognize the question 
+  # FallbackClassifier: 
+  # meant to trigger when all of the intent predictions are lower than the threshold configured below,
+  # hence will trigger a response where it doesn't recognize the question 
   - name: FallbackClassifier
     threshold: 0.7
     ambiguity_threshold: 0.1
-
-  # BERT INTEGRATION BELOW:
-  # https://rasa.com/blog/how-to-benchmark-bert/
-
-  # Hugging Face Transformer integration for BERT
-  # NOTE: REQUIRED INTERNET CONNECTION TO WORK:
-  # https://rasa.com/docs/rasa/components#languagemodelfeaturizer
-  # - name: LanguageModelFeaturizer
-  # #   # Using BERT model
-  #   model_name: "bert"
-  # #   # Pre-trained model weights; adjust to a specific model if needed
-  #   model_weights: "bert-base-uncased"
-  # # # Adds BERT embeddings as features
-
 
 # Configuration for Rasa Core.
 # https://rasa.com/docs/rasa/core/policies/
@@ -67,10 +53,3 @@ policies: # null
     max_history: 5
     epochs: 100
     constrain_similarities: true
-
-
-  # meant to trigger when all of the intent predictions are lower than the threshold configured below,
-  # hence will trigger a response where it doesn't recognize the question
-  # - name: RulePolicy
-  #   core_fallback_action_name: "utter_please_rephrase"  # Fallback action
-  #   core_fallback_threshold: 0.3   # Adjust the confidence threshold here

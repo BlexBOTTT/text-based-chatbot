@@ -1,0 +1,49 @@
+[
+  {
+    "text": "How do working students manage their course load and employment?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "course",
+        "start": 24,
+        "end": 30,
+        "confidence_entity": 0.9935359954833984,
+        "value": "manage",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Do you offer courses in fields like business, engineering, or technology?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "course",
+        "start": 36,
+        "end": 44,
+        "confidence_entity": 0.9997311234474182,
+        "value": "business",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "course",
+        "start": 46,
+        "end": 57,
+        "confidence_entity": 0.9997624754905701,
+        "value": "engineering",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "course",
+        "start": 62,
+        "end": 72,
+        "confidence_entity": 0.9576740860939026,
+        "value": "technology",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

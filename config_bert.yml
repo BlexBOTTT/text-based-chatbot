@@ -11,9 +11,9 @@ assistant_id: 20240814-215218-all-miso
 language: en
 
 pipeline: # null
-# # No configuration for the NLU pipeline was provided. The following default pipeline was used to train your model.
-# # If you'd like to customize it, uncomment and adjust the pipeline.
-# # See https://rasa.com/docs/rasa/tuning-your-model for more information.
+# No configuration for the NLU pipeline was provided. The following default pipeline was used to train your model.
+# If you'd like to customize it, uncomment and adjust the pipeline.
+# See https://rasa.com/docs/rasa/tuning-your-model for more information.
   - name: WhitespaceTokenizer
   - name: RegexFeaturizer
   - name: LexicalSyntacticFeaturizer
@@ -65,10 +65,3 @@ policies: # null
     max_history: 5
     epochs: 100
     constrain_similarities: true
-
-
-  # meant to trigger when all of the intent predictions are lower than the threshold configured below,
-  # hence will trigger a response where it doesn't recognize the question
-  # - name: RulePolicy
-  #   core_fallback_action_name: "utter_please_rephrase"  # Fallback action
-  #   core_fallback_threshold: 0.3   # Adjust the confidence threshold here

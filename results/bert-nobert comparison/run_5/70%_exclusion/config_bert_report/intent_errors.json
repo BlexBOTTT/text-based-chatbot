@@ -1,0 +1,202 @@
+[
+  {
+    "text": "I need to contact a staff member directly.",
+    "intent": "ask_speak_to_staff",
+    "intent_prediction": {
+      "name": "ask_school_contact",
+      "confidence": 0.974967896938324
+    }
+  },
+  {
+    "text": "How do I enroll in the school?",
+    "intent": "ask_admission_process",
+    "intent_prediction": {
+      "name": "ask_school_contact",
+      "confidence": 0.8097866177558899
+    }
+  },
+  {
+    "text": "Can I complete the admission process entirely online?",
+    "intent": "ask_admission_process",
+    "intent_prediction": {
+      "name": "ask_admission_online_registration",
+      "confidence": 0.8148840069770813
+    }
+  },
+  {
+    "text": "How does your school handle late applications?",
+    "intent": "ask_admission_process",
+    "intent_prediction": {
+      "name": "ask_chatbot_coverage",
+      "confidence": 0.33765000104904175
+    }
+  },
+  {
+    "text": "Do I need to meet someone in person for admission?",
+    "intent": "ask_admission_process",
+    "intent_prediction": {
+      "name": "ask_speak_to_staff",
+      "confidence": 0.9722877740859985
+    }
+  },
+  {
+    "text": "Is there an age limit for applicants?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.973332405090332
+    }
+  },
+  {
+    "text": "Are proof of vaccinations necessary to complete admission?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.6601442694664001
+    }
+  },
+  {
+    "text": "Do I need an entrance exam for admission?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.9985435009002686
+    }
+  },
+  {
+    "text": "Is there a criminal background check for admission?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.7633575797080994
+    }
+  },
+  {
+    "text": "Do I need a physical medical examination certificate?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_transferee_enrollment",
+      "confidence": 0.3968273103237152
+    }
+  },
+  {
+    "text": "Do I need an ID for the application process?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.9958993792533875
+    }
+  },
+  {
+    "text": "Do I need to submit a personal statement for admission?",
+    "intent": "ask_admission_requirements",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.9943972826004028
+    }
+  },
+  {
+    "text": "Can I register online if I am a transfer student?",
+    "intent": "ask_admission_online_registration",
+    "intent_prediction": {
+      "name": "ask_admission_transferee_enrollment",
+      "confidence": 0.9134820699691772
+    }
+  },
+  {
+    "text": "How long does the transfer admission process take?",
+    "intent": "ask_admission_transferee_enrollment",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.5966936349868774
+    }
+  },
+  {
+    "text": "What are the steps for transferring to your school?",
+    "intent": "ask_admission_transferee_enrollment",
+    "intent_prediction": {
+      "name": "ask_admission_process",
+      "confidence": 0.7801874279975891
+    }
+  },
+  {
+    "text": "How do I get to the school?",
+    "intent": "ask_school_location",
+    "intent_prediction": {
+      "name": "ask_school_contact",
+      "confidence": 0.6339170336723328
+    }
+  },
+  {
+    "text": "How do I get in touch with the IT support team at the school?",
+    "intent": "ask_school_contact",
+    "intent_prediction": {
+      "name": "ask_speak_to_staff",
+      "confidence": 0.8387603163719177
+    }
+  },
+  {
+    "text": "Where can I reach the school administration online?",
+    "intent": "ask_school_contact",
+    "intent_prediction": {
+      "name": "ask_admission_online_registration",
+      "confidence": 0.7204437851905823
+    }
+  },
+  {
+    "text": "What’s the contact number for the Las Piñas campus?",
+    "intent": "ask_school_contact",
+    "intent_prediction": {
+      "name": "ask_school_location",
+      "confidence": 0.7062333822250366
+    }
+  },
+  {
+    "text": "Is the tuition fee different for local and out-of-state students?",
+    "intent": "ask_tuition_price_general",
+    "intent_prediction": {
+      "name": "ask_tuition_price_specific",
+      "confidence": 0.9914946556091309
+    }
+  },
+  {
+    "text": "How much is the general tuition fee?",
+    "intent": "ask_tuition_price_general",
+    "intent_prediction": {
+      "name": "ask_tuition_price_specific",
+      "confidence": 0.5725656747817993
+    }
+  },
+  {
+    "text": "Can you break down the tuition fees for me?",
+    "intent": "ask_tuition_price_general",
+    "intent_prediction": {
+      "name": "ask_tuition_price_specific",
+      "confidence": 0.9998025298118591
+    }
+  },
+  {
+    "text": "How much is the tuition?",
+    "intent": "ask_tuition_price_general",
+    "intent_prediction": {
+      "name": "ask_tuition_price_specific",
+      "confidence": 0.9437292218208313
+    }
+  },
+  {
+    "text": "How does the tuition fee change for international students?",
+    "intent": "ask_tuition_price_general",
+    "intent_prediction": {
+      "name": "ask_tuition_price_specific",
+      "confidence": 0.9204826951026917
+    }
+  },
+  {
+    "text": "Can I get a course catalog for this year?",
+    "intent": "ask_courses_list",
+    "intent_prediction": {
+      "name": "ask_tuition_price_specific",
+      "confidence": 0.7314656376838684
+    }
+  }
+]
