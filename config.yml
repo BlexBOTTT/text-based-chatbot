@@ -38,6 +38,22 @@ pipeline: # null
     threshold: 0.7
     ambiguity_threshold: 0.1
 
+  # BERT INTEGRATION BELOW:
+  # https://rasa.com/blog/how-to-benchmark-bert/
+
+  # Hugging Face Transformer integration for BERT
+  # NOTE: REQUIRED INTERNET CONNECTION TO WORK:
+  # https://rasa.com/docs/rasa/components#languagemodelfeaturizer
+  # - name: LanguageModelFeaturizer
+  #   model_name: "bert"
+  #   model_weights: "bert-base-uncased"
+
+  - name: LanguageModelFeaturizer
+    model_name: "distilbert"
+    model_weights: "distilbert-base-uncased"
+
+
+
 # Configuration for Rasa Core.
 # https://rasa.com/docs/rasa/core/policies/
 policies: # null

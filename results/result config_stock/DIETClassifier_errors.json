@@ -1,0 +1,44 @@
+[
+  {
+    "text": "Do you offer courses in fields like business, engineering, or technology?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "course",
+        "start": 36,
+        "end": 44,
+        "confidence_entity": 0.9618489742279053,
+        "value": "business",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "course",
+        "start": 46,
+        "end": 57,
+        "confidence_entity": 0.9520739912986755,
+        "value": "engineering",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "What are the general education courses required at your school?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "course",
+        "start": 21,
+        "end": 30,
+        "confidence_entity": 0.5136834979057312,
+        "value": "education",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]
