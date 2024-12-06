@@ -1,0 +1,35 @@
+[{
+  "_id": {
+    "$oid": "671a11507a87df775644e173"
+  },
+  "rasa_intent": "ask_school_location",
+  "utter_school_location": "If you are asking about school location:\n\nWe are located in: \n 045 Admiral Road, Admiral Village, Talon Tres, Las Piñas City 1747, Metro Manila, Philippines.\nCheck this Google Maps link: https://maps.app.goo.gl/dRqctXP4QoQe4WPk6"
+},
+{
+  "_id": {
+    "$oid": "672884750e3cbccf8c4a808c"
+  },
+  "rasa_intent": "ask_school_contact",
+  "utter_ask_contact": "If you are asking about school's contact information:\nHere are the contact details for the school:\n\nFacebook: https://www.facebook.com/mysfaclp (you can talk to us here!)\nPhone: 0917-729-2909 / 8800-3131\nEmail: sfaclaspinasadmission@gmail.com\nPhysical Address: 045 Admiral Village, Talon Tres, Las Piñas City, Metro Manila 1747, Philippines (https://maps.app.goo.gl/PtT4YRcZbk8bH8nK9)"
+},
+{
+  "_id": {
+    "$oid": "673a1e92a2976767265f6ba7"
+  },
+  "rasa_intent": "ask_chatbot_coverage",
+  "utter_chatbot_coverage": "If you are asking about the chatbot's coverage:\n\nWould you like to know what topics I cover?\nHere they are below Here are the contact details for the school:\n- Admission-related Inquiries (requirements, process, online reg.,)\n- Course/Program Lists\n- Available Discounts\n- General Inquiries (Location, Contact, chatbot coverage, speak-to-staff, why-sfac)\n- Tuition Prices of the Courses\n\nHere it is, so just ask any questions!"
+},
+{
+  "_id": {
+    "$oid": "673a1f7ba2976767265f6ba8"
+  },
+  "rasa_intent": "ask_speak_to_staff",
+  "utter_speak_to_staff": "Of course! You can talk to a real staff instead of me, kindly please\nfollow this link below and reach out to us!\n\n- facebook page: https://www.facebook.com/@SFACCollegeLasPinas"
+},
+{
+  "_id": {
+    "$oid": "673a223ea2976767265f6ba9"
+  },
+  "rasa_intent": "ask_why_should_i_enroll",
+  "utter_why_should_i_enroll": "Are you asking on why SFAC?\n\nBecause:\n- Quality Franciscan Education\n- Focus on Hands-On Learning\n- Consistent PRC Passers in All Board Program Courses Offered\n- Industry Partners for OJT and Job Placements\n- Student-Centered Teaching Approach\n\nBesides that, we also have\n- Well-Equipped Laboratories\n- Extensive Student Support Services\n- Laboratories and Offices\n\nAnd last, but not the least:\n- Affordable School Fees for every one!\n- 24-Hour CCTV Surveillance\n- Air-Conditioned Rooms\n- Catholic-Oriented\n- WiFi @1GB speed within whole Campus!"
+}]

@@ -1,0 +1,7 @@
+[{
+  "_id": {
+    "$oid": "671a11507a87df775644e173"
+  },
+  "rasa_intent": "ask_available_discounts",
+  "utter_discounts": "If you are asking about available scholarships and discounts:\n\nPlease Register here to receive updates about scholarship programs and discounts.\n\nFREE ONLINE REGISTRATION \nhttps://forms.gle/nnBGRwfXV9fpgtPs6\n☺️"
+}]

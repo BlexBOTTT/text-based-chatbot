@@ -1,0 +1,7 @@
+[{
+  "_id": {
+    "$oid": "670f39804ca291414bdb5428"
+  },
+  "rasa_intent": "ask_courses_list",
+  "utter_course_list": "If you are asking about the course list:\n\n𝐖𝐞 𝐨𝐟𝐟𝐞𝐫:\n✔️B.S. in Nursing\n✔️AB Psychology\n✔️B.S. in Electrical Engineering\n✔️B.S. in Electronics Engineering\n✔️B.S. in Computer Engineering\n✔️B.S. in Computer Science\n✔️B.S. in Business Administration\n👉Major in Operations Management, Financial Management, Marketing Management.\n✔️B.S. in Hospitality Management\n✔️Bachelor of Secondary Education\n👉Major in English, Filipino, Mathematics, Science, Social Studies\n✔️Bachelor of Elementary Education"
+}]

@@ -1,0 +1,35 @@
+[{
+  "_id": {
+    "$oid": "670f39804ca291414bdb5423"
+  },
+  "rasa_intent": "ask_admission_process",
+  "utter_admission_process": "If you are asking about admission process:\n\nThe admission process includes submission of application forms,\ndocument verification, and interview scheduling. \nApplicants will be notified of their admission status within days of submission.\n\nFor more in-detailed info, you can just contact our page and inquire about our process:\n- facebook page: https://www.facebook.com/@SFACCollegeLasPinas"
+},
+{
+  "_id": {
+    "$oid": "670fee12f9dc010e1cddc887"
+  },
+  "rasa_intent": "ask_admission_requirements",
+  "utter_admission_requirements": "If you are asking about admission requirements:\n\nFor the requirements, we require you to have:\n - Form 138 (FRESHMAN), or Transcript of Records (TRANSFEREE/2ND COURSER) \n - Certificate of Good Moral (ORIGINAL) \n - Birth Certificate - PSA/NSO (PHOTOCOPY) \n - Four copies of 2x2 ID Picture in white background \n - Long Brown Envelope"
+},
+{
+  "_id": {
+    "$oid": "673306015faef66f562576dc"
+  },
+  "rasa_intent": "ask_admission_online_registration",
+  "utter_admission_online_registration": "If you are asking about online registration:\n\n𝘽𝙀 𝙊𝙉𝙀 𝙊𝙁 𝙐𝙎!\nEnsure your slot for the S.Y. 2024-2025.\n✍️For online FREE registration click here:\nhttps://forms.gle/nnBGRwfXV9fpgtPs6 and wait for email or text messages for confirmation.\n\nFor the 𝐎𝐍𝐋𝐈𝐍𝐄 RESERVATION PAYMENT:\n𝐒𝐭𝐞𝐩 1: Pay either via bank deposit or bank transfer (Bank to bank, GCASH or Paymaya)\nBank: Eastwest Bank Corporation\nAccount Name: Saint Francis de Assisi Educational Foundation Inc.\nAccount Number: 2000-0074-2383\nBranch : Alabang Madrigal\n\n𝐒𝐭𝐞𝐩 2: Send your proof of payment to our official Facebook account\nhttps://www.facebook.com/SFACCollegeLasPinas/\n\nNote: Indicate the following information\nName of Student:\nCourse/Program enrolled:\nReason for payment:\nContact number:\nE-mail Address:\n\n𝐒𝐭𝐞𝐩 3: Receive your official receipt thru E-mail"
+},
+{
+  "_id": {
+    "$oid": "67335abe5faef66f56257700"
+  },
+  "rasa_intent": "ask_admission_transferee_enrollment",
+  "utter_admission_transferee_enrollment": "If you are asking about transferee enrollment:\n\nHOW TO ENROLL TRANSFEREES\nFor Transferees, visit our school and bring a copy of your grades for evaluation and assessment of school fees.\nOffice Hours:\nMON-FRI: 8:00AM - 4:00PM (3:00 PM, Cut off)"
+},
+{
+  "_id": {
+    "$oid": "67335d845faef66f56257715"
+  },
+  "rasa_intent": "ask_admission_working_student",
+  "utter_admission_working_student": "If you are asking about working students:\n\nARE YOU ACCEPTING WORKING STUDENTS?\nFor working students, we need to schedule a talk with our program head for consideration. \nPlease let us know if you are interested.\n\nFor an appointment kindly message us on these links below so we can assist you virtually.\n- https://www.facebook.com/@SFACCollegeLasPinas\n"
+}]
