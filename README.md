@@ -1,81 +1,104 @@
 # SFAC-LP Admission chatbot
-A WIP text-based chatbot made with RASA framework via python
 
-aims to be conversational
+A text-based chatbot built with the **Rasa framework** in Python.  
 
-5/15/2014 TEST CHATBOT
+**Objective**: The chatbot aims to handle **college-related admission inquiries** and answer them correctly.
 
-# Configurations:
-    This rasa project is supported with:
-    DESKTOP-LAPTOP
-    - Python Version:   3.10.11
-    - pip version:      24.2
-    - Rasa Version:     3.6.20
+# Images of the chatbot
+|   Image   |   Description |
+|-|-|
+|   ![Whole](docs/readme/whole.png)    |Appearance of the widget|
+|   ![Whole](docs/readme/welcome.png)  |Welcome greeting of the chatbot with multiple button options for which topic|
+|   ![Whole](docs/readme/sample.png)   |A sample topic response from chatbot where uttering to speak to a real staff instead|
+|   ![Whole](docs/readme/button.png)   |Button which can collapse the chatbot widget|
 
-# CHECKLIST (say DONE if completed)
-- Connect to website DONE!!! (via rasa widgetchat div file)
-- MongoDB (Knowledge Management/Base??) DONE!!!
-- BERT - DONE!! (NEED TESTING RESULTS!!)
-- NLPaug (for data augmentation)
-- ~~LLM integration via OpenAI?~~
-    # What about the dataset? is it:
-    - _For college only_
-    - ~K-12?~
-    - ~Or, Both K-12 and College?~
+## Development Phase
+- **Start Date**: 15th of June 2024
+- **End Date**: 30th of November 2024
 
-# Commands:
+## Configurations
+The project is developed using the following setup below:
 
-Activate venv - python 3.8.10
+- **Operating System**: Windows 10 Professional
+- **Python Version**: 3.10.11
+- **Pip Version**: 24.2
+- **Rasa Version**: 3.6.20
+---
 
-- .venv\Scripts\activate
+## Checklist
+| Task | Status |
+|-------------------------|-------------------------------|
+| Connect to the actual **LIVE** website    | **UNABLE**, due to new revision of in SFAC-LP's portal during late-development timeframe|
+| Connect to **local** website              | **DONE** via Rasa widget chat `<div>` integration |
+| MongoDB as the knowledge base             | **DONE**, via `rasa run actions` and action.py command tailored to fetch proper responses depending on the inquiry detected by the chatbot|
+| ~~BERT Integration~~                      | **TECHNICALLY DONE, BUT** the results were nearly identical to results without BERT integration|
+| ~~LLM Integration via OpenAI~~            | **UNABLE**, blocked due to paywalls for Rasa Pro and OpenAI APIs)                            |
 
-# FREQUENTLY USED COMMANDS
+
+### Dataset Tailored with:
+- Focused with only **College-Related** questions within the admission office's scope
+
+## Frequently Used Rasa CLI Commands (must activate venv first)
+
+|**Command**|**Description**|
+|   ----    |  ----    |
+| `.venv\Scripts\activate`                            | Activates the virtual environment where the Rasa framework is stored, allowing exclusive execution of Rasa commands. |
+| `rasa run actions`                                  | Connects Rasa's `action.py` code to MongoDB. **Run this first**, as chatbot responses rely on the database.|
+| `rasa data validate`                                | Validates data to check for issues in the dataset, stories, rules, etc.|
+| `rasa data split nlu --training-fraction 0.7`       | Splits NLU training data into training and test sets, defaulting to 80/20 but adjustable to 70/30 with the fraction.|
+| `rasa train`                                        | Trains the model after ensuring no validation errors or issues exist.|
+| `rasa shell`                                        | Talks to the chatbot in the Command Line Interface (CLI).|
+| `rasa run --enable-api --cors "*"`                  | Default command for conversing with the chatbot through the web chat widget.|
+| `rasa run --enable-api --cors "*" --model <path>`   | Runs a specific model if multiple `.tar.gz` models are saved.|
 
 
-## commands for training chatbot
-- rasa run actions (IMPORTANT:run this first with anything since everything the chatbot responses is from the db itself)
-## CLI command for data validation to see any checks and potential issues
-- rasa data validate
-### CLI command for data splitting NLU training data (80/20 by default, but with '--training-fraction 0.7' will split to 70/30)
-- rasa data split nlu --training-fraction 0.7
-## then if there is no any potential downmark checks or potential issues, finally submit
-- rasa train
+## Installation Problems
 
-## command to talk to the chatbot in the CLI (command line interface)
-- rasa shell
+### 1. First-Time Installation Errors
+If you encounter any of the following errors during the first-time installation:
+- `subprocess-exited-with-error`
+- `metadata-generation-failed`
+- `mattermostwrapper` issue
 
-## default command for conversing with the chatbot in the web's chat widget
-rasa run --enable-api --cors "*"
-## command if has multiple models saved and want to slect a particular .tar.gz one
-rasa run --enable-api --cors "*" --model <path>
+Run these commands to resolve the issues:
+```bash
+pip install setuptools==58.0.4
+pip install mattermostwrapper==2.2
+pip install rasa
+rasa --version
+```
+### 2. AsyncServer Warning
 
-# Installation problems
-- FOR FiRTST time installing rasa:
-    - if errors are:
-        "subprocess-exited-with-error", "metadata-generation-failed", and
-        "mattermostwrapper" issue:
-        ```
-        pip install setuptools==58.0.4
-        pip install mattermostwrapper==2.2
-        pip install rasa
-        rasa --version
-        ```
+Error Location:
 
-- if c:\users\USER\cbproject\rasa-env\lib\site-packages\rasa\core\channels\socketio.py:236: 
-    _RuntimeWarning: coroutine ‘AsyncServer.enter_room’ was never awaited_
-    - try this below:![async_236_warning](docs/images/async_236_warning.png)
+`c:\users\USER\cbproject\rasa-env\lib\site-packages\rasa\core\channels\socketio.py:236`
+
+Error Message:
+
+`RuntimeWarning: coroutine ‘AsyncServer.enter_room’ was never awaited`
+
+**Solution:**
+Refer to the screenshot below for guidance:
+![async_236_warning](docs/errors/async_236_warning.png)
     
 
-- if Powershell's "ExecutionPolicy" (which usually trying to use venv in powershell):
-    ![Execution policy](docs/images/execution_policy.png)
-    - try this below:
-        - open windows powershell and execute `Get-ExecutionPolicy`
-        - if the response was `Restricted`, 
-        - `apply `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
-        - then press `Y`
-        - recheck the VSCode's terminal window and retry `.\venv\Scripts\Activate` in the terminal, and see if it works and see if `(venv)` appeared so it may look like "`(venv) PS C:\Users\USER\Documents\admi-chatbot>`".
-        - if you want to revert to old changes, type:
-            - `Set-ExecutionPolicy -ExecutionPolicy Restricted -Scope CurrentUser`, then press `Y`
+### 3. PowerShell "ExecutionPolicy" Error
+When trying to activate the virtual environment in PowerShell, you might encounter an issue related to the "ExecutionPolicy."
+![Execution policy](docs/errors/execution_policy.png)
+
+**Steps to potentially resolve:**
+- open windows powershell and execute `Get-ExecutionPolicy`
+- if the response was `Restricted`, apply 
+
+    `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
+
+- then press `Y`
+
+- recheck the VSCode's terminal window and retry `.\venv\Scripts\Activate` in the terminal, and see if it works and see if `(venv)` appeared so it may look like 
+"`(venv) PS C:\Users\USER\Documents\admi-chatbot>`".
+
+- if you want to revert to old changes, type:
+    - `Set-ExecutionPolicy -ExecutionPolicy Restricted -Scope CurrentUser`, then press `Y`
 
 
 
